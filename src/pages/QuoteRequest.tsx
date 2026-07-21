@@ -1,0 +1,245 @@
+import { useState, type FormEvent } from 'react'
+import { AnimatePresence, motion } from 'framer-motion'
+import { CheckCircle2, ArrowLeft } from 'lucide-react'
+import PageHero from '../components/ui/PageHero'
+import { Label, TextInput, TextArea, Select, Field } from '../components/ui/FormField'
+import Button from '../components/ui/Button'
+import { services } from '../data/services'
+
+const steps = ['Your Request', 'Route & Timing', 'Your Details']
+
+const clientTypes = ['Private Client', 'Business Client']
+
+export default function QuoteRequest() {
+  const [step, setStep] = useState(0)
+  const [submitted, setSubmitted] = useState(false)
+  const [submitting, setSubmitting] = useState(false)
+  const [clientType, setClientType] = useState(clientTypes[0])
+
+  const isLast = step === steps.length - 1
+
+  const next = () => setStep((s) => Math.min(s + 1, steps.length - 1))
+  const back = () => setStep((s) => Math.max(s - 1, 0))
+
+  const handleSubmit = (e: FormEvent) => {
+    e.preventDefault()
+    if (!isLast) {
+      next()
+      return
+    }
+    setSubmitting(true)
+    window.setTimeout(() => {
+      setSubmitting(false)
+      setSubmitted(true)
+    }, 900)
+  }
+
+  return (
+    <div>
+      <PageHero
+        kicker="Tailor-Made Logistics"
+        title="Request your private quote"
+        description="Share the essentials of your request and a dedicated logistics architect will prepare a bespoke proposal within one business day."
+        crumb="Quote Request"
+      />
+
+      <section className="relative bg-noir py-24 sm:py-28">
+        <div className="mx-auto max-w-3xl px-6 sm:px-10">
+          <div className="card-glass p-8 sm:p-14">
+            {submitted ? (
+              <div className="flex flex-col items-center justify-center py-16 text-center">
+                <CheckCircle2 className="h-14 w-14 text-champagne-light" strokeWidth={1.2} />
+                <h3 className="mt-7 font-display text-3xl">Request Received</h3>
+                <p className="mt-4 max-w-md text-sm font-light leading-relaxed text-mist">
+                  Thank you for entrusting us with your request. Your dedicated logistics architect will
+                  review the details and reach out within one business day with a tailored proposal.
+                </p>
+              </div>
+            ) : (
+              <>
+                {/* PROGRESS */}
+                <div className="mb-14">
+                  <div className="flex items-center justify-between">
+                    {steps.map((label, i) => (
+                      <div key={label} className="flex flex-1 items-center last:flex-none">
+                        <div className="flex flex-col items-center gap-2.5">
+                          <div
+                            className={`flex h-8 w-8 items-center justify-center rounded-full border text-xs font-display transition-colors duration-500 ${
+                              i <= step
+                                ? 'border-champagne bg-champagne/10 text-champagne-light'
+                                : 'border-champagne/20 text-mist-dim'
+                            }`}
+                          >
+                            {i + 1}
+                          </div>
+                          <span
+                            className={`hidden sm:block text-[10px] uppercase tracking-[0.14em] text-center ${
+                              i <= step ? 'text-champagne-light' : 'text-mist-dim'
+                            }`}
+                          >
+                            {label}
+                          </span>
+                        </div>
+                        {i < steps.length - 1 && (
+                          <div className="mx-3 h-px flex-1 bg-champagne/15 relative -translate-y-3.5 sm:translate-y-0">
+                            <motion.div
+                              className="absolute inset-y-0 left-0 bg-champagne"
+                              initial={false}
+                              animate={{ width: i < step ? '100%' : '0%' }}
+                              transition={{ duration: 0.5, ease: [0.16, 1, 0.3, 1] }}
+                            />
+                          </div>
+                        )}
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <form onSubmit={handleSubmit}>
+                  <AnimatePresence mode="wait">
+                    <motion.div
+                      key={step}
+                      initial={{ opacity: 0, x: 16 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      exit={{ opacity: 0, x: -16 }}
+                      transition={{ duration: 0.35, ease: [0.16, 1, 0.3, 1] }}
+                      className="space-y-8"
+                    >
+                      {step === 0 && (
+                        <>
+                          <Field>
+                            <Label>Service Required</Label>
+                            <Select required name="service" defaultValue="">
+                              <option value="" disabled>
+                                Select a service
+                              </option>
+                              {services.map((s) => (
+                                <option key={s.slug} value={s.title}>
+                                  {s.title}
+                                </option>
+                              ))}
+                            </Select>
+                          </Field>
+                          <Field>
+                            <Label>Client Type</Label>
+                            <div className="flex gap-3">
+                              {clientTypes.map((t) => (
+                                <button
+                                  type="button"
+                                  key={t}
+                                  onClick={() => setClientType(t)}
+                                  className={`px-5 py-2.5 text-[11px] uppercase tracking-[0.14em] border transition-colors duration-300 ${
+                                    clientType === t
+                                      ? 'border-champagne bg-champagne/10 text-champagne-light'
+                                      : 'border-champagne/20 text-mist hover:border-champagne/50'
+                                  }`}
+                                >
+                                  {t}
+                                </button>
+                              ))}
+                            </div>
+                          </Field>
+                          <Field>
+                            <Label>Describe the Asset or Request</Label>
+                            <TextArea
+                              required
+                              name="description"
+                              rows={5}
+                              placeholder="e.g. Relocation of a 3-vehicle collection, including one classic convertible requiring enclosed transport..."
+                            />
+                          </Field>
+                        </>
+                      )}
+
+                      {step === 1 && (
+                        <>
+                          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                            <Field>
+                              <Label>Origin Location</Label>
+                              <TextInput required name="origin" placeholder="Amsterdam, Netherlands" />
+                            </Field>
+                            <Field>
+                              <Label>Destination Location</Label>
+                              <TextInput required name="destination" placeholder="Lisbon, Portugal" />
+                            </Field>
+                          </div>
+                          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                            <Field>
+                              <Label>Preferred Date</Label>
+                              <TextInput type="date" name="date" />
+                            </Field>
+                            <Field>
+                              <Label>Flexibility</Label>
+                              <Select name="flexibility" defaultValue="Flexible (±2 weeks)">
+                                <option>Fixed date</option>
+                                <option>Flexible (±2 weeks)</option>
+                                <option>Fully flexible</option>
+                              </Select>
+                            </Field>
+                          </div>
+                          <Field>
+                            <Label>Additional Notes (optional)</Label>
+                            <TextArea
+                              name="notes"
+                              rows={4}
+                              placeholder="Access restrictions, insurance requirements, or any other detail we should know..."
+                            />
+                          </Field>
+                        </>
+                      )}
+
+                      {step === 2 && (
+                        <>
+                          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                            <Field>
+                              <Label>Full Name</Label>
+                              <TextInput required name="name" placeholder="Jane van der Berg" />
+                            </Field>
+                            <Field>
+                              <Label>Email Address</Label>
+                              <TextInput required type="email" name="email" placeholder="jane@example.com" />
+                            </Field>
+                          </div>
+                          <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                            <Field>
+                              <Label>Phone Number</Label>
+                              <TextInput required type="tel" name="phone" placeholder="+31 6 0000 0000" />
+                            </Field>
+                            {clientType === 'Business Client' && (
+                              <Field>
+                                <Label>Company Name</Label>
+                                <TextInput name="company" placeholder="Company B.V." />
+                              </Field>
+                            )}
+                          </div>
+                        </>
+                      )}
+                    </motion.div>
+                  </AnimatePresence>
+
+                  <div className="mt-12 flex items-center justify-between">
+                    {step > 0 ? (
+                      <button
+                        type="button"
+                        onClick={back}
+                        className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-mist hover:text-ivory transition-colors"
+                      >
+                        <ArrowLeft className="h-3.5 w-3.5" />
+                        Back
+                      </button>
+                    ) : (
+                      <span />
+                    )}
+                    <Button type="submit" icon={!isLast} disabled={submitting}>
+                      {isLast ? (submitting ? 'Submitting…' : 'Submit Request') : 'Continue'}
+                    </Button>
+                  </div>
+                </form>
+              </>
+            )}
+          </div>
+        </div>
+      </section>
+    </div>
+  )
+}
