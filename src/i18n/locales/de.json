@@ -1,0 +1,351 @@
+{
+  "meta": {
+    "home": { "title": "Nederland Portugal Express | Private Luxuslogistik", "desc": "Maßgeschneiderte internationale Luxuslogistik, White-Glove-Transport, hochwertiger Fahrzeug- und Yachttransport sowie erstklassige Umzüge zwischen den Niederlanden, Portugal und darüber hinaus." },
+    "about": { "title": "Über Uns | Nederland Portugal Express", "desc": "Ein privater Standard logistischer Exzellenz, entstanden auf der Route zwischen Amsterdam und Lissabon." },
+    "services": { "title": "Leistungen | Nederland Portugal Express", "desc": "Ein vollständiges Angebot privater Logistikdienstleistungen — Luxustransport, Yachtlogistik, Fahrzeugtransport, Umzüge und mehr." },
+    "secureStorage": { "title": "Sichere Lagerung | Nederland Portugal Express", "desc": "Klimatisierte, überwachte private Lagerung für Fahrzeuge, Boote, Kunst und Nachlassgegenstände." },
+    "removals": { "title": "Internationale Umzüge | Nederland Portugal Express", "desc": "Erstklassige internationale Umzüge zwischen den Niederlanden, Portugal und darüber hinaus." },
+    "contact": { "title": "Kontakt | Nederland Portugal Express", "desc": "Sprechen Sie mit unserem Concierge-Team über Ihre private Logistikanfrage." },
+    "quote": { "title": "Angebot Anfordern | Nederland Portugal Express", "desc": "Fordern Sie ein maßgeschneidertes, privates Logistikangebot von Nederland Portugal Express an." },
+    "notFound": { "title": "Seite Nicht Gefunden | Nederland Portugal Express" }
+  },
+  "nav": {
+    "home": "Startseite",
+    "about": "Über Uns",
+    "services": "Leistungen",
+    "secureStorage": "Sichere Lagerung",
+    "removals": "Umzüge",
+    "contact": "Kontakt",
+    "requestQuote": "Angebot Anfordern",
+    "language": "Sprache"
+  },
+  "footer": {
+    "tagline": "Maßgeschneiderte internationale Logistik für alle, die Qualität an Präzision, Diskretion und Handwerkskunst messen — wir verbinden die Niederlande, Portugal und die Welt.",
+    "explore": "Entdecken",
+    "clientServices": "Kundenservice",
+    "concierge": "Concierge",
+    "aboutUs": "Über Uns",
+    "rights": "Alle Rechte vorbehalten.",
+    "crafted": "Mit Diskretion gestaltet",
+    "offices": "Amsterdam, Niederlande & Lissabon, Portugal"
+  },
+  "common": {
+    "learnMore": "Mehr Erfahren",
+    "discover": "Entdecken",
+    "continue": "Weiter",
+    "back": "Zurück",
+    "sending": "Wird gesendet…",
+    "submitting": "Wird gesendet…",
+    "scroll": "Scrollen",
+    "home": "Startseite"
+  },
+  "home": {
+    "hero": {
+      "kicker": "Private Internationale Logistik",
+      "line1": "Was Sie schätzen,",
+      "line2": "verdient eine private Reise",
+      "line3": "keine Lieferung.",
+      "subtitle": "Nederland Portugal Express bewegt das Außergewöhnliche — Fahrzeuge, Boote, Anwesen und Erbstücke — zwischen den Niederlanden, Portugal und der Welt, mit der Diskretion eines privaten Haushalts und der Präzision eines Ateliers.",
+      "ctaPrimary": "Angebot Anfordern",
+      "ctaSecondary": "Leistungen Entdecken"
+    },
+    "stats": [
+      { "value": "18+", "label": "Jahre Handwerkskunst" },
+      { "value": "2.400+", "label": "Transportierte Objekte" },
+      { "value": "24/7", "label": "Concierge-Verfügbarkeit" },
+      { "value": "100%", "label": "Versichert & Verbürgt" }
+    ],
+    "craft": {
+      "kicker": "Unser Handwerk",
+      "title": "Ein vollständiges Angebot privater Logistikdienstleistungen",
+      "desc": "Jede Leistung wird nach demselben unnachgiebigen Standard erbracht — sorgfältige Planung, geprüfte Spezialisten und absolute Diskretion."
+    },
+    "route": {
+      "kicker": "Zwei Nationen, Ein Standard",
+      "title": "Amsterdam und Lissabon mit kompromissloser Sorgfalt verbunden",
+      "desc": "Unsere Wurzeln liegen zwischen zwei der geschichtsträchtigsten Seefahrernationen Europas. Wir kennen den Korridor genau — seine Zollverfahren, seine Häfen, seine privaten Anwesen — und bewegen uns dadurch nahtlos, wo andere lediglich transportieren.",
+      "points": [
+        "Etabliertes europäisches Transportnetzwerk",
+        "Direkte Beziehungen zu Zollbehörden",
+        "Vertrauenswürdige Marina- und Lagerpartner"
+      ]
+    },
+    "process": {
+      "kicker": "Wie Wir Arbeiten",
+      "title": "Ein durchdachter Prozess, vom ersten Gespräch bis zur letzten Lieferung",
+      "steps": [
+        { "title": "Private Beratung", "desc": "Ein diskretes Gespräch, um das Objekt, den Anlass und den erwarteten Standard zu verstehen." },
+        { "title": "Maßgeschneiderte Planung", "desc": "Ihr Logistikarchitekt entwirft eine individuelle Route, Zeitplanung und Handhabungsprotokolle." },
+        { "title": "Präzise Ausführung", "desc": "Geprüfte Spezialisten und geschlossener, überwachter Transport befördern Ihre Sendung mit Sorgfalt." },
+        { "title": "White-Glove-Lieferung", "desc": "Ankunft, Platzierung und Endkontrolle — durchgeführt zu Ihrer vollsten Zufriedenheit." }
+      ]
+    },
+    "testimonial": {
+      "quote": "Jedes Detail wurde behandelt, als wäre unsere Sammlung ihre eigene — vom ersten Anruf bis zur endgültigen Platzierung in Lissabon. Nichts weniger als außergewöhnlich.",
+      "name": "Privatkunde",
+      "role": "Umzug einer Fahrzeugsammlung, Amsterdam → Lissabon"
+    }
+  },
+  "about": {
+    "hero": {
+      "kicker": "Über Nederland Portugal Express",
+      "title": "Ein privater Standard logistischer Exzellenz",
+      "desc": "Entstanden auf der Route zwischen Amsterdam und Lissabon, sind wir zu einem vertrauenswürdigen Namen in der maßgeschneiderten Logistik für Kunden geworden, die bei der Qualität keine Kompromisse eingehen."
+    },
+    "story": {
+      "kicker": "Unsere Geschichte",
+      "title": "Logistik, erhoben zu einem privaten Dienst",
+      "p1": "Nederland Portugal Express wurde aus einer einfachen Überzeugung gegründet: dass der Transport außergewöhnlicher Dinge — Fahrzeuge, Boote, Anwesen, Erbstücke — einen Sorgfaltsstandard verdient, der ihrem Wert entspricht. Was als spezialisierter Korridor zwischen den Niederlanden und Portugal begann, ist zu einem privaten Logistikhaus für anspruchsvolle Kunden weltweit geworden.",
+      "p2": "Wir agieren nicht wie ein gewöhnlicher Spediteur. Jeder Auftrag wird maßgeschneidert konzipiert, von einem eigenen Logistikarchitekten geleitet und von Spezialisten ausgeführt, die ebenso für ihre Präzision wie für ihre Diskretion ausgewählt wurden.",
+      "quote": "Präzision ist kein Versprechen, sie ist eine Praxis."
+    },
+    "pillars": {
+      "kicker": "Unsere Grundsätze",
+      "title": "Die vier Säulen unserer Arbeit",
+      "desc": "Diese Werte sind kein Anspruch — sie sind der operative Standard hinter jeder Sendung, die wir annehmen.",
+      "items": [
+        { "title": "Vertrauen", "desc": "Jede Sendung ist versichert, dokumentiert und wird von Teams betreut, die sich ihren Platz in unserem Netzwerk über Jahre, nicht Wochen, erarbeitet haben." },
+        { "title": "Diskretion", "desc": "Vertraulichkeit ist für uns keine Richtlinie, sie ist Instinkt. Kundenidentitäten, Vermögenswerte und Reiserouten bleiben strikt privat." },
+        { "title": "Handwerkskunst", "desc": "Von maßgefertigten Kisten bis zur Cradle-Konstruktion behandeln unsere Spezialisten jede Aufgabe als Handwerk — niemals als Massenware." },
+        { "title": "Präzision", "desc": "Zeitpläne, Routen und Handhabungsprotokolle werden mit derselben Sorgfalt entwickelt wie die Objekte, die wir transportieren." }
+      ]
+    },
+    "stats": [
+      { "value": "18+", "label": "Jahre Handwerkskunst" },
+      { "value": "2.400+", "label": "Transportierte Objekte" },
+      { "value": "30+", "label": "Bediente Länder" },
+      { "value": "100%", "label": "Versichert & Verbürgt" }
+    ],
+    "testimonial": {
+      "quote": "Sie verstehen, dass Diskretion ebenso wichtig ist wie Präzision. Unser Anwesenumzug wurde ohne einen einzigen Fehltritt und ohne ein einziges unpassendes Wort abgewickelt.",
+      "name": "Privatkunde",
+      "role": "Anwesenumzug, Den Haag → Cascais"
+    }
+  },
+  "services": {
+    "hero": {
+      "kicker": "Unsere Leistungen",
+      "title": "Ein vollständiges Angebot privater Logistik",
+      "desc": "Sieben Disziplinen, ein unnachgiebiger Standard. Jede Leistung wird von Spezialisten erbracht, die für ihre Präzision, Diskretion und Sorgfalt ausgewählt wurden."
+    },
+    "items": [
+      {
+        "slug": "international-logistics",
+        "title": "Internationale Luxuslogistik",
+        "shortTitle": "Luxuslogistik",
+        "summary": "Durchgängige Koordination hochwertiger Sendungen über Grenzen hinweg, mit einem einzigen Ansprechpartner vom Ursprung bis zum Ziel.",
+        "description": "Von Amsterdam bis Lissabon und jeder Hauptstadt dazwischen orchestrieren wir multimodalen Transport für Kunden, die auf jedem Kilometer Präzision erwarten. Jede Sendung wird maßgeschneidert geplant — Routen, Zoll, Timing und Handhabung, abgestimmt auf das Objekt und den Anlass.",
+        "points": ["Eigener Logistikarchitekt", "Echtzeit-Sendungsverfolgung", "Zoll & Dokumentation übernommen"]
+      },
+      {
+        "slug": "white-glove-transport",
+        "title": "White-Glove-Transport",
+        "shortTitle": "White-Glove-Transport",
+        "summary": "Handverlesene Spezialisten übernehmen Verladung, Transport und Lieferung Ihrer wertvollsten Besitztümer mit größter Sorgfalt.",
+        "description": "Unsere White-Glove-Teams sind im Umgang mit feiner Kunst, Antiquitäten, Haute Couture und unersetzlichen Objekten geschult. Jeder Berührungspunkt — von gepolsterten Kisten bis zum klimatisierten Transport — wird mit der Diskretion eines privaten Haushalts ausgeführt.",
+        "points": ["Individuelle Verkistung & Polsterung", "Klimatisierte Fahrzeuge", "Geschulte Handhabungsspezialisten"]
+      },
+      {
+        "slug": "vehicle-transport",
+        "title": "Hochwertiger Fahrzeugtransport",
+        "shortTitle": "Fahrzeugtransport",
+        "summary": "Geschlossener, versicherter Transport für Supersportwagen, Klassiker und Sammlungen — mit dem Respekt behandelt, den sie verdienen.",
+        "description": "Ob Sie ein einzelnes Sammlerfahrzeug oder eine ganze Garage verlagern — unsere geschlossenen Transporter und Weichgurtsysteme schützen sowohl die Karosserie als auch die Provenienz. Dokumentation, Versicherungsbewertung und Concours-Niveau-Sorgfalt sind Standard, keine Option.",
+        "points": ["Geschlossener Transport mit Luftfederung", "Vollständige Versicherungsbewertung", "Weichgurt, kontaktfreie Verladung"]
+      },
+      {
+        "slug": "yacht-marine-logistics",
+        "title": "Yacht- & Marinelogistik",
+        "shortTitle": "Yacht & Marine",
+        "summary": "Slippen, Cradling, Landtransport und Hafen-zu-Hafen-Koordination für Yachten und Wasserfahrzeuge.",
+        "description": "Wir betreuen den gesamten Lebenszyklus einer Wasserfahrzeugverlagerung — Vermessung, Mastlegung, Cradle-Konstruktion, Genehmigungen und Begleitung — in Zusammenarbeit mit Marinas entlang der iberischen und nordseeischen Küste, um Ihr Fahrzeug sicher und termingerecht zu liefern.",
+        "points": ["Hafen-zu-Hafen-Koordination", "Individuelle Cradle-Konstruktion", "Genehmigungs- & Begleitmanagement"]
+      },
+      {
+        "slug": "international-removals",
+        "title": "Premium Internationale Umzüge",
+        "shortTitle": "Internationale Umzüge",
+        "summary": "Vollservice-Umzug von Wohnungen und Anwesen zwischen den Niederlanden, Portugal und darüber hinaus.",
+        "description": "Ein Leben zu verlagern verdient mehr als einen Umzugswagen. Unsere Umzugsspezialisten planen jedes Detail — Verpackung, Zoll, Lagerung und Auspacken — damit sich Ihr neues Zuhause vom ersten Abend an vertraut anfühlt.",
+        "points": ["Maßgeschneiderte Verpackung & Inventar", "Zollabwicklung von Tür zu Tür", "Auspack- & Einrichtungsservice"]
+      },
+      {
+        "slug": "secure-storage",
+        "title": "Sichere Lagerlösungen",
+        "shortTitle": "Sichere Lagerung",
+        "summary": "Klimatisierte, überwachte Einrichtungen für Fahrzeuge, Boote, Kunst und Nachlassgegenstände — so lange wie nötig.",
+        "description": "Unsere Lagereinrichtungen verbinden Sicherheit auf Bankniveau mit der Umgebungspräzision, die wertvolle Objekte verlangen — Feuchtigkeits- und Temperaturregelung, 24-Stunden-Überwachung und private, individuell gesicherte Boxen.",
+        "points": ["24/7 überwachte Sicherheit", "Klima- & Feuchtigkeitsregelung", "Private, individuell gesicherte Boxen"]
+      },
+      {
+        "slug": "tailor-made-logistics",
+        "title": "Maßgeschneiderte Logistik",
+        "shortTitle": "Individuelle Lösungen",
+        "summary": "Für Anforderungen außerhalb des Gewöhnlichen entwirft unser Concierge-Team eine Lösung, die ganz auf Sie zugeschnitten ist.",
+        "description": "Private wie geschäftliche Kunden kommen mit dem Ungewöhnlichen zu uns — ein Anwesenumzug binnen einer Woche, die Verlagerung einer mehrteiligen Flotte, eine diskrete grenzüberschreitende Lieferung. Wir entwerfen zuerst die Lösung, die Logistik folgt danach.",
+        "points": ["Engagierte Concierge-Planung", "Private & geschäftliche Programme", "Absolute Diskretion, stets"]
+      }
+    ]
+  },
+  "secureStorage": {
+    "hero": {
+      "kicker": "Sichere Lagerlösungen",
+      "title": "Verwahrung, konzipiert nach dem Standard dessen, was sie birgt",
+      "desc": "Unsere privaten Lagereinrichtungen in den Niederlanden und Portugal verbinden Sicherheit auf Bankniveau mit der Umgebungspräzision, die wertvolle Objekte verlangen — so lange wie nötig."
+    },
+    "features": {
+      "kicker": "Einrichtungsstandards",
+      "title": "Sicherheit und Präzision, zu gleichen Teilen",
+      "desc": "Jede Einrichtung in unserem Netzwerk wird nach derselben strengen Checkliste geprüft — ohne Ausnahme, unabhängig vom Standort.",
+      "items": [
+        { "title": "24/7 Überwachte Sicherheit", "desc": "Hochauflösende Videoüberwachung und bemannte Patrouillen sorgen für lückenlose Aufsicht jeder Einrichtung, rund um die Uhr." },
+        { "title": "Eingeschränkte Zugangskontrolle", "desc": "Biometrischer und autorisierter Zutritt stellt sicher, dass nur befugtes Personal und Kunden den Lagerbereich erreichen." },
+        { "title": "Klima- & Feuchtigkeitsregelung", "desc": "Präzise Umgebungssysteme schützen Karosserie, Holz, Leinwand und Polsterung vor den Elementen." },
+        { "title": "Brandschutzsysteme", "desc": "Fortschrittliche Erkennungs- und Löschtechnologie, speziell für Umgebungen mit hochwertigen Objekten entwickelt." },
+        { "title": "Vollständig Versicherte Boxen", "desc": "Jedes gelagerte Objekt ist umfassend versichert, mit Bewertungen, die im Voraus geprüft und bestätigt werden." },
+        { "title": "Flexible Lagerbedingungen", "desc": "Von einer einzigen Saison bis zur unbefristeten Verwahrung wird die Lagerung ganz nach Ihren Anforderungen organisiert." }
+      ]
+    },
+    "categories": {
+      "kicker": "Was Wir Lagern",
+      "title": "Von einzelnen Erbstücken bis zu ganzen Sammlungen",
+      "desc": "Ob Sie eine Fahrzeugsammlung zwischen den Saisons, eine Yacht über den Winter oder den Hausrat eines Anwesens während eines Umzugs sichern — unsere Lagerlösungen richten sich nach dem Objekt, nicht umgekehrt.",
+      "items": [
+        "Kraftfahrzeuge & Sammlungen",
+        "Yachten, Beiboote & Marineausrüstung",
+        "Kunst & Antiquitäten",
+        "Wein & Sammlerstücke",
+        "Anwesen- & Haushaltsgegenstände",
+        "Geschäfts- & Unternehmensinventar"
+      ]
+    },
+    "process": {
+      "kicker": "Lagerung Organisieren",
+      "title": "Eine private Bewertung, bevor auch nur ein Gegenstand bewegt wird",
+      "desc": "Unser Team führt eine private Beratung durch, um das Objekt, die Umgebungsanforderungen und Ihre Zugangsbedürfnisse zu verstehen. Ein maßgeschneiderter Lagerplan — einschließlich Transport zur Einrichtung, falls erforderlich — wird dann bestätigt, bevor etwas geplant wird."
+    }
+  },
+  "removals": {
+    "hero": {
+      "kicker": "Premium Internationale Umzüge",
+      "title": "Ein Leben umziehen, mit der Sorgfalt, die es verdient",
+      "desc": "Von einer Einzimmerwohnung bis zu einem Anwesen mehrerer Generationen — unsere Umzugsspezialisten verwalten jedes Detail zwischen den Niederlanden, Portugal und darüber hinaus, damit sich Ihr neues Zuhause vom ersten Abend an vollständig anfühlt."
+    },
+    "included": {
+      "kicker": "Was Enthalten Ist",
+      "title": "Ein vollständig betreuter Umzug, von Anfang bis Ende",
+      "desc": "Wir glauben, dass sich ein Umzug wie ein Service anfühlen sollte, nicht wie eine Logistikübung. Jeder Auftrag umfasst standardmäßig Folgendes — mit zusätzlichen maßgeschneiderten Leistungen auf Anfrage.",
+      "items": [
+        "Vollständige Haushaltsinventarisierung & Bewertung",
+        "Verpackungsmaterial in Museumsqualität",
+        "Zollabwicklung von Tür zu Tür",
+        "Eigener Umzugsberater",
+        "Optionale zwischenzeitliche sichere Lagerung",
+        "Auspacken & Möbelplatzierung",
+        "Handhabung zerbrechlicher & spezieller Gegenstände",
+        "Versicherung für den vollen Transitwert"
+      ]
+    },
+    "process": {
+      "kicker": "Unser Prozess",
+      "title": "Fünf Etappen, ein eigener Berater",
+      "desc": "Sie sprechen während des gesamten Prozesses mit einem einzigen Ansprechpartner — keine Callcenter, keine Übergaben.",
+      "steps": [
+        { "title": "Private Besichtigung", "desc": "Ein eigener Umzugsberater besucht Ihre Residenz oder führt eine Videobesichtigung durch, um Umfang, Volumen und spezielle Gegenstände zu erfassen." },
+        { "title": "Maßgeschneiderte Verpackung", "desc": "Material in Museumsqualität und individuelle Verkistung schützen Möbel, Kunst und Erbstücke auf der bevorstehenden Reise." },
+        { "title": "Zoll & Dokumentation", "desc": "Wir erstellen und verwalten alle Zollerklärungen und Importdokumente, von Tür zu Tür." },
+        { "title": "Transport & Durchfuhr", "desc": "Ihr Hab und Gut reist mit eigenem, verfolgtem Transport — nie zusammengelegt mit fremden Sendungen." },
+        { "title": "Auspacken & Einrichtung", "desc": "Unser Team packt aus, platziert und richtet Möbel in Ihrer neuen Residenz genau nach Ihren Anweisungen ein." }
+      ]
+    },
+    "corridor": {
+      "kicker": "Unser Spezialkorridor",
+      "title": "Niederlande & Portugal, aus nächster Nähe verstanden",
+      "desc": "Obwohl wir Kunden in ganz Europa und darüber hinaus umziehen, bleibt der Korridor Niederlande–Portugal unsere Spezialität. Wir kennen die Häfen, die Verfahren und die Nachbarschaften — von Amsterdams Grachtenhäusern bis zu Lissabons historischen Vierteln und den privaten Anwesen der Algarve."
+    }
+  },
+  "contact": {
+    "hero": {
+      "kicker": "Kontakt",
+      "title": "Sprechen Sie mit unserem Concierge-Team",
+      "desc": "Ob Frage oder maßgeschneiderte Anfrage — unser Team antwortet mit derselben Diskretion und Präzision, die wir bei jeder Sendung anwenden."
+    },
+    "info": {
+      "telephone": "Telefon",
+      "email": "E-Mail",
+      "offices": "Büros",
+      "office1": "Amsterdam, Niederlande",
+      "office2": "Lissabon, Portugal — nach privater Vereinbarung",
+      "availability": "Verfügbarkeit",
+      "availability1": "Concierge-Schalter: 24/7",
+      "availability2": "Büros: Mo–Fr, 09:00–18:00 MEZ",
+      "note": "Bei zeitkritischen Anfragen steht unser Concierge-Schalter rund um die Uhr zur Verfügung. Für maßgeschneiderte Angebote empfehlen wir das Formular {{link}}.",
+      "linkLabel": "Angebotsanfrage"
+    },
+    "form": {
+      "fullName": "Vollständiger Name",
+      "fullNamePlaceholder": "Jane van der Berg",
+      "email": "E-Mail-Adresse",
+      "emailPlaceholder": "jane@beispiel.com",
+      "phone": "Telefon (optional)",
+      "phonePlaceholder": "+31 6 0000 0000",
+      "subject": "Betreff",
+      "subjectPlaceholder": "Wie können wir helfen?",
+      "message": "Nachricht",
+      "messagePlaceholder": "Erzählen Sie uns von Ihrer Anfrage...",
+      "send": "Nachricht Senden",
+      "successTitle": "Nachricht Erhalten",
+      "successDesc": "Vielen Dank für Ihre Nachricht. Ein Mitglied unseres Concierge-Teams antwortet innerhalb eines Werktags."
+    }
+  },
+  "quote": {
+    "hero": {
+      "kicker": "Maßgeschneiderte Logistik",
+      "title": "Fordern Sie Ihr privates Angebot an",
+      "desc": "Teilen Sie uns die wesentlichen Details Ihrer Anfrage mit, und ein eigener Logistikarchitekt erstellt innerhalb eines Werktags ein maßgeschneidertes Angebot."
+    },
+    "crumb": "Angebotsanfrage",
+    "steps": ["Ihre Anfrage", "Route & Zeitplan", "Ihre Angaben"],
+    "clientTypes": { "private": "Privatkunde", "business": "Geschäftskunde" },
+    "form": {
+      "service": "Gewünschte Leistung",
+      "servicePlaceholder": "Leistung auswählen",
+      "clientType": "Kundentyp",
+      "description": "Beschreiben Sie das Objekt oder die Anfrage",
+      "descriptionPlaceholder": "z. B. Umzug einer 3-Fahrzeug-Sammlung, darunter ein Klassiker-Cabrio, das geschlossenen Transport benötigt...",
+      "origin": "Abholort",
+      "originPlaceholder": "Amsterdam, Niederlande",
+      "destination": "Zielort",
+      "destinationPlaceholder": "Lissabon, Portugal",
+      "date": "Wunschtermin",
+      "flexibility": "Flexibilität",
+      "flexibilityOptions": ["Fester Termin", "Flexibel (±2 Wochen)", "Vollständig flexibel"],
+      "notes": "Zusätzliche Hinweise (optional)",
+      "notesPlaceholder": "Zugangsbeschränkungen, Versicherungsanforderungen oder andere Details, die wir wissen sollten...",
+      "fullName": "Vollständiger Name",
+      "fullNamePlaceholder": "Jane van der Berg",
+      "email": "E-Mail-Adresse",
+      "emailPlaceholder": "jane@beispiel.com",
+      "phone": "Telefonnummer",
+      "phonePlaceholder": "+31 6 0000 0000",
+      "company": "Firmenname",
+      "companyPlaceholder": "Firma GmbH",
+      "submit": "Anfrage Senden",
+      "successTitle": "Anfrage Erhalten",
+      "successDesc": "Vielen Dank für Ihr Vertrauen. Ihr eigener Logistikarchitekt prüft die Details und meldet sich innerhalb eines Werktags mit einem maßgeschneiderten Angebot bei Ihnen."
+    }
+  },
+  "cta": {
+    "kicker": "Beginnen Sie die Reise",
+    "title": "Eine Reiseroute, geschrieben",
+    "titleItalic": "ganz um Sie herum",
+    "desc": "Teilen Sie die Details Ihrer Sendung mit, und unser Concierge-Team erstellt innerhalb eines Werktags ein maßgeschneidertes Angebot — diskret, präzise und ganz in Ihrem Dienst.",
+    "primary": "Angebot Anfordern",
+    "secondary": "Mit Concierge Sprechen"
+  },
+  "notFound": {
+    "kicker": "Vom Kurs Abgekommen",
+    "title": "Diese Route scheint von der Karte abgekommen zu sein. Lassen Sie uns Sie zurück in vertraute Gewässer führen.",
+    "cta": "Zur Startseite"
+  }
+}

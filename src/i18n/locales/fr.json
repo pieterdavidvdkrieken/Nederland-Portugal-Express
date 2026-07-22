@@ -1,0 +1,351 @@
+{
+  "meta": {
+    "home": { "title": "Nederland Portugal Express | Logistique de Luxe Privée", "desc": "Logistique internationale de luxe sur mesure, transport white-glove, transport de véhicules et yachts de grande valeur, et déménagements haut de gamme entre les Pays-Bas, le Portugal et au-delà." },
+    "about": { "title": "À Propos | Nederland Portugal Express", "desc": "Une norme privée d'excellence logistique, née sur le corridor entre Amsterdam et Lisbonne." },
+    "services": { "title": "Services | Nederland Portugal Express", "desc": "Une gamme complète de services logistiques privés — transport de luxe, logistique de yachts, transport de véhicules, déménagements et plus encore." },
+    "secureStorage": { "title": "Stockage Sécurisé | Nederland Portugal Express", "desc": "Stockage privé climatisé et surveillé pour véhicules, bateaux, œuvres d'art et biens patrimoniaux." },
+    "removals": { "title": "Déménagements Internationaux | Nederland Portugal Express", "desc": "Déménagements internationaux haut de gamme entre les Pays-Bas, le Portugal et au-delà." },
+    "contact": { "title": "Contact | Nederland Portugal Express", "desc": "Parlez à notre équipe de conciergerie de votre demande logistique privée." },
+    "quote": { "title": "Demander un Devis | Nederland Portugal Express", "desc": "Demandez une proposition logistique privée et sur mesure auprès de Nederland Portugal Express." },
+    "notFound": { "title": "Page Introuvable | Nederland Portugal Express" }
+  },
+  "nav": {
+    "home": "Accueil",
+    "about": "À Propos",
+    "services": "Services",
+    "secureStorage": "Stockage Sécurisé",
+    "removals": "Déménagements",
+    "contact": "Contact",
+    "requestQuote": "Demander un Devis",
+    "language": "Langue"
+  },
+  "footer": {
+    "tagline": "Logistique internationale sur mesure pour ceux qui mesurent la qualité en précision, discrétion et savoir-faire — reliant les Pays-Bas, le Portugal et le monde.",
+    "explore": "Explorer",
+    "clientServices": "Services Clients",
+    "concierge": "Conciergerie",
+    "aboutUs": "À Propos",
+    "rights": "Tous droits réservés.",
+    "crafted": "Conçu avec discrétion",
+    "offices": "Amsterdam, Pays-Bas & Lisbonne, Portugal"
+  },
+  "common": {
+    "learnMore": "En Savoir Plus",
+    "discover": "Découvrir",
+    "continue": "Continuer",
+    "back": "Retour",
+    "sending": "Envoi…",
+    "submitting": "Envoi…",
+    "scroll": "Défiler",
+    "home": "Accueil"
+  },
+  "home": {
+    "hero": {
+      "kicker": "Logistique Internationale Privée",
+      "line1": "Ce que vous chérissez",
+      "line2": "mérite un voyage privé",
+      "line3": "pas une livraison.",
+      "subtitle": "Nederland Portugal Express déplace l'exceptionnel — véhicules, bateaux, propriétés et objets de famille — entre les Pays-Bas, le Portugal et le monde, avec la discrétion d'une maison privée et la précision d'un atelier.",
+      "ctaPrimary": "Demander un Devis",
+      "ctaSecondary": "Découvrir nos Services"
+    },
+    "stats": [
+      { "value": "18+", "label": "Années de Savoir-Faire" },
+      { "value": "2 400+", "label": "Biens Transportés" },
+      { "value": "24/7", "label": "Conciergerie Disponible" },
+      { "value": "100%", "label": "Assuré & Garanti" }
+    ],
+    "craft": {
+      "kicker": "Notre Savoir-Faire",
+      "title": "Une gamme complète de services logistiques privés",
+      "desc": "Chaque service est livré selon la même norme rigoureuse — planification méticuleuse, spécialistes vérifiés et discrétion absolue."
+    },
+    "route": {
+      "kicker": "Deux Nations, Une Norme",
+      "title": "Relier Amsterdam et Lisbonne avec un soin sans compromis",
+      "desc": "Nos racines s'étendent entre deux des nations maritimes les plus légendaires d'Europe. Nous connaissons intimement ce corridor — ses procédures douanières, ses ports, ses propriétés privées — ce qui nous permet d'évoluer avec fluidité là où d'autres ne font que transporter.",
+      "points": [
+        "Réseau de transport européen établi",
+        "Relations directes avec les autorités douanières",
+        "Partenaires de confiance pour marinas et stockage"
+      ]
+    },
+    "process": {
+      "kicker": "Notre Méthode",
+      "title": "Un processus réfléchi, du premier appel à la livraison finale",
+      "steps": [
+        { "title": "Consultation Privée", "desc": "Un échange discret pour comprendre le bien, l'occasion et le niveau d'exigence attendu." },
+        { "title": "Planification sur Mesure", "desc": "Votre architecte logistique conçoit un itinéraire, un calendrier et un protocole de manutention personnalisés." },
+        { "title": "Exécution Précise", "desc": "Des spécialistes vérifiés et un transport fermé et surveillé acheminent votre envoi avec soin." },
+        { "title": "Livraison White-Glove", "desc": "Arrivée, mise en place et inspection finale — réalisées à votre entière satisfaction." }
+      ]
+    },
+    "testimonial": {
+      "quote": "Chaque détail a été traité comme si notre collection leur appartenait — du premier appel à la mise en place finale à Lisbonne. Rien de moins qu'exceptionnel.",
+      "name": "Client Privé",
+      "role": "Déménagement d'une Collection de Véhicules, Amsterdam → Lisbonne"
+    }
+  },
+  "about": {
+    "hero": {
+      "kicker": "À Propos de Nederland Portugal Express",
+      "title": "Une norme privée d'excellence logistique",
+      "desc": "Née sur le corridor entre Amsterdam et Lisbonne, notre maison est devenue une référence de confiance en logistique sur mesure pour une clientèle qui ne transige jamais sur la qualité."
+    },
+    "story": {
+      "kicker": "Notre Histoire",
+      "title": "La logistique, élevée au rang de service privé",
+      "p1": "Nederland Portugal Express a été fondée sur une conviction simple : le transport de biens exceptionnels — véhicules, bateaux, propriétés, objets de famille — mérite un niveau de soin égal à leur valeur. Ce qui a commencé comme un corridor spécialisé entre les Pays-Bas et le Portugal est devenu une maison de logistique privée au service d'une clientèle exigeante à travers le monde.",
+      "p2": "Nous n'opérons pas comme un transporteur classique. Chaque mission est conçue sur mesure, dirigée par un architecte logistique dédié, et exécutée par des spécialistes choisis autant pour leur précision que pour leur discrétion.",
+      "quote": "La précision n'est pas une promesse, c'est une pratique."
+    },
+    "pillars": {
+      "kicker": "Nos Principes",
+      "title": "Les quatre piliers de notre métier",
+      "desc": "Ces valeurs ne sont pas de simples aspirations — elles constituent la norme opérationnelle derrière chaque envoi que nous acceptons.",
+      "items": [
+        { "title": "Confiance", "desc": "Chaque envoi est assuré, documenté et confié à des équipes qui ont gagné leur place dans notre réseau au fil des années, et non des semaines." },
+        { "title": "Discrétion", "desc": "La confidentialité n'est pas une politique pour nous, c'est un instinct. L'identité de nos clients, leurs biens et leurs itinéraires restent strictement privés." },
+        { "title": "Savoir-Faire", "desc": "De la caisse sur mesure à l'ingénierie de berceau, nos spécialistes traitent chaque tâche comme un artisanat — jamais comme une simple prestation." },
+        { "title": "Précision", "desc": "Les calendriers, itinéraires et protocoles de manutention sont conçus avec la même rigueur que les biens que nous transportons." }
+      ]
+    },
+    "stats": [
+      { "value": "18+", "label": "Années de Savoir-Faire" },
+      { "value": "2 400+", "label": "Biens Transportés" },
+      { "value": "30+", "label": "Pays Desservis" },
+      { "value": "100%", "label": "Assuré & Garanti" }
+    ],
+    "testimonial": {
+      "quote": "Ils comprennent que la discrétion est aussi importante que la précision. Le déménagement de notre propriété s'est déroulé sans le moindre faux pas, et sans un mot de trop.",
+      "name": "Client Privé",
+      "role": "Déménagement de Propriété, La Haye → Cascais"
+    }
+  },
+  "services": {
+    "hero": {
+      "kicker": "Nos Services",
+      "title": "Une gamme complète de logistique privée",
+      "desc": "Sept disciplines, une seule norme rigoureuse. Chaque service est assuré par des spécialistes choisis pour leur précision, leur discrétion et leur soin."
+    },
+    "items": [
+      {
+        "slug": "international-logistics",
+        "title": "Logistique de Luxe Internationale",
+        "shortTitle": "Logistique de Luxe",
+        "summary": "Coordination intégrale d'envois de grande valeur au-delà des frontières, avec un interlocuteur unique de l'origine à la destination.",
+        "description": "D'Amsterdam à Lisbonne et de chaque capitale entre les deux, nous orchestrons un transport multimodal pour des clients qui exigent la précision à chaque kilomètre. Chaque envoi est planifié sur mesure — itinéraires, douanes, calendrier et manutention adaptés au bien et à l'occasion.",
+        "points": ["Architecte logistique dédié", "Suivi d'envoi en temps réel", "Douanes et documentation prises en charge"]
+      },
+      {
+        "slug": "white-glove-transport",
+        "title": "Transport White Glove",
+        "shortTitle": "Transport White Glove",
+        "summary": "Des spécialistes triés sur le volet gèrent le chargement, le transit et la livraison de vos biens les plus précieux avec un soin méticuleux.",
+        "description": "Nos équipes white glove sont formées à la manipulation d'œuvres d'art, d'antiquités, de haute couture et d'objets irremplaçables. Chaque étape — de la caisse capitonnée au transport climatisé — est exécutée avec la discrétion d'une maison privée.",
+        "points": ["Caisses et rembourrage sur mesure", "Véhicules climatisés", "Spécialistes de manutention formés"]
+      },
+      {
+        "slug": "vehicle-transport",
+        "title": "Transport de Véhicules de Grande Valeur",
+        "shortTitle": "Transport de Véhicules",
+        "summary": "Transport fermé et assuré pour supercars, voitures classiques et collections — traité avec le respect qu'il mérite.",
+        "description": "Qu'il s'agisse de déplacer une seule voiture de collection ou un garage entier, nos transporteurs fermés et nos systèmes de sangles souples protègent à la fois la carrosserie et la provenance. Documentation, expertise d'assurance et soin de niveau concours sont la norme, non une option.",
+        "points": ["Transport fermé à suspension pneumatique", "Expertise d'assurance complète", "Sangles souples, chargement sans contact"]
+      },
+      {
+        "slug": "yacht-marine-logistics",
+        "title": "Logistique de Yachts & Maritime",
+        "shortTitle": "Yacht & Maritime",
+        "summary": "Mise à sec, mise en berceau, transport terrestre et coordination de marina à marina pour yachts et navires.",
+        "description": "Nous gérons l'intégralité du cycle de vie d'un transfert maritime — inspection, démâtage, ingénierie de berceau, permis et escorte — en coordination avec des marinas le long des côtes ibériques et de la mer du Nord, pour livrer votre navire en toute sécurité et dans les délais.",
+        "points": ["Coordination de marina à marina", "Ingénierie de berceau sur mesure", "Gestion des permis et de l'escorte"]
+      },
+      {
+        "slug": "international-removals",
+        "title": "Déménagements Internationaux Haut de Gamme",
+        "shortTitle": "Déménagements Internationaux",
+        "summary": "Déménagement tout compris de résidences et de propriétés entre les Pays-Bas, le Portugal et au-delà.",
+        "description": "Déplacer une vie mérite davantage qu'un camion de déménagement. Nos spécialistes planifient chaque détail — emballage, douanes, stockage et déballage — pour que votre nouvelle résidence ressemble à un foyer dès le premier soir.",
+        "points": ["Emballage et inventaire sur mesure", "Dédouanement de porte à porte", "Service de déballage et d'installation"]
+      },
+      {
+        "slug": "secure-storage",
+        "title": "Solutions de Stockage Sécurisé",
+        "shortTitle": "Stockage Sécurisé",
+        "summary": "Installations climatisées et surveillées pour véhicules, bateaux, œuvres d'art et biens patrimoniaux — aussi longtemps que nécessaire.",
+        "description": "Nos installations de stockage allient une sécurité de niveau bancaire à la précision environnementale qu'exigent les biens de valeur — contrôle de l'humidité et de la température, surveillance 24 heures sur 24, et box privés individuellement sécurisés.",
+        "points": ["Surveillance 24/7", "Contrôle du climat et de l'humidité", "Box privés individuellement sécurisés"]
+      },
+      {
+        "slug": "tailor-made-logistics",
+        "title": "Logistique Sur Mesure",
+        "shortTitle": "Solutions Sur Mesure",
+        "summary": "Pour les besoins qui sortent de l'ordinaire, notre équipe de conciergerie conçoit une solution entièrement pensée pour vous.",
+        "description": "Clients privés comme professionnels viennent à nous avec l'inhabituel — un déménagement de propriété en une semaine, le transfert d'une flotte de plusieurs navires, une livraison discrète transfrontalière. Nous concevons d'abord la solution, la logistique suit ensuite.",
+        "points": ["Planification de conciergerie dédiée", "Programmes privés et d'entreprise", "Discrétion absolue, toujours"]
+      }
+    ]
+  },
+  "secureStorage": {
+    "hero": {
+      "kicker": "Solutions de Stockage Sécurisé",
+      "title": "Une garde conçue à la hauteur de ce qu'elle protège",
+      "desc": "Nos installations de stockage privées aux Pays-Bas et au Portugal allient une sécurité de niveau bancaire à la précision environnementale qu'exigent les biens de valeur — aussi longtemps que nécessaire."
+    },
+    "features": {
+      "kicker": "Normes des Installations",
+      "title": "Sécurité et précision, à parts égales",
+      "desc": "Chaque installation de notre réseau est auditée selon la même liste de contrôle exigeante — sans exception, quel que soit le lieu.",
+      "items": [
+        { "title": "Surveillance 24/7", "desc": "Vidéosurveillance haute définition et patrouilles constantes assurent une supervision continue de chaque installation, à toute heure." },
+        { "title": "Contrôle d'Accès Restreint", "desc": "Un accès biométrique et accrédité garantit que seuls le personnel autorisé et les clients atteignent l'espace de stockage." },
+        { "title": "Contrôle du Climat et de l'Humidité", "desc": "Des systèmes environnementaux de précision protègent carrosseries, boiseries, toiles et sellerie des éléments." },
+        { "title": "Systèmes de Protection Incendie", "desc": "Technologie de détection et d'extinction avancée, conçue spécifiquement pour les environnements abritant des biens de grande valeur." },
+        { "title": "Box Entièrement Assurés", "desc": "Chaque bien stocké est couvert par une assurance complète, avec des expertises révisées et confirmées au préalable." },
+        { "title": "Conditions de Stockage Flexibles", "desc": "D'une simple saison à une garde indéfinie, le stockage s'organise entièrement selon vos besoins." }
+      ]
+    },
+    "categories": {
+      "kicker": "Ce Que Nous Stockons",
+      "title": "Des objets de famille aux collections entières",
+      "desc": "Qu'il s'agisse de protéger une collection de véhicules entre deux saisons, un yacht durant l'hiver, ou les biens d'une propriété lors d'un déménagement, nos solutions de stockage s'adaptent au bien — jamais l'inverse.",
+      "items": [
+        "Véhicules Motorisés & Collections",
+        "Yachts, Annexes & Équipement Marin",
+        "Œuvres d'Art & Antiquités",
+        "Vins & Objets de Collection",
+        "Biens de Propriété & du Foyer",
+        "Inventaire d'Entreprise"
+      ]
+    },
+    "process": {
+      "kicker": "Organiser le Stockage",
+      "title": "Une évaluation privée, avant qu'un seul objet ne soit déplacé",
+      "desc": "Notre équipe mène une consultation privée pour comprendre le bien, ses exigences environnementales et vos besoins d'accès. Un plan de stockage sur mesure — incluant le transport vers l'installation si nécessaire — est ensuite confirmé avant toute planification."
+    }
+  },
+  "removals": {
+    "hero": {
+      "kicker": "Déménagements Internationaux Haut de Gamme",
+      "title": "Déplacer une vie, avec le soin qu'elle mérite",
+      "desc": "D'un appartement d'une pièce à une propriété multigénérationnelle, nos spécialistes du déménagement gèrent chaque détail entre les Pays-Bas, le Portugal et au-delà — pour que votre nouveau foyer soit complet dès le premier soir."
+    },
+    "included": {
+      "kicker": "Ce Qui Est Inclus",
+      "title": "Un déménagement entièrement géré, du début à la fin",
+      "desc": "Nous pensons qu'un déménagement doit être vécu comme un service, non comme un exercice logistique. Chaque mission comprend les éléments suivants en standard — avec des prestations sur mesure supplémentaires disponibles sur demande.",
+      "items": [
+        "Inventaire complet du foyer et expertise",
+        "Matériaux d'emballage de qualité muséale",
+        "Dédouanement de porte à porte",
+        "Consultant en déménagement dédié",
+        "Stockage sécurisé temporaire en option",
+        "Déballage et installation du mobilier",
+        "Manutention des objets fragiles et spécialisés",
+        "Assurance couvrant la valeur totale du transit"
+      ]
+    },
+    "process": {
+      "kicker": "Notre Processus",
+      "title": "Cinq étapes, un seul consultant dédié",
+      "desc": "Vous échangerez avec un interlocuteur unique tout au long du processus — pas de centres d'appels, pas de transferts.",
+      "steps": [
+        { "title": "Visite Privée", "desc": "Un consultant en déménagement dédié visite ou effectue une inspection vidéo de votre résidence pour évaluer l'ampleur, le volume et les objets spécifiques." },
+        { "title": "Emballage Sur Mesure", "desc": "Des matériaux de qualité muséale et des caisses sur mesure protègent meubles, œuvres d'art et objets de famille pour le voyage à venir." },
+        { "title": "Douanes & Documentation", "desc": "Nous préparons et gérons toutes les déclarations douanières et documents d'importation, de porte à porte." },
+        { "title": "Transport & Transit", "desc": "Vos biens voyagent via un transport dédié et suivi — jamais regroupés avec des envois non liés." },
+        { "title": "Déballage & Installation", "desc": "Notre équipe déballe, place et agence le mobilier dans votre nouvelle résidence, exactement selon vos instructions." }
+      ]
+    },
+    "corridor": {
+      "kicker": "Notre Corridor Spécialisé",
+      "title": "Pays-Bas & Portugal, une connaissance intime",
+      "desc": "Bien que nous déménagions des clients à travers l'Europe et au-delà, le corridor Pays-Bas–Portugal reste notre spécialité. Nous connaissons les ports, les procédures et les quartiers — des maisons de canal d'Amsterdam aux quartiers historiques de Lisbonne et aux propriétés privées de l'Algarve."
+    }
+  },
+  "contact": {
+    "hero": {
+      "kicker": "Contact",
+      "title": "Parlez à notre équipe de conciergerie",
+      "desc": "Qu'il s'agisse d'une question ou d'une demande sur mesure, notre équipe répond avec la même discrétion et la même précision que nous apportons à chaque envoi."
+    },
+    "info": {
+      "telephone": "Téléphone",
+      "email": "E-mail",
+      "offices": "Bureaux",
+      "office1": "Amsterdam, Pays-Bas",
+      "office2": "Lisbonne, Portugal — sur rendez-vous privé",
+      "availability": "Disponibilité",
+      "availability1": "Conciergerie : 24 h/24, 7 j/7",
+      "availability2": "Bureaux : lun.–ven., 9 h–18 h CET",
+      "note": "Pour les demandes urgentes, notre conciergerie est disponible à toute heure. Pour une proposition sur mesure, nous recommandons le formulaire {{link}}.",
+      "linkLabel": "Demande de Devis"
+    },
+    "form": {
+      "fullName": "Nom Complet",
+      "fullNamePlaceholder": "Jane van der Berg",
+      "email": "Adresse E-mail",
+      "emailPlaceholder": "jane@exemple.com",
+      "phone": "Téléphone (facultatif)",
+      "phonePlaceholder": "+31 6 0000 0000",
+      "subject": "Objet",
+      "subjectPlaceholder": "Comment pouvons-nous vous aider ?",
+      "message": "Message",
+      "messagePlaceholder": "Parlez-nous de votre demande...",
+      "send": "Envoyer le Message",
+      "successTitle": "Message Reçu",
+      "successDesc": "Merci de nous avoir contactés. Un membre de notre équipe de conciergerie vous répondra dans un délai d'un jour ouvré."
+    }
+  },
+  "quote": {
+    "hero": {
+      "kicker": "Logistique Sur Mesure",
+      "title": "Demandez votre devis privé",
+      "desc": "Partagez les éléments essentiels de votre demande et un architecte logistique dédié préparera une proposition sur mesure dans un délai d'un jour ouvré."
+    },
+    "crumb": "Demande de Devis",
+    "steps": ["Votre Demande", "Itinéraire & Calendrier", "Vos Coordonnées"],
+    "clientTypes": { "private": "Client Privé", "business": "Client Professionnel" },
+    "form": {
+      "service": "Service Requis",
+      "servicePlaceholder": "Sélectionnez un service",
+      "clientType": "Type de Client",
+      "description": "Décrivez le Bien ou la Demande",
+      "descriptionPlaceholder": "ex. Déménagement d'une collection de 3 véhicules, dont une décapotable classique nécessitant un transport fermé...",
+      "origin": "Lieu d'Origine",
+      "originPlaceholder": "Amsterdam, Pays-Bas",
+      "destination": "Lieu de Destination",
+      "destinationPlaceholder": "Lisbonne, Portugal",
+      "date": "Date Souhaitée",
+      "flexibility": "Flexibilité",
+      "flexibilityOptions": ["Date fixe", "Flexible (±2 semaines)", "Entièrement flexible"],
+      "notes": "Remarques Complémentaires (facultatif)",
+      "notesPlaceholder": "Restrictions d'accès, exigences d'assurance, ou tout autre détail que nous devrions connaître...",
+      "fullName": "Nom Complet",
+      "fullNamePlaceholder": "Jane van der Berg",
+      "email": "Adresse E-mail",
+      "emailPlaceholder": "jane@exemple.com",
+      "phone": "Numéro de Téléphone",
+      "phonePlaceholder": "+31 6 0000 0000",
+      "company": "Nom de l'Entreprise",
+      "companyPlaceholder": "Entreprise SARL",
+      "submit": "Envoyer la Demande",
+      "successTitle": "Demande Reçue",
+      "successDesc": "Merci de nous avoir confié votre demande. Votre architecte logistique dédié examinera les détails et vous contactera dans un délai d'un jour ouvré avec une proposition sur mesure."
+    }
+  },
+  "cta": {
+    "kicker": "Débutez le Voyage",
+    "title": "Un itinéraire conçu",
+    "titleItalic": "entièrement pour vous",
+    "desc": "Partagez les détails de votre envoi et notre équipe de conciergerie élaborera une proposition sur mesure dans un délai d'un jour ouvré — discrète, précise, et entièrement à votre service.",
+    "primary": "Demander un Devis",
+    "secondary": "Parler à la Conciergerie"
+  },
+  "notFound": {
+    "kicker": "Hors Route",
+    "title": "Cet itinéraire semble s'être écarté de la carte. Laissez-nous vous ramener vers des eaux plus familières.",
+    "cta": "Retour à l'Accueil"
+  }
+}

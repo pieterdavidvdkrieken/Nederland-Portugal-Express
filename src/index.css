@@ -1,0 +1,198 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-noir: #07090d;
+  --color-noir-soft: #0c1017;
+  --color-ink: #0a1220;
+  --color-ink-light: #101c30;
+  --color-ink-lighter: #16233a;
+  --color-champagne: #cbaa6b;
+  --color-champagne-light: #e3cd9c;
+  --color-champagne-soft: #ddc48e;
+  --color-champagne-deep: #a8823f;
+  --color-ivory: #f3efe6;
+  --color-mist: #9aa5b5;
+  --color-mist-dim: #6b7488;
+
+  --font-display: 'Cormorant Garamond', 'Times New Roman', serif;
+  --font-statement: 'Bodoni Moda', 'Times New Roman', serif;
+  --font-sans: 'Manrope', -apple-system, 'Segoe UI', sans-serif;
+
+  --animate-fade-up: fade-up 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
+  --animate-fade-in: fade-in 1.2s ease both;
+  --animate-shimmer: shimmer 3.5s linear infinite;
+  --animate-float: float 7s ease-in-out infinite;
+  --animate-spin-slow: spin 40s linear infinite;
+  --animate-spin-slower: spin 90s linear infinite;
+
+  @keyframes fade-up {
+    from {
+      opacity: 0;
+      transform: translateY(28px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes shimmer {
+    0% {
+      background-position: -200% 0;
+    }
+    100% {
+      background-position: 200% 0;
+    }
+  }
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-14px);
+    }
+  }
+}
+
+::selection {
+  background: rgba(203, 170, 107, 0.28);
+  color: #f3efe6;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--color-noir);
+  color: var(--color-ivory);
+  font-family: var(--font-sans);
+  font-weight: 300;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  overflow-x: hidden;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  color: var(--color-ivory);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-noir);
+}
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(var(--color-champagne-deep), var(--color-champagne));
+  border-radius: 999px;
+  border: 2px solid var(--color-noir);
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-statement {
+  font-family: var(--font-statement);
+  font-optical-sizing: auto;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  a,
+  button,
+  .cursor-none-target {
+    cursor: none;
+  }
+}
+
+.tracking-kicker {
+  letter-spacing: 0.32em;
+}
+
+.text-gradient-gold {
+  background-image: linear-gradient(
+    100deg,
+    #a8823f 0%,
+    #e3cd9c 32%,
+    #f6e9c8 46%,
+    #cbaa6b 62%,
+    #8f6d33 100%
+  );
+  background-size: 220% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.text-gradient-gold-static {
+  background-image: linear-gradient(100deg, #a8823f 0%, #e3cd9c 40%, #cbaa6b 75%, #8f6d33 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.shimmer-gold {
+  animation: shimmer 4s linear infinite;
+}
+
+.hairline {
+  background: linear-gradient(90deg, transparent, rgba(203, 170, 107, 0.55), transparent);
+  height: 1px;
+}
+
+.hairline-solid {
+  background: linear-gradient(90deg, rgba(203, 170, 107, 0), rgba(203, 170, 107, 0.65), rgba(203, 170, 107, 0));
+}
+
+.grain::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.05;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='120' height='120'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.card-glass {
+  background: linear-gradient(160deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.012));
+  border: 1px solid rgba(203, 170, 107, 0.16);
+  backdrop-filter: blur(6px);
+}
+
+.focus-gold:focus-visible {
+  outline: 1px solid rgba(203, 170, 107, 0.7);
+  outline-offset: 4px;
+}
+
+input,
+textarea,
+select {
+  font-family: var(--font-sans);
+}
+
+input:-webkit-autofill,
+textarea:-webkit-autofill,
+select:-webkit-autofill {
+  -webkit-text-fill-color: #f3efe6;
+  -webkit-box-shadow: 0 0 0px 1000px #0c1017 inset;
+  transition: background-color 9999s ease-in-out 0s;
+}

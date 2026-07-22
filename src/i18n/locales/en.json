@@ -1,0 +1,351 @@
+{
+  "meta": {
+    "home": { "title": "Nederland Portugal Express | Private Luxury Logistics", "desc": "Bespoke international luxury logistics, white-glove transport, high-value vehicle and yacht logistics, and premium relocations between the Netherlands, Portugal and beyond." },
+    "about": { "title": "About Us | Nederland Portugal Express", "desc": "A private standard of logistics excellence, born on the corridor between Amsterdam and Lisbon." },
+    "services": { "title": "Services | Nederland Portugal Express", "desc": "A complete suite of private logistics services — luxury transport, yacht logistics, vehicle transport, removals and more." },
+    "secureStorage": { "title": "Secure Storage | Nederland Portugal Express", "desc": "Climate-controlled, monitored private storage for vehicles, vessels, art and estate belongings." },
+    "removals": { "title": "International Removals | Nederland Portugal Express", "desc": "Premium international removals and relocations between the Netherlands, Portugal and beyond." },
+    "contact": { "title": "Contact | Nederland Portugal Express", "desc": "Speak with our concierge team about your private logistics request." },
+    "quote": { "title": "Request a Quote | Nederland Portugal Express", "desc": "Request a tailored, private logistics proposal from Nederland Portugal Express." },
+    "notFound": { "title": "Page Not Found | Nederland Portugal Express" }
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "secureStorage": "Secure Storage",
+    "removals": "Removals",
+    "contact": "Contact",
+    "requestQuote": "Request a Quote",
+    "language": "Language"
+  },
+  "footer": {
+    "tagline": "Bespoke international logistics for those who measure quality in precision, discretion and craftsmanship — connecting the Netherlands, Portugal and the world.",
+    "explore": "Explore",
+    "clientServices": "Client Services",
+    "concierge": "Concierge",
+    "aboutUs": "About Us",
+    "rights": "All rights reserved.",
+    "crafted": "Crafted with discretion",
+    "offices": "Amsterdam, Netherlands & Lisbon, Portugal"
+  },
+  "common": {
+    "learnMore": "Learn More",
+    "discover": "Discover",
+    "continue": "Continue",
+    "back": "Back",
+    "sending": "Sending…",
+    "submitting": "Submitting…",
+    "scroll": "Scroll",
+    "home": "Home"
+  },
+  "home": {
+    "hero": {
+      "kicker": "Private International Logistics",
+      "line1": "What you treasure",
+      "line2": "deserves a private journey",
+      "line3": "not a delivery.",
+      "subtitle": "Nederland Portugal Express moves the exceptional — vehicles, vessels, estates and heirlooms — between the Netherlands, Portugal and the world, with the discretion of a private household and the precision of an atelier.",
+      "ctaPrimary": "Request a Quote",
+      "ctaSecondary": "Explore Services"
+    },
+    "stats": [
+      { "value": "18+", "label": "Years of Craftsmanship" },
+      { "value": "2,400+", "label": "Assets Relocated" },
+      { "value": "24/7", "label": "Concierge Availability" },
+      { "value": "100%", "label": "Insured & Bonded" }
+    ],
+    "craft": {
+      "kicker": "Our Craft",
+      "title": "A complete suite of private logistics services",
+      "desc": "Every service is delivered with the same unwavering standard — meticulous planning, vetted specialists, and absolute discretion."
+    },
+    "route": {
+      "kicker": "Two Nations, One Standard",
+      "title": "Connecting Amsterdam and Lisbon with uncompromising care",
+      "desc": "Our roots run between two of Europe's most storied maritime nations. We understand the corridor intimately — its customs procedures, its ports, its private estates — allowing us to move seamlessly where others merely transport.",
+      "points": [
+        "Established European transport network",
+        "Direct relationships with customs authorities",
+        "Trusted marina & storage partners"
+      ]
+    },
+    "process": {
+      "kicker": "How We Work",
+      "title": "A considered process, from first call to final delivery",
+      "steps": [
+        { "title": "Private Consultation", "desc": "A discreet conversation to understand the asset, the occasion and the standard expected." },
+        { "title": "Bespoke Planning", "desc": "Your logistics architect designs a tailored route, timeline and handling protocol." },
+        { "title": "Precision Execution", "desc": "Vetted specialists and enclosed, monitored transport carry your consignment with care." },
+        { "title": "White-Glove Delivery", "desc": "Arrival, placement and final inspection — completed to your exact satisfaction." }
+      ]
+    },
+    "testimonial": {
+      "quote": "Every detail was handled as though our collection were their own — from the first call to the final placement in Lisbon. Nothing short of exceptional.",
+      "name": "Private Client",
+      "role": "Vehicle Collection Relocation, Amsterdam → Lisbon"
+    }
+  },
+  "about": {
+    "hero": {
+      "kicker": "About Nederland Portugal Express",
+      "title": "A private standard of logistics excellence",
+      "desc": "Born from the corridor between Amsterdam and Lisbon, we have grown into a trusted name in bespoke logistics for clients who never compromise on quality."
+    },
+    "story": {
+      "kicker": "Our Story",
+      "title": "Logistics, elevated to a private service",
+      "p1": "Nederland Portugal Express was founded on a simple conviction: that the movement of exceptional things — vehicles, vessels, estates, heirlooms — deserves a standard of care equal to their value. What began as a specialist corridor between the Netherlands and Portugal has become a private logistics house serving discerning clients across the globe.",
+      "p2": "We do not operate as a conventional carrier. Every engagement is designed bespoke, led by a dedicated logistics architect, and executed by specialists selected for their precision as much as their discretion.",
+      "quote": "Precision is not a promise, it is a practice."
+    },
+    "pillars": {
+      "kicker": "Our Principles",
+      "title": "The four pillars of our practice",
+      "desc": "These values are not aspirational — they are the operating standard behind every consignment we accept.",
+      "items": [
+        { "title": "Trust", "desc": "Every consignment is insured, documented and handled by teams who have earned their place in our network over years, not weeks." },
+        { "title": "Discretion", "desc": "Confidentiality is not a policy for us, it is instinct. Client identities, assets and itineraries remain strictly private." },
+        { "title": "Craftsmanship", "desc": "From bespoke crating to cradle engineering, our specialists treat every task as a craft — never a commodity." },
+        { "title": "Precision", "desc": "Timelines, routes and handling protocols are engineered with the same rigour as the assets we transport." }
+      ]
+    },
+    "stats": [
+      { "value": "18+", "label": "Years of Craftsmanship" },
+      { "value": "2,400+", "label": "Assets Relocated" },
+      { "value": "30+", "label": "Countries Served" },
+      { "value": "100%", "label": "Insured & Bonded" }
+    ],
+    "testimonial": {
+      "quote": "They understand that discretion is as important as precision. Our estate relocation was handled without a single misstep, and without a single word spoken out of turn.",
+      "name": "Private Client",
+      "role": "Estate Relocation, The Hague → Cascais"
+    }
+  },
+  "services": {
+    "hero": {
+      "kicker": "Our Services",
+      "title": "A complete suite of private logistics",
+      "desc": "Seven disciplines, one unwavering standard. Each service is delivered by specialists selected for their precision, discretion and care."
+    },
+    "items": [
+      {
+        "slug": "international-logistics",
+        "title": "International Luxury Logistics",
+        "shortTitle": "Luxury Logistics",
+        "summary": "End-to-end coordination of high-value consignments across borders, with a single point of contact from origin to destination.",
+        "description": "From Amsterdam to Lisbon and every capital between, we orchestrate multimodal transport for clients who expect precision at every mile. Every shipment is planned bespoke — routes, customs, timing and handling tailored to the asset and the occasion.",
+        "points": ["Dedicated logistics architect", "Real-time consignment tracking", "Customs & documentation handled"]
+      },
+      {
+        "slug": "white-glove-transport",
+        "title": "White Glove Transport",
+        "shortTitle": "White Glove Transport",
+        "summary": "Hand-selected specialists manage loading, transit and delivery of your most valued possessions with meticulous care.",
+        "description": "Our white glove teams are trained in the handling of fine art, antiques, haute couture and objects of irreplaceable value. Every touchpoint — from padded crating to climate-controlled transit — is executed with the discretion of a private household.",
+        "points": ["Custom crating & padding", "Climate-controlled vehicles", "Trained handling specialists"]
+      },
+      {
+        "slug": "vehicle-transport",
+        "title": "High-Value Vehicle Transport",
+        "shortTitle": "Vehicle Transport",
+        "summary": "Enclosed, insured transport for supercars, classics and collections — treated with the reverence they deserve.",
+        "description": "Whether relocating a single collector car or an entire garage, our enclosed carriers and soft-strap systems protect bodywork and provenance alike. Documentation, insurance valuation and concours-level care are standard, not optional.",
+        "points": ["Enclosed, air-ride transport", "Full insurance valuation", "Soft-strap, zero-contact loading"]
+      },
+      {
+        "slug": "yacht-marine-logistics",
+        "title": "Yacht & Marine Logistics",
+        "shortTitle": "Yacht & Marine",
+        "summary": "Haul-out, cradling, overland transport and marina-to-marina coordination for yachts and marine vessels.",
+        "description": "We manage the full lifecycle of marine relocation — survey, unstepping, cradle engineering, permits and escort — coordinating with marinas across the Iberian and North Sea coastlines to deliver your vessel safely and on schedule.",
+        "points": ["Marina-to-marina coordination", "Custom cradle engineering", "Permit & escort management"]
+      },
+      {
+        "slug": "international-removals",
+        "title": "Premium International Removals",
+        "shortTitle": "International Removals",
+        "summary": "Full-service relocation of homes and estates between the Netherlands, Portugal and beyond.",
+        "description": "Relocating a life deserves more than a moving truck. Our removals specialists plan every detail — packing, customs, storage and unpacking — so your new residence feels like home from the first evening.",
+        "points": ["Bespoke packing & inventory", "Door-to-door customs clearance", "Unpacking & placement service"]
+      },
+      {
+        "slug": "secure-storage",
+        "title": "Secure Storage Solutions",
+        "shortTitle": "Secure Storage",
+        "summary": "Climate-controlled, monitored facilities for vehicles, vessels, art and estate belongings — however long required.",
+        "description": "Our storage facilities combine bank-grade security with the environmental precision fine assets demand — humidity and temperature control, 24-hour surveillance, and private, individually secured bays.",
+        "points": ["24/7 monitored surveillance", "Climate & humidity control", "Private, individually secured bays"]
+      },
+      {
+        "slug": "tailor-made-logistics",
+        "title": "Tailor-Made Logistics",
+        "shortTitle": "Bespoke Solutions",
+        "summary": "For requirements that fall outside the ordinary, our concierge team designs a solution built entirely around you.",
+        "description": "Private and business clients alike come to us with the unusual — a same-week estate relocation, a multi-vessel fleet move, a discreet cross-border delivery. We design the solution first, and the logistics follow.",
+        "points": ["Dedicated concierge planning", "Private & corporate programmes", "Absolute discretion, always"]
+      }
+    ]
+  },
+  "secureStorage": {
+    "hero": {
+      "kicker": "Secure Storage Solutions",
+      "title": "Safekeeping, engineered to the standard of what it holds",
+      "desc": "Our private storage facilities across the Netherlands and Portugal combine bank-grade security with the environmental precision that fine assets demand — for as long as required."
+    },
+    "features": {
+      "kicker": "Facility Standards",
+      "title": "Security and precision, in equal measure",
+      "desc": "Every facility in our network is audited to the same exacting checklist — no exceptions, regardless of location.",
+      "items": [
+        { "title": "24/7 Monitored Surveillance", "desc": "High-definition CCTV and manned patrols provide continuous oversight of every facility, every hour of every day." },
+        { "title": "Restricted Access Control", "desc": "Biometric and credentialed entry ensures only authorised personnel and clients ever reach the storage floor." },
+        { "title": "Climate & Humidity Control", "desc": "Precision environmental systems protect coachwork, timber, canvas and upholstery from the elements." },
+        { "title": "Fire Suppression Systems", "desc": "Advanced detection and suppression technology, engineered specifically for high-value asset environments." },
+        { "title": "Fully Insured Bays", "desc": "Every stored asset is covered under comprehensive insurance, with valuations reviewed and confirmed in advance." },
+        { "title": "Flexible Storage Terms", "desc": "From a single season to indefinite safekeeping, storage is arranged entirely around your requirements." }
+      ]
+    },
+    "categories": {
+      "kicker": "What We Store",
+      "title": "From single heirlooms to entire collections",
+      "desc": "Whether safeguarding a vehicle collection between seasons, a yacht through winter, or an estate's belongings during a relocation, our storage solutions are configured to the asset — not the other way around.",
+      "items": [
+        "Motor Vehicles & Collections",
+        "Yachts, Tenders & Marine Equipment",
+        "Fine Art & Antiques",
+        "Wine & Collectibles",
+        "Estate & Household Belongings",
+        "Business & Corporate Inventory"
+      ]
+    },
+    "process": {
+      "kicker": "Arranging Storage",
+      "title": "A private assessment, before a single item moves",
+      "desc": "Our team conducts a private consultation to understand the asset, its environmental requirements and your access needs. A tailored storage plan — including transport to the facility if required — is then confirmed before anything is scheduled."
+    }
+  },
+  "removals": {
+    "hero": {
+      "kicker": "Premium International Removals",
+      "title": "Relocating a life, with the care it deserves",
+      "desc": "From a single-room apartment to a multi-generational estate, our removals specialists manage every detail between the Netherlands, Portugal and beyond — so your new home feels complete from the first evening."
+    },
+    "included": {
+      "kicker": "What's Included",
+      "title": "A fully managed relocation, start to finish",
+      "desc": "We believe a removal should feel like a service, not a logistics exercise. Every engagement includes the following as standard — with additional bespoke provisions available on request.",
+      "items": [
+        "Full household inventory & valuation",
+        "Museum-grade packing materials",
+        "Door-to-door customs clearance",
+        "Dedicated relocation consultant",
+        "Optional interim secure storage",
+        "Unpacking & furniture placement",
+        "Fragile & specialist item handling",
+        "Insurance covering full transit value"
+      ]
+    },
+    "process": {
+      "kicker": "Our Process",
+      "title": "Five stages, one dedicated consultant",
+      "desc": "You will speak with a single point of contact throughout — no call centres, no handoffs.",
+      "steps": [
+        { "title": "Private Survey", "desc": "A dedicated relocation consultant visits or video-surveys your residence to assess scope, volume and any specialist items." },
+        { "title": "Bespoke Packing", "desc": "Museum-grade materials and custom crating protect furniture, art and heirlooms for the journey ahead." },
+        { "title": "Customs & Documentation", "desc": "We prepare and manage all customs declarations and import documentation, door to door." },
+        { "title": "Transport & Transit", "desc": "Your belongings travel via dedicated, tracked transport — never consolidated with unrelated shipments." },
+        { "title": "Unpacking & Placement", "desc": "Our team unpacks, places and arranges furnishings in your new residence, exactly as instructed." }
+      ]
+    },
+    "corridor": {
+      "kicker": "Our Specialist Corridor",
+      "title": "Netherlands & Portugal, understood intimately",
+      "desc": "While we relocate clients across Europe and beyond, the Netherlands–Portugal corridor remains our specialism. We know the ports, the procedures and the neighbourhoods — from Amsterdam's canal houses to Lisbon's historic quarters and the Algarve's private estates."
+    }
+  },
+  "contact": {
+    "hero": {
+      "kicker": "Contact",
+      "title": "Speak with our concierge team",
+      "desc": "Whether a question or a bespoke request, our team responds with the same discretion and precision we bring to every consignment."
+    },
+    "info": {
+      "telephone": "Telephone",
+      "email": "Email",
+      "offices": "Offices",
+      "office1": "Amsterdam, Netherlands",
+      "office2": "Lisbon, Portugal — by private appointment",
+      "availability": "Availability",
+      "availability1": "Concierge desk: 24/7",
+      "availability2": "Offices: Mon–Fri, 09:00–18:00 CET",
+      "note": "For time-sensitive requests, our concierge desk is available around the clock. For tailored proposals, we recommend the {{link}} form.",
+      "linkLabel": "Quote Request"
+    },
+    "form": {
+      "fullName": "Full Name",
+      "fullNamePlaceholder": "Jane van der Berg",
+      "email": "Email Address",
+      "emailPlaceholder": "jane@example.com",
+      "phone": "Phone (optional)",
+      "phonePlaceholder": "+31 6 0000 0000",
+      "subject": "Subject",
+      "subjectPlaceholder": "How can we help?",
+      "message": "Message",
+      "messagePlaceholder": "Tell us about your request...",
+      "send": "Send Message",
+      "successTitle": "Message Received",
+      "successDesc": "Thank you for reaching out. A member of our concierge team will respond within one business day."
+    }
+  },
+  "quote": {
+    "hero": {
+      "kicker": "Tailor-Made Logistics",
+      "title": "Request your private quote",
+      "desc": "Share the essentials of your request and a dedicated logistics architect will prepare a bespoke proposal within one business day."
+    },
+    "crumb": "Quote Request",
+    "steps": ["Your Request", "Route & Timing", "Your Details"],
+    "clientTypes": { "private": "Private Client", "business": "Business Client" },
+    "form": {
+      "service": "Service Required",
+      "servicePlaceholder": "Select a service",
+      "clientType": "Client Type",
+      "description": "Describe the Asset or Request",
+      "descriptionPlaceholder": "e.g. Relocation of a 3-vehicle collection, including one classic convertible requiring enclosed transport...",
+      "origin": "Origin Location",
+      "originPlaceholder": "Amsterdam, Netherlands",
+      "destination": "Destination Location",
+      "destinationPlaceholder": "Lisbon, Portugal",
+      "date": "Preferred Date",
+      "flexibility": "Flexibility",
+      "flexibilityOptions": ["Fixed date", "Flexible (±2 weeks)", "Fully flexible"],
+      "notes": "Additional Notes (optional)",
+      "notesPlaceholder": "Access restrictions, insurance requirements, or any other detail we should know...",
+      "fullName": "Full Name",
+      "fullNamePlaceholder": "Jane van der Berg",
+      "email": "Email Address",
+      "emailPlaceholder": "jane@example.com",
+      "phone": "Phone Number",
+      "phonePlaceholder": "+31 6 0000 0000",
+      "company": "Company Name",
+      "companyPlaceholder": "Company B.V.",
+      "submit": "Submit Request",
+      "successTitle": "Request Received",
+      "successDesc": "Thank you for entrusting us with your request. Your dedicated logistics architect will review the details and reach out within one business day with a tailored proposal."
+    }
+  },
+  "cta": {
+    "kicker": "Begin the Journey",
+    "title": "An itinerary written",
+    "titleItalic": "entirely around you",
+    "desc": "Share the details of your consignment and our concierge team will craft a tailored proposal within one business day — discreet, precise, and entirely in your service.",
+    "primary": "Request a Quote",
+    "secondary": "Speak with Concierge"
+  },
+  "notFound": {
+    "kicker": "Off Course",
+    "title": "This route appears to have drifted off the map. Let us guide you back to familiar waters.",
+    "cta": "Return Home"
+  }
+}

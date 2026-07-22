@@ -1,0 +1,351 @@
+{
+  "meta": {
+    "home": { "title": "Nederland Portugal Express | Private Luxury Logistiek", "desc": "Bespoke internationale luxelogistiek, white-glove transport, hoogwaardig voertuig- en jachtvervoer, en premium verhuizingen tussen Nederland, Portugal en daarbuiten." },
+    "about": { "title": "Over Ons | Nederland Portugal Express", "desc": "Een private standaard van logistieke excellentie, ontstaan op de route tussen Amsterdam en Lissabon." },
+    "services": { "title": "Diensten | Nederland Portugal Express", "desc": "Een volledig aanbod van private logistieke diensten — luxevervoer, jachtlogistiek, voertuigtransport, verhuizingen en meer." },
+    "secureStorage": { "title": "Beveiligde Opslag | Nederland Portugal Express", "desc": "Klimaatgecontroleerde, bewaakte private opslag voor voertuigen, vaartuigen, kunst en huisraad." },
+    "removals": { "title": "Internationale Verhuizingen | Nederland Portugal Express", "desc": "Premium internationale verhuizingen en relocaties tussen Nederland, Portugal en daarbuiten." },
+    "contact": { "title": "Contact | Nederland Portugal Express", "desc": "Spreek met ons concierge-team over uw private logistieke aanvraag." },
+    "quote": { "title": "Offerte Aanvragen | Nederland Portugal Express", "desc": "Vraag een op maat gemaakt, privé logistiek voorstel aan bij Nederland Portugal Express." },
+    "notFound": { "title": "Pagina Niet Gevonden | Nederland Portugal Express" }
+  },
+  "nav": {
+    "home": "Home",
+    "about": "Over Ons",
+    "services": "Diensten",
+    "secureStorage": "Beveiligde Opslag",
+    "removals": "Verhuizingen",
+    "contact": "Contact",
+    "requestQuote": "Offerte Aanvragen",
+    "language": "Taal"
+  },
+  "footer": {
+    "tagline": "Bespoke internationale logistiek voor wie kwaliteit meet in precisie, discretie en vakmanschap — wij verbinden Nederland, Portugal en de wereld.",
+    "explore": "Ontdek",
+    "clientServices": "Klantenservice",
+    "concierge": "Concierge",
+    "aboutUs": "Over Ons",
+    "rights": "Alle rechten voorbehouden.",
+    "crafted": "Met discretie vervaardigd",
+    "offices": "Amsterdam, Nederland & Lissabon, Portugal"
+  },
+  "common": {
+    "learnMore": "Meer Weten",
+    "discover": "Ontdekken",
+    "continue": "Doorgaan",
+    "back": "Terug",
+    "sending": "Verzenden…",
+    "submitting": "Verzenden…",
+    "scroll": "Scroll",
+    "home": "Home"
+  },
+  "home": {
+    "hero": {
+      "kicker": "Private Internationale Logistiek",
+      "line1": "Wat u koestert",
+      "line2": "verdient een private reis",
+      "line3": "geen bezorging.",
+      "subtitle": "Nederland Portugal Express verplaatst het uitzonderlijke — voertuigen, vaartuigen, landgoederen en erfstukken — tussen Nederland, Portugal en de wereld, met de discretie van een particulier huishouden en de precisie van een atelier.",
+      "ctaPrimary": "Offerte Aanvragen",
+      "ctaSecondary": "Ontdek Onze Diensten"
+    },
+    "stats": [
+      { "value": "18+", "label": "Jaar Vakmanschap" },
+      { "value": "2.400+", "label": "Verplaatste Bezittingen" },
+      { "value": "24/7", "label": "Concierge Beschikbaarheid" },
+      { "value": "100%", "label": "Verzekerd & Gewaarborgd" }
+    ],
+    "craft": {
+      "kicker": "Ons Vakmanschap",
+      "title": "Een volledig aanbod van private logistieke diensten",
+      "desc": "Elke dienst wordt geleverd volgens dezelfde onwrikbare standaard — nauwgezette planning, doorgelichte specialisten en absolute discretie."
+    },
+    "route": {
+      "kicker": "Twee Landen, Eén Standaard",
+      "title": "Amsterdam en Lissabon verbonden met niets dan zorg",
+      "desc": "Onze wortels liggen tussen twee van Europa's meest gerenommeerde maritieme naties. Wij kennen de route van binnenuit — de douaneprocedures, de havens, de private landgoederen — waardoor wij naadloos bewegen waar anderen enkel vervoeren.",
+      "points": [
+        "Gevestigd Europees transportnetwerk",
+        "Directe relaties met douaneautoriteiten",
+        "Vertrouwde jachthaven- en opslagpartners"
+      ]
+    },
+    "process": {
+      "kicker": "Hoe Wij Werken",
+      "title": "Een doordacht proces, van eerste gesprek tot laatste levering",
+      "steps": [
+        { "title": "Privé Consult", "desc": "Een discreet gesprek om het object, de gelegenheid en de verwachte standaard te begrijpen." },
+        { "title": "Op Maat Gemaakte Planning", "desc": "Uw logistiek architect ontwerpt een route, tijdlijn en behandelprotocol op maat." },
+        { "title": "Precieze Uitvoering", "desc": "Doorgelichte specialisten en gesloten, bewaakt transport vervoeren uw zending met zorg." },
+        { "title": "White-Glove Levering", "desc": "Aankomst, plaatsing en eindinspectie — uitgevoerd naar uw exacte tevredenheid." }
+      ]
+    },
+    "testimonial": {
+      "quote": "Elk detail werd behandeld alsof onze collectie hun eigendom was — van het eerste telefoontje tot de uiteindelijke plaatsing in Lissabon. Niets minder dan uitzonderlijk.",
+      "name": "Privéklant",
+      "role": "Verhuizing Voertuigcollectie, Amsterdam → Lissabon"
+    }
+  },
+  "about": {
+    "hero": {
+      "kicker": "Over Nederland Portugal Express",
+      "title": "Een private standaard van logistieke excellentie",
+      "desc": "Ontstaan op de route tussen Amsterdam en Lissabon, zijn wij uitgegroeid tot een vertrouwde naam in bespoke logistiek voor klanten die nooit concessies doen aan kwaliteit."
+    },
+    "story": {
+      "kicker": "Ons Verhaal",
+      "title": "Logistiek, verheven tot een private dienst",
+      "p1": "Nederland Portugal Express is opgericht vanuit een eenvoudige overtuiging: dat het verplaatsen van uitzonderlijke bezittingen — voertuigen, vaartuigen, landgoederen, erfstukken — een zorgstandaard verdient die gelijk is aan hun waarde. Wat begon als een gespecialiseerde route tussen Nederland en Portugal, is uitgegroeid tot een privaat logistiek huis voor veeleisende klanten wereldwijd.",
+      "p2": "Wij opereren niet als een gewone vervoerder. Elke opdracht wordt op maat ontworpen, geleid door een toegewijde logistiek architect, en uitgevoerd door specialisten die net zo zorgvuldig geselecteerd zijn op precisie als op discretie.",
+      "quote": "Precisie is geen belofte, het is een praktijk."
+    },
+    "pillars": {
+      "kicker": "Onze Principes",
+      "title": "De vier pijlers van onze praktijk",
+      "desc": "Deze waarden zijn geen ambitie — het zijn de operationele standaard achter elke zending die wij aannemen.",
+      "items": [
+        { "title": "Vertrouwen", "desc": "Elke zending is verzekerd, gedocumenteerd en behandeld door teams die hun plaats in ons netwerk over jaren, niet weken, hebben verdiend." },
+        { "title": "Discretie", "desc": "Vertrouwelijkheid is voor ons geen beleid, het is instinct. Klantidentiteiten, bezittingen en reisroutes blijven strikt privé." },
+        { "title": "Vakmanschap", "desc": "Van bespoke krattenbouw tot cradle-engineering, onze specialisten behandelen elke taak als een ambacht — nooit als een handelswaar." },
+        { "title": "Precisie", "desc": "Tijdlijnen, routes en behandelprotocollen worden ontworpen met dezelfde nauwgezetheid als de bezittingen die wij vervoeren." }
+      ]
+    },
+    "stats": [
+      { "value": "18+", "label": "Jaar Vakmanschap" },
+      { "value": "2.400+", "label": "Verplaatste Bezittingen" },
+      { "value": "30+", "label": "Bediende Landen" },
+      { "value": "100%", "label": "Verzekerd & Gewaarborgd" }
+    ],
+    "testimonial": {
+      "quote": "Zij begrijpen dat discretie net zo belangrijk is als precisie. Onze landgoedverhuizing verliep zonder één misstap, en zonder één woord dat te ver ging.",
+      "name": "Privéklant",
+      "role": "Landgoedverhuizing, Den Haag → Cascais"
+    }
+  },
+  "services": {
+    "hero": {
+      "kicker": "Onze Diensten",
+      "title": "Een volledig aanbod van private logistiek",
+      "desc": "Zeven disciplines, één onwrikbare standaard. Elke dienst wordt geleverd door specialisten geselecteerd op precisie, discretie en zorg."
+    },
+    "items": [
+      {
+        "slug": "international-logistics",
+        "title": "Internationale Luxelogistiek",
+        "shortTitle": "Luxelogistiek",
+        "summary": "Volledige coördinatie van hoogwaardige zendingen over grenzen heen, met één aanspreekpunt van herkomst tot bestemming.",
+        "description": "Van Amsterdam tot Lissabon en elke hoofdstad daartussen, orkestreren wij multimodaal transport voor klanten die op elke kilometer precisie verwachten. Elke zending wordt op maat gepland — routes, douane, timing en behandeling afgestemd op het object en de gelegenheid.",
+        "points": ["Toegewijd logistiek architect", "Realtime zendingstracking", "Douane & documentatie geregeld"]
+      },
+      {
+        "slug": "white-glove-transport",
+        "title": "White Glove Transport",
+        "shortTitle": "White Glove Transport",
+        "summary": "Handmatig geselecteerde specialisten verzorgen het laden, vervoeren en leveren van uw meest waardevolle bezittingen met uiterste zorg.",
+        "description": "Onze white glove-teams zijn getraind in de behandeling van fine art, antiek, haute couture en onvervangbare objecten. Elk contactmoment — van gevoerde kratten tot klimaatgecontroleerd transport — wordt uitgevoerd met de discretie van een particulier huishouden.",
+        "points": ["Op maat gemaakte kratten & bekleding", "Klimaatgecontroleerde voertuigen", "Getrainde behandelspecialisten"]
+      },
+      {
+        "slug": "vehicle-transport",
+        "title": "Hoogwaardig Voertuigtransport",
+        "shortTitle": "Voertuigtransport",
+        "summary": "Gesloten, verzekerd transport voor supercars, klassiekers en collecties — behandeld met het respect dat ze verdienen.",
+        "description": "Of het nu gaat om één collectorsauto of een volledige garage, onze gesloten trailers en zachte spansystemen beschermen zowel de carrosserie als de herkomst. Documentatie, taxatie en concours-niveau zorg zijn standaard, geen optie.",
+        "points": ["Gesloten transport met luchtvering", "Volledige verzekeringstaxatie", "Zacht spansysteem, zero-contact laden"]
+      },
+      {
+        "slug": "yacht-marine-logistics",
+        "title": "Jacht- & Maritieme Logistiek",
+        "shortTitle": "Jacht & Maritiem",
+        "summary": "Te water laten, cradling, overlandtransport en haven-naar-haven-coördinatie voor jachten en vaartuigen.",
+        "description": "Wij beheren de volledige levenscyclus van maritieme relocatie — inspectie, ontmasten, cradle-engineering, vergunningen en escorte — in samenwerking met jachthavens langs de Iberische en Noordzeekust om uw vaartuig veilig en op tijd af te leveren.",
+        "points": ["Haven-naar-haven-coördinatie", "Op maat gemaakte cradle-engineering", "Beheer van vergunningen & escorte"]
+      },
+      {
+        "slug": "international-removals",
+        "title": "Premium Internationale Verhuizingen",
+        "shortTitle": "Internationale Verhuizingen",
+        "summary": "Volledige verzorging van de verhuizing van woningen en landgoederen tussen Nederland, Portugal en daarbuiten.",
+        "description": "Het verplaatsen van een leven verdient meer dan een verhuiswagen. Onze verhuisspecialisten plannen elk detail — inpakken, douane, opslag en uitpakken — zodat uw nieuwe woning vanaf de eerste avond als thuis voelt.",
+        "points": ["Bespoke inpak & inventarisatie", "Deur-tot-deur douaneafhandeling", "Uitpak- & plaatsingsservice"]
+      },
+      {
+        "slug": "secure-storage",
+        "title": "Beveiligde Opslagoplossingen",
+        "shortTitle": "Beveiligde Opslag",
+        "summary": "Klimaatgecontroleerde, bewaakte faciliteiten voor voertuigen, vaartuigen, kunst en huisraad — voor zolang als nodig.",
+        "description": "Onze opslagfaciliteiten combineren beveiliging van bankniveau met de omgevingsprecisie die kostbare bezittingen vereisen — vochtigheids- en temperatuurregeling, 24-uurs bewaking en privé, individueel beveiligde ruimtes.",
+        "points": ["24/7 bewaakt toezicht", "Klimaat- & vochtigheidsregeling", "Privé, individueel beveiligde ruimtes"]
+      },
+      {
+        "slug": "tailor-made-logistics",
+        "title": "Logistiek op Maat",
+        "shortTitle": "Bespoke Oplossingen",
+        "summary": "Voor vereisten buiten het gewone ontwerpt ons concierge-team een oplossing volledig rond u.",
+        "description": "Zowel particuliere als zakelijke klanten komen bij ons met het ongewone — een landgoedverhuizing binnen een week, een verplaatsing van een vloot vaartuigen, een discrete grensoverschrijdende levering. Wij ontwerpen eerst de oplossing, de logistiek volgt daarna.",
+        "points": ["Toegewijde concierge-planning", "Private & zakelijke programma's", "Absolute discretie, altijd"]
+      }
+    ]
+  },
+  "secureStorage": {
+    "hero": {
+      "kicker": "Beveiligde Opslagoplossingen",
+      "title": "Bewaring, ontworpen naar de standaard van wat zij bevat",
+      "desc": "Onze private opslagfaciliteiten in Nederland en Portugal combineren beveiliging van bankniveau met de omgevingsprecisie die kostbare bezittingen vereisen — voor zolang als nodig."
+    },
+    "features": {
+      "kicker": "Faciliteitsstandaarden",
+      "title": "Beveiliging en precisie, in gelijke mate",
+      "desc": "Elke faciliteit in ons netwerk wordt getoetst aan dezelfde strenge checklist — zonder uitzondering, ongeacht de locatie.",
+      "items": [
+        { "title": "24/7 Bewaakt Toezicht", "desc": "HD-camerabewaking en bemande patrouilles zorgen voor continu toezicht op elke faciliteit, elk uur van elke dag." },
+        { "title": "Beperkte Toegangscontrole", "desc": "Biometrische en geautoriseerde toegang zorgt ervoor dat alleen bevoegd personeel en klanten de opslagvloer bereiken." },
+        { "title": "Klimaat- & Vochtigheidsregeling", "desc": "Precisie klimaatsystemen beschermen carrosserie, hout, canvas en bekleding tegen de elementen." },
+        { "title": "Brandbeveiligingssystemen", "desc": "Geavanceerde detectie- en blustechnologie, specifiek ontworpen voor omgevingen met hoogwaardige bezittingen." },
+        { "title": "Volledig Verzekerde Ruimtes", "desc": "Elke opgeslagen bezitting valt onder een uitgebreide verzekering, met taxaties die vooraf worden beoordeeld en bevestigd." },
+        { "title": "Flexibele Opslagtermijnen", "desc": "Van één seizoen tot onbepaalde bewaring, opslag wordt volledig rond uw wensen geregeld." }
+      ]
+    },
+    "categories": {
+      "kicker": "Wat Wij Opslaan",
+      "title": "Van individuele erfstukken tot volledige collecties",
+      "desc": "Of het nu gaat om een voertuigcollectie tussen de seizoenen, een jacht tijdens de winter, of de bezittingen van een landgoed tijdens een verhuizing, onze opslagoplossingen worden afgestemd op het object — niet andersom.",
+      "items": [
+        "Motorvoertuigen & Collecties",
+        "Jachten, Tenders & Maritieme Uitrusting",
+        "Fine Art & Antiek",
+        "Wijn & Verzamelobjecten",
+        "Landgoed- & Huisraadbezittingen",
+        "Zakelijke & Bedrijfsvoorraad"
+      ]
+    },
+    "process": {
+      "kicker": "Opslag Regelen",
+      "title": "Een privé beoordeling, voordat er ook maar iets wordt verplaatst",
+      "desc": "Ons team voert een privéconsult uit om het object, de omgevingsvereisten en uw toegangsbehoeften te begrijpen. Een op maat gemaakt opslagplan — inclusief transport naar de faciliteit indien nodig — wordt vervolgens bevestigd voordat er iets wordt ingepland."
+    }
+  },
+  "removals": {
+    "hero": {
+      "kicker": "Premium Internationale Verhuizingen",
+      "title": "Een leven verhuizen, met de zorg die het verdient",
+      "desc": "Van een appartement met één kamer tot een landgoed voor meerdere generaties, onze verhuisspecialisten verzorgen elk detail tussen Nederland, Portugal en daarbuiten — zodat uw nieuwe thuis zich vanaf de eerste avond compleet voelt."
+    },
+    "included": {
+      "kicker": "Wat Is Inbegrepen",
+      "title": "Een volledig verzorgde verhuizing, van begin tot eind",
+      "desc": "Wij geloven dat een verhuizing als een dienst moet aanvoelen, niet als een logistieke oefening. Elke opdracht omvat standaard het volgende — met extra bespoke voorzieningen op aanvraag.",
+      "items": [
+        "Volledige huisraadinventarisatie & taxatie",
+        "Inpakmateriaal van museumkwaliteit",
+        "Deur-tot-deur douaneafhandeling",
+        "Toegewijde verhuisconsulent",
+        "Optionele tijdelijke beveiligde opslag",
+        "Uitpakken & meubelplaatsing",
+        "Behandeling van breekbare & speciale items",
+        "Verzekering voor de volledige transitwaarde"
+      ]
+    },
+    "process": {
+      "kicker": "Ons Proces",
+      "title": "Vijf fases, één toegewijde consulent",
+      "desc": "U spreekt gedurende het hele proces met één vast aanspreekpunt — geen callcenters, geen overdrachten.",
+      "steps": [
+        { "title": "Privé Inspectie", "desc": "Een toegewijde verhuisconsulent bezoekt uw woning of voert een video-inspectie uit om omvang, volume en speciale items te beoordelen." },
+        { "title": "Bespoke Inpakken", "desc": "Materiaal van museumkwaliteit en op maat gemaakte kratten beschermen meubels, kunst en erfstukken tijdens de reis." },
+        { "title": "Douane & Documentatie", "desc": "Wij bereiden alle douaneaangiften en importdocumentatie voor en beheren deze, deur tot deur." },
+        { "title": "Transport & Doorvoer", "desc": "Uw bezittingen reizen via toegewijd, gevolgd transport — nooit gecombineerd met niet-gerelateerde zendingen." },
+        { "title": "Uitpakken & Plaatsing", "desc": "Ons team pakt uit, plaatst en richt uw meubels in uw nieuwe woning exact zoals gevraagd." }
+      ]
+    },
+    "corridor": {
+      "kicker": "Onze Gespecialiseerde Route",
+      "title": "Nederland & Portugal, van binnenuit gekend",
+      "desc": "Hoewel wij klanten door heel Europa en daarbuiten verhuizen, blijft de route Nederland–Portugal onze specialiteit. Wij kennen de havens, de procedures en de buurten — van Amsterdamse grachtenpanden tot de historische wijken van Lissabon en de private landgoederen van de Algarve."
+    }
+  },
+  "contact": {
+    "hero": {
+      "kicker": "Contact",
+      "title": "Spreek met ons concierge-team",
+      "desc": "Of het nu een vraag of een bespoke aanvraag betreft, ons team reageert met dezelfde discretie en precisie die wij bij elke zending toepassen."
+    },
+    "info": {
+      "telephone": "Telefoon",
+      "email": "E-mail",
+      "offices": "Kantoren",
+      "office1": "Amsterdam, Nederland",
+      "office2": "Lissabon, Portugal — op afspraak",
+      "availability": "Beschikbaarheid",
+      "availability1": "Concierge-desk: 24/7",
+      "availability2": "Kantoren: ma–vr, 09:00–18:00 CET",
+      "note": "Voor tijdgevoelige aanvragen is onze concierge-desk 24 uur per dag beschikbaar. Voor een op maat gemaakt voorstel raden wij het {{link}}-formulier aan.",
+      "linkLabel": "Offerteaanvraag"
+    },
+    "form": {
+      "fullName": "Volledige Naam",
+      "fullNamePlaceholder": "Jane van der Berg",
+      "email": "E-mailadres",
+      "emailPlaceholder": "jane@voorbeeld.com",
+      "phone": "Telefoon (optioneel)",
+      "phonePlaceholder": "+31 6 0000 0000",
+      "subject": "Onderwerp",
+      "subjectPlaceholder": "Waarmee kunnen wij helpen?",
+      "message": "Bericht",
+      "messagePlaceholder": "Vertel ons over uw aanvraag...",
+      "send": "Verstuur Bericht",
+      "successTitle": "Bericht Ontvangen",
+      "successDesc": "Dank u voor uw bericht. Een lid van ons concierge-team reageert binnen één werkdag."
+    }
+  },
+  "quote": {
+    "hero": {
+      "kicker": "Logistiek op Maat",
+      "title": "Vraag uw private offerte aan",
+      "desc": "Deel de kern van uw aanvraag en een toegewijde logistiek architect stelt binnen één werkdag een bespoke voorstel op."
+    },
+    "crumb": "Offerteaanvraag",
+    "steps": ["Uw Aanvraag", "Route & Timing", "Uw Gegevens"],
+    "clientTypes": { "private": "Particuliere Klant", "business": "Zakelijke Klant" },
+    "form": {
+      "service": "Gewenste Dienst",
+      "servicePlaceholder": "Selecteer een dienst",
+      "clientType": "Klanttype",
+      "description": "Omschrijf het Object of de Aanvraag",
+      "descriptionPlaceholder": "bijv. Verhuizing van een 3-voertuigcollectie, waaronder een klassieke cabriolet die gesloten transport vereist...",
+      "origin": "Locatie van Herkomst",
+      "originPlaceholder": "Amsterdam, Nederland",
+      "destination": "Bestemmingslocatie",
+      "destinationPlaceholder": "Lissabon, Portugal",
+      "date": "Gewenste Datum",
+      "flexibility": "Flexibiliteit",
+      "flexibilityOptions": ["Vaste datum", "Flexibel (±2 weken)", "Volledig flexibel"],
+      "notes": "Aanvullende Opmerkingen (optioneel)",
+      "notesPlaceholder": "Toegangsbeperkingen, verzekeringseisen of andere details die wij moeten weten...",
+      "fullName": "Volledige Naam",
+      "fullNamePlaceholder": "Jane van der Berg",
+      "email": "E-mailadres",
+      "emailPlaceholder": "jane@voorbeeld.com",
+      "phone": "Telefoonnummer",
+      "phonePlaceholder": "+31 6 0000 0000",
+      "company": "Bedrijfsnaam",
+      "companyPlaceholder": "Bedrijf B.V.",
+      "submit": "Aanvraag Versturen",
+      "successTitle": "Aanvraag Ontvangen",
+      "successDesc": "Dank u voor uw vertrouwen. Uw toegewijde logistiek architect beoordeelt de details en neemt binnen één werkdag contact met u op met een op maat gemaakt voorstel."
+    }
+  },
+  "cta": {
+    "kicker": "Begin de Reis",
+    "title": "Een reisplan geschreven",
+    "titleItalic": "volledig rond u",
+    "desc": "Deel de details van uw zending en ons concierge-team stelt binnen één werkdag een op maat gemaakt voorstel op — discreet, precies en volledig tot uw dienst.",
+    "primary": "Offerte Aanvragen",
+    "secondary": "Spreek met Concierge"
+  },
+  "notFound": {
+    "kicker": "Van Koers Af",
+    "title": "Deze route lijkt van de kaart te zijn afgedwaald. Laat ons u terugleiden naar vertrouwde wateren.",
+    "cta": "Terug naar Home"
+  }
+}
