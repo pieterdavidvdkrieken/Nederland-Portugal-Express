@@ -1,16 +1,24 @@
 # Project Status — Nederland Portugal Express
 
 **Last updated:** 2026-07-22
-**Branch:** `claude/npe-luxury-website-design-bfwdg3`
-**Latest commit:** `a8f5d19`
+**Primary branch:** `main` (source of truth — PR #1 merged)
+**This update's branch:** `claude/npe-luxury-website-design-bfwdg3` (restarted from `main`, per repo workflow, to carry this documentation change)
+**Latest commit on `main` at time of writing:** `de09a5b67ebad0ad236266f5746c5cb5e5004cfe`
+**Commit introducing this documentation update:** the current tip of `claude/npe-luxury-website-design-bfwdg3` — run `git log -1` or see the branch on GitHub for the exact hash (a commit cannot cleanly reference its own final hash inside its own content).
 
 ## Current Status
 
-The marketing website is functionally complete and running as a client-side
-React single-page application. All seven pages are built, translated into
-seven languages, and pass type-checking, linting and production build
-cleanly. The site has **not yet been deployed to a live domain** — hosting
-and DNS (TransIP) still need to be configured (see below).
+**The website build is complete and merged into `main`.** The marketing
+site is a fully functional client-side React single-page application
+covering all seven pages, in seven languages, with the full cinematic
+visual system described below. `main` was verified against a clean clone:
+`tsc --noEmit`, `vite build`, and `oxlint` all pass without errors.
+
+The project is **feature-complete but not yet live** — it has not been
+deployed to production hosting, no domain is connected, and the two forms
+(Contact, Quote Request) do not yet submit to a real backend. These are the
+three remaining blockers before the site can serve real clients (see
+**Pending Tasks**).
 
 ## Completed Features
 
@@ -31,7 +39,15 @@ and DNS (TransIP) still need to be configured (see below).
   menu and footer.
 - **Responsive:** verified at desktop and mobile breakpoints via Playwright.
 - **Quality gates:** `tsc --noEmit`, `vite build`, and `oxlint` all pass
-  clean; zero console/runtime errors across a full route + language sweep.
+  clean; zero console/runtime errors across a full route + language sweep,
+  re-verified on a fresh clone of `main` after merge.
+- **Project documentation:** `PROJECT_STATUS.md` (this file),
+  `ROADMAP.md` (long-term vision), `BRAND_MANIFESTO.md` (core brand
+  philosophy) — all version-controlled alongside the code.
+- **Version control hygiene:** PR #1 ("Build ultra-luxury Nederland
+  Portugal Express website (multilingual)") merged into `main`; working
+  tree and all branches verified clean with no uncommitted or unpushed
+  changes at each checkpoint.
 
 ## Pending Tasks
 
@@ -48,8 +64,24 @@ and DNS (TransIP) still need to be configured (see below).
 - [ ] Optional: code-split translation bundles / lazy-load non-default
       languages to shrink the initial JS payload (currently ~646 KB raw /
       ~199 KB gzipped, flagged by the Vite build as a chunk-size warning).
-- [ ] Merge pull request [#1](https://github.com/pieterdavidvdkrieken/Nederland-Portugal-Express/pull/1)
-      into `main` once reviewed.
+- [ ] Review and merge the documentation update in this branch (this
+      PROJECT_STATUS.md revision plus ROADMAP.md and BRAND_MANIFESTO.md)
+      into `main`, if a pull request is requested.
+
+## GitHub Branch Information
+
+| Branch | Role | Status |
+|---|---|---|
+| `main` | Production source of truth | Contains the full merged website as of commit `de09a5b` |
+| `claude/npe-luxury-website-design-bfwdg3` | Working branch for this documentation update | Restarted from `main` after PR #1 merged, per repo policy that a merged branch is not reused for further commits |
+
+**History:** PR #1 (`claude/npe-luxury-website-design-bfwdg3` → `main`)
+introduced the entire website build — the initial luxury site, the
+ultra-luxury/cinematic + multilingual upgrade, and the first version of
+this status document — and was merged as commit `de09a5b`. This
+documentation update follows the same branch name (reset to `main`'s tip
+first, since the previous history was already merged) so any new pull
+request opened from it is a **new** PR, not a reopening of #1.
 
 ## Technology Stack
 
@@ -99,25 +131,8 @@ small-caps, wide-tracked gold labels; dividers use a thin gold hairline
 with a rotated-diamond ornament; imagery is entirely custom CSS/SVG (no
 stock photography) to keep the visual language exclusive and consistent.
 
-## Future Roadmap
-
-1. **Backend integration** — real form submission (email/CRM) for Contact
-   and Quote Request.
-2. **Deployment** — ship to production hosting and go live on the client's
-   domain.
-3. **CMS (optional)** — if content will change often (services, pricing,
-   testimonials), consider a headless CMS instead of hardcoded translation
-   JSON.
-4. **Analytics & SEO** — add privacy-respecting analytics, structured data
-   (LocalBusiness / Organization schema), and per-language sitemaps once
-   live.
-5. **Imagery** — commission real photography of vehicles/yachts/removals in
-   progress to replace the abstract visual language, if desired.
-6. **Performance** — code-split the i18n bundle and lazy-load non-default
-   languages once traffic patterns are known.
-7. **Additional languages** — infrastructure supports adding further
-   locales by dropping in a new JSON file under `src/i18n/locales/` and
-   registering it in `src/i18n/languages.ts` / `src/i18n/config.ts`.
+See `BRAND_MANIFESTO.md` for the underlying brand philosophy and
+`ROADMAP.md` for how the brand and product evolve from here.
 
 ## Deployment Instructions
 
