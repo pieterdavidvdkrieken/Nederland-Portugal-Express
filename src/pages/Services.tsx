@@ -1,19 +1,25 @@
 import { Check } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 import PageHero from '../components/ui/PageHero'
 import Reveal from '../components/ui/Reveal'
 import IconTile from '../components/ui/IconTile'
 import Button from '../components/ui/Button'
 import CTASection from '../components/ui/CTASection'
-import { services } from '../data/services'
+import { useServices } from '../hooks/useServices'
+import { usePageMeta } from '../hooks/usePageMeta'
 
 export default function Services() {
+  const { t } = useTranslation()
+  usePageMeta('services')
+  const services = useServices()
+
   return (
     <div>
       <PageHero
-        kicker="Our Services"
-        title="A complete suite of private logistics"
-        description="Seven disciplines, one unwavering standard. Each service is delivered by specialists selected for their precision, discretion and care."
-        crumb="Services"
+        kicker={t('services.hero.kicker')}
+        title={t('services.hero.title')}
+        description={t('services.hero.desc')}
+        crumb={t('nav.services')}
       />
 
       <section className="relative bg-noir py-24 sm:py-28">
@@ -47,7 +53,7 @@ export default function Services() {
                   {service.link && (
                     <div className="mt-8">
                       <Button to={service.link} variant="ghost">
-                        Learn More
+                        {t('common.learnMore')}
                       </Button>
                     </div>
                   )}

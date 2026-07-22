@@ -1,37 +1,32 @@
 import { useState, type FormEvent } from 'react'
 import { Phone, Mail, MapPin, Clock, CheckCircle2 } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 import PageHero from '../components/ui/PageHero'
 import Reveal from '../components/ui/Reveal'
 import Button from '../components/ui/Button'
 import Divider from '../components/ui/Divider'
 import { Label, TextInput, TextArea, Field } from '../components/ui/FormField'
-
-const info = [
-  {
-    icon: Phone,
-    title: 'Telephone',
-    lines: ['+31 20 123 4567', '+351 21 456 7890'],
-  },
-  {
-    icon: Mail,
-    title: 'Email',
-    lines: ['concierge@npexpress.com'],
-  },
-  {
-    icon: MapPin,
-    title: 'Offices',
-    lines: ['Amsterdam, Netherlands', 'Lisbon, Portugal — by private appointment'],
-  },
-  {
-    icon: Clock,
-    title: 'Availability',
-    lines: ['Concierge desk: 24/7', 'Offices: Mon–Fri, 09:00–18:00 CET'],
-  },
-]
+import LocaleLink from '../i18n/LocaleLink'
+import { usePageMeta } from '../hooks/usePageMeta'
 
 export default function Contact() {
+  const { t } = useTranslation()
+  usePageMeta('contact')
   const [submitted, setSubmitted] = useState(false)
   const [submitting, setSubmitting] = useState(false)
+
+  const info = [
+    { icon: Phone, title: t('contact.info.telephone'), lines: ['+31 20 123 4567', '+351 21 456 7890'] },
+    { icon: Mail, title: t('contact.info.email'), lines: ['concierge@npexpress.com'] },
+    { icon: MapPin, title: t('contact.info.offices'), lines: [t('contact.info.office1'), t('contact.info.office2')] },
+    {
+      icon: Clock,
+      title: t('contact.info.availability'),
+      lines: [t('contact.info.availability1'), t('contact.info.availability2')],
+    },
+  ]
+
+  const [notePrefix, noteSuffix] = t('contact.info.note').split('{{link}}')
 
   const handleSubmit = (e: FormEvent) => {
     e.preventDefault()
@@ -45,10 +40,10 @@ export default function Contact() {
   return (
     <div>
       <PageHero
-        kicker="Contact"
-        title="Speak with our concierge team"
-        description="Whether a question or a bespoke request, our team responds with the same discretion and precision we bring to every consignment."
-        crumb="Contact"
+        kicker={t('contact.hero.kicker')}
+        title={t('contact.hero.title')}
+        description={t('contact.hero.desc')}
+        crumb={t('nav.contact')}
       />
 
       <section className="relative bg-noir py-24 sm:py-28">
@@ -73,12 +68,11 @@ export default function Contact() {
               ))}
               <Divider className="!justify-start" />
               <p className="text-sm font-light leading-relaxed text-mist max-w-sm">
-                For time-sensitive requests, our concierge desk is available around the clock. For tailored
-                proposals, we recommend the{' '}
-                <a href="/quote-request" className="text-champagne-light underline underline-offset-4">
-                  Quote Request
-                </a>{' '}
-                form.
+                {notePrefix}
+                <LocaleLink to="/quote-request" className="text-champagne-light underline underline-offset-4">
+                  {t('contact.info.linkLabel')}
+                </LocaleLink>
+                {noteSuffix}
               </p>
             </div>
           </Reveal>
@@ -89,40 +83,37 @@ export default function Contact() {
               {submitted ? (
                 <div className="flex flex-col items-center justify-center py-16 text-center">
                   <CheckCircle2 className="h-12 w-12 text-champagne-light" strokeWidth={1.2} />
-                  <h3 className="mt-6 font-display text-2xl">Message Received</h3>
-                  <p className="mt-3 max-w-sm text-sm font-light text-mist">
-                    Thank you for reaching out. A member of our concierge team will respond within one
-                    business day.
-                  </p>
+                  <h3 className="mt-6 font-display text-2xl">{t('contact.form.successTitle')}</h3>
+                  <p className="mt-3 max-w-sm text-sm font-light text-mist">{t('contact.form.successDesc')}</p>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-8">
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                     <Field>
-                      <Label>Full Name</Label>
-                      <TextInput required name="name" placeholder="Jane van der Berg" />
+                      <Label>{t('contact.form.fullName')}</Label>
+                      <TextInput required name="name" placeholder={t('contact.form.fullNamePlaceholder')} />
                     </Field>
                     <Field>
-                      <Label>Email Address</Label>
-                      <TextInput required type="email" name="email" placeholder="jane@example.com" />
+                      <Label>{t('contact.form.email')}</Label>
+                      <TextInput required type="email" name="email" placeholder={t('contact.form.emailPlaceholder')} />
                     </Field>
                   </div>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                     <Field>
-                      <Label>Phone (optional)</Label>
-                      <TextInput type="tel" name="phone" placeholder="+31 6 0000 0000" />
+                      <Label>{t('contact.form.phone')}</Label>
+                      <TextInput type="tel" name="phone" placeholder={t('contact.form.phonePlaceholder')} />
                     </Field>
                     <Field>
-                      <Label>Subject</Label>
-                      <TextInput name="subject" placeholder="How can we help?" />
+                      <Label>{t('contact.form.subject')}</Label>
+                      <TextInput name="subject" placeholder={t('contact.form.subjectPlaceholder')} />
                     </Field>
                   </div>
                   <Field>
-                    <Label>Message</Label>
-                    <TextArea required name="message" rows={5} placeholder="Tell us about your request..." />
+                    <Label>{t('contact.form.message')}</Label>
+                    <TextArea required name="message" rows={5} placeholder={t('contact.form.messagePlaceholder')} />
                   </Field>
                   <Button type="submit" disabled={submitting}>
-                    {submitting ? 'Sending…' : 'Send Message'}
+                    {submitting ? t('common.sending') : t('contact.form.send')}
                   </Button>
                 </form>
               )}

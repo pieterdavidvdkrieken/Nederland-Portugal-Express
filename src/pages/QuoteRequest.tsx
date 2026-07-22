@@ -1,16 +1,21 @@
 import { useState, type FormEvent } from 'react'
 import { AnimatePresence, motion } from 'framer-motion'
 import { CheckCircle2, ArrowLeft } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 import PageHero from '../components/ui/PageHero'
 import { Label, TextInput, TextArea, Select, Field } from '../components/ui/FormField'
 import Button from '../components/ui/Button'
-import { services } from '../data/services'
-
-const steps = ['Your Request', 'Route & Timing', 'Your Details']
-
-const clientTypes = ['Private Client', 'Business Client']
+import { useServices } from '../hooks/useServices'
+import { usePageMeta } from '../hooks/usePageMeta'
 
 export default function QuoteRequest() {
+  const { t } = useTranslation()
+  usePageMeta('quote')
+  const services = useServices()
+  const steps = t('quote.steps', { returnObjects: true }) as string[]
+  const flexibilityOptions = t('quote.form.flexibilityOptions', { returnObjects: true }) as string[]
+  const clientTypes = [t('quote.clientTypes.private'), t('quote.clientTypes.business')]
+
   const [step, setStep] = useState(0)
   const [submitted, setSubmitted] = useState(false)
   const [submitting, setSubmitting] = useState(false)
@@ -37,10 +42,10 @@ export default function QuoteRequest() {
   return (
     <div>
       <PageHero
-        kicker="Tailor-Made Logistics"
-        title="Request your private quote"
-        description="Share the essentials of your request and a dedicated logistics architect will prepare a bespoke proposal within one business day."
-        crumb="Quote Request"
+        kicker={t('quote.hero.kicker')}
+        title={t('quote.hero.title')}
+        description={t('quote.hero.desc')}
+        crumb={t('quote.crumb')}
       />
 
       <section className="relative bg-noir py-24 sm:py-28">
@@ -49,10 +54,9 @@ export default function QuoteRequest() {
             {submitted ? (
               <div className="flex flex-col items-center justify-center py-16 text-center">
                 <CheckCircle2 className="h-14 w-14 text-champagne-light" strokeWidth={1.2} />
-                <h3 className="mt-7 font-display text-3xl">Request Received</h3>
+                <h3 className="mt-7 font-display text-3xl">{t('quote.form.successTitle')}</h3>
                 <p className="mt-4 max-w-md text-sm font-light leading-relaxed text-mist">
-                  Thank you for entrusting us with your request. Your dedicated logistics architect will
-                  review the details and reach out within one business day with a tailored proposal.
+                  {t('quote.form.successDesc')}
                 </p>
               </div>
             ) : (
@@ -108,10 +112,10 @@ export default function QuoteRequest() {
                       {step === 0 && (
                         <>
                           <Field>
-                            <Label>Service Required</Label>
+                            <Label>{t('quote.form.service')}</Label>
                             <Select required name="service" defaultValue="">
                               <option value="" disabled>
-                                Select a service
+                                {t('quote.form.servicePlaceholder')}
                               </option>
                               {services.map((s) => (
                                 <option key={s.slug} value={s.title}>
@@ -121,31 +125,31 @@ export default function QuoteRequest() {
                             </Select>
                           </Field>
                           <Field>
-                            <Label>Client Type</Label>
+                            <Label>{t('quote.form.clientType')}</Label>
                             <div className="flex gap-3">
-                              {clientTypes.map((t) => (
+                              {clientTypes.map((ct) => (
                                 <button
                                   type="button"
-                                  key={t}
-                                  onClick={() => setClientType(t)}
+                                  key={ct}
+                                  onClick={() => setClientType(ct)}
                                   className={`px-5 py-2.5 text-[11px] uppercase tracking-[0.14em] border transition-colors duration-300 ${
-                                    clientType === t
+                                    clientType === ct
                                       ? 'border-champagne bg-champagne/10 text-champagne-light'
                                       : 'border-champagne/20 text-mist hover:border-champagne/50'
                                   }`}
                                 >
-                                  {t}
+                                  {ct}
                                 </button>
                               ))}
                             </div>
                           </Field>
                           <Field>
-                            <Label>Describe the Asset or Request</Label>
+                            <Label>{t('quote.form.description')}</Label>
                             <TextArea
                               required
                               name="description"
                               rows={5}
-                              placeholder="e.g. Relocation of a 3-vehicle collection, including one classic convertible requiring enclosed transport..."
+                              placeholder={t('quote.form.descriptionPlaceholder')}
                             />
                           </Field>
                         </>
@@ -155,35 +159,35 @@ export default function QuoteRequest() {
                         <>
                           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                             <Field>
-                              <Label>Origin Location</Label>
-                              <TextInput required name="origin" placeholder="Amsterdam, Netherlands" />
+                              <Label>{t('quote.form.origin')}</Label>
+                              <TextInput required name="origin" placeholder={t('quote.form.originPlaceholder')} />
                             </Field>
                             <Field>
-                              <Label>Destination Location</Label>
-                              <TextInput required name="destination" placeholder="Lisbon, Portugal" />
+                              <Label>{t('quote.form.destination')}</Label>
+                              <TextInput
+                                required
+                                name="destination"
+                                placeholder={t('quote.form.destinationPlaceholder')}
+                              />
                             </Field>
                           </div>
                           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                             <Field>
-                              <Label>Preferred Date</Label>
+                              <Label>{t('quote.form.date')}</Label>
                               <TextInput type="date" name="date" />
                             </Field>
                             <Field>
-                              <Label>Flexibility</Label>
-                              <Select name="flexibility" defaultValue="Flexible (±2 weeks)">
-                                <option>Fixed date</option>
-                                <option>Flexible (±2 weeks)</option>
-                                <option>Fully flexible</option>
+                              <Label>{t('quote.form.flexibility')}</Label>
+                              <Select name="flexibility" defaultValue={flexibilityOptions[1]}>
+                                {flexibilityOptions.map((opt) => (
+                                  <option key={opt}>{opt}</option>
+                                ))}
                               </Select>
                             </Field>
                           </div>
                           <Field>
-                            <Label>Additional Notes (optional)</Label>
-                            <TextArea
-                              name="notes"
-                              rows={4}
-                              placeholder="Access restrictions, insurance requirements, or any other detail we should know..."
-                            />
+                            <Label>{t('quote.form.notes')}</Label>
+                            <TextArea name="notes" rows={4} placeholder={t('quote.form.notesPlaceholder')} />
                           </Field>
                         </>
                       )}
@@ -192,23 +196,33 @@ export default function QuoteRequest() {
                         <>
                           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                             <Field>
-                              <Label>Full Name</Label>
-                              <TextInput required name="name" placeholder="Jane van der Berg" />
+                              <Label>{t('quote.form.fullName')}</Label>
+                              <TextInput required name="name" placeholder={t('quote.form.fullNamePlaceholder')} />
                             </Field>
                             <Field>
-                              <Label>Email Address</Label>
-                              <TextInput required type="email" name="email" placeholder="jane@example.com" />
+                              <Label>{t('quote.form.email')}</Label>
+                              <TextInput
+                                required
+                                type="email"
+                                name="email"
+                                placeholder={t('quote.form.emailPlaceholder')}
+                              />
                             </Field>
                           </div>
                           <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                             <Field>
-                              <Label>Phone Number</Label>
-                              <TextInput required type="tel" name="phone" placeholder="+31 6 0000 0000" />
+                              <Label>{t('quote.form.phone')}</Label>
+                              <TextInput
+                                required
+                                type="tel"
+                                name="phone"
+                                placeholder={t('quote.form.phonePlaceholder')}
+                              />
                             </Field>
-                            {clientType === 'Business Client' && (
+                            {clientType === clientTypes[1] && (
                               <Field>
-                                <Label>Company Name</Label>
-                                <TextInput name="company" placeholder="Company B.V." />
+                                <Label>{t('quote.form.company')}</Label>
+                                <TextInput name="company" placeholder={t('quote.form.companyPlaceholder')} />
                               </Field>
                             )}
                           </div>
@@ -225,13 +239,13 @@ export default function QuoteRequest() {
                         className="inline-flex items-center gap-2 text-[11px] uppercase tracking-[0.18em] text-mist hover:text-ivory transition-colors"
                       >
                         <ArrowLeft className="h-3.5 w-3.5" />
-                        Back
+                        {t('common.back')}
                       </button>
                     ) : (
                       <span />
                     )}
                     <Button type="submit" icon={!isLast} disabled={submitting}>
-                      {isLast ? (submitting ? 'Submitting…' : 'Submit Request') : 'Continue'}
+                      {isLast ? (submitting ? t('common.submitting') : t('quote.form.submit')) : t('common.continue')}
                     </Button>
                   </div>
                 </form>

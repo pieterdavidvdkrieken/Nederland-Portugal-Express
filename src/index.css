@@ -15,6 +15,7 @@
   --color-mist-dim: #6b7488;
 
   --font-display: 'Cormorant Garamond', 'Times New Roman', serif;
+  --font-statement: 'Bodoni Moda', 'Times New Roman', serif;
   --font-sans: 'Manrope', -apple-system, 'Segoe UI', sans-serif;
 
   --animate-fade-up: fade-up 0.9s cubic-bezier(0.16, 1, 0.3, 1) both;
@@ -107,6 +108,19 @@ h4 {
 
 .font-display {
   font-family: var(--font-display);
+}
+
+.font-statement {
+  font-family: var(--font-statement);
+  font-optical-sizing: auto;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  a,
+  button,
+  .cursor-none-target {
+    cursor: none;
+  }
 }
 
 .tracking-kicker {

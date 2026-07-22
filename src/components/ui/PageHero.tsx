@@ -1,7 +1,9 @@
-import { motion } from 'framer-motion'
-import { Link } from 'react-router-dom'
+import { useRef } from 'react'
+import { motion, useScroll, useTransform } from 'framer-motion'
 import { ChevronRight } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 import AuroraBackdrop from './AuroraBackdrop'
+import LocaleLink from '../../i18n/LocaleLink'
 
 interface PageHeroProps {
   kicker: string
@@ -11,20 +13,29 @@ interface PageHeroProps {
 }
 
 export default function PageHero({ kicker, title, description, crumb }: PageHeroProps) {
+  const { t } = useTranslation()
+  const ref = useRef<HTMLElement>(null)
+  const { scrollYProgress } = useScroll({ target: ref, offset: ['start start', 'end start'] })
+  const bgY = useTransform(scrollYProgress, [0, 1], ['0%', '18%'])
+  const contentY = useTransform(scrollYProgress, [0, 1], ['0%', '10%'])
+  const contentOpacity = useTransform(scrollYProgress, [0, 0.85], [1, 0])
+
   return (
-    <section className="relative overflow-hidden bg-noir pt-40 pb-24 sm:pt-48 sm:pb-28">
-      <AuroraBackdrop />
-      <div className="absolute inset-0 opacity-[0.05] bg-[linear-gradient(rgba(203,170,107,0.5)_1px,transparent_1px),linear-gradient(90deg,rgba(203,170,107,0.5)_1px,transparent_1px)] bg-[size:64px_64px]" />
-      <div className="relative mx-auto max-w-7xl px-6 sm:px-10">
+    <section ref={ref} className="relative overflow-hidden bg-noir pt-40 pb-24 sm:pt-48 sm:pb-28">
+      <motion.div style={{ y: bgY }} className="absolute inset-0">
+        <AuroraBackdrop />
+        <div className="absolute inset-0 opacity-[0.05] bg-[linear-gradient(rgba(203,170,107,0.5)_1px,transparent_1px),linear-gradient(90deg,rgba(203,170,107,0.5)_1px,transparent_1px)] bg-[size:64px_64px]" />
+      </motion.div>
+      <motion.div style={{ y: contentY, opacity: contentOpacity }} className="relative mx-auto max-w-7xl px-6 sm:px-10">
         <motion.div
           initial={{ opacity: 0, y: 8 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7 }}
           className="mb-8 flex items-center gap-2 text-[11px] uppercase tracking-[0.2em] text-mist-dim"
         >
-          <Link to="/" className="hover:text-champagne transition-colors">
-            Home
-          </Link>
+          <LocaleLink to="/" className="hover:text-champagne transition-colors">
+            {t('common.home')}
+          </LocaleLink>
           <ChevronRight className="h-3 w-3" />
           <span className="text-champagne/80">{crumb}</span>
         </motion.div>
@@ -41,7 +52,7 @@ export default function PageHero({ kicker, title, description, crumb }: PageHero
           initial={{ opacity: 0, y: 22 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.9, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-          className="font-display font-medium text-5xl sm:text-6xl md:text-7xl leading-[1.05] max-w-4xl"
+          className="font-statement font-medium text-5xl sm:text-6xl md:text-7xl leading-[1.05] max-w-4xl"
         >
           {title}
         </motion.h1>
@@ -55,7 +66,7 @@ export default function PageHero({ kicker, title, description, crumb }: PageHero
             {description}
           </motion.p>
         )}
-      </div>
+      </motion.div>
     </section>
   )
 }

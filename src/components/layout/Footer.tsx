@@ -1,28 +1,31 @@
-import { Link } from 'react-router-dom'
 import { Mail, Phone, MapPin, ArrowUpRight } from 'lucide-react'
+import { useTranslation } from 'react-i18next'
 import Divider from '../ui/Divider'
+import LocaleLink from '../../i18n/LocaleLink'
 
 const social = ['Instagram', 'LinkedIn']
 
-const explore = [
-  { label: 'About Us', to: '/about' },
-  { label: 'Services', to: '/services' },
-  { label: 'Secure Storage', to: '/secure-storage' },
-  { label: 'International Removals', to: '/international-removals' },
-]
-
-const client = [
-  { label: 'Request a Quote', to: '/quote-request' },
-  { label: 'Contact', to: '/contact' },
-]
-
 export default function Footer() {
+  const { t } = useTranslation()
+
+  const explore = [
+    { label: t('footer.aboutUs'), to: '/about' },
+    { label: t('nav.services'), to: '/services' },
+    { label: t('nav.secureStorage'), to: '/secure-storage' },
+    { label: t('nav.removals'), to: '/international-removals' },
+  ]
+
+  const client = [
+    { label: t('nav.requestQuote'), to: '/quote-request' },
+    { label: t('nav.contact'), to: '/contact' },
+  ]
+
   return (
     <footer className="relative border-t border-champagne/10 bg-noir-soft pt-20 pb-10">
       <div className="mx-auto max-w-7xl px-6 sm:px-10">
         <div className="grid grid-cols-1 gap-14 lg:grid-cols-[1.4fr_1fr_1fr_1.2fr]">
           <div>
-            <Link to="/" className="inline-flex items-center gap-3">
+            <LocaleLink to="/" className="inline-flex items-center gap-3">
               <span className="flex h-9 w-9 items-center justify-center rounded-full border border-champagne/40">
                 <span className="font-display text-sm text-champagne-light">NP</span>
               </span>
@@ -30,11 +33,8 @@ export default function Footer() {
                 <span className="font-display text-lg tracking-wide text-ivory">Nederland Portugal</span>
                 <span className="text-[10px] tracking-[0.35em] text-champagne/80 uppercase mt-0.5">Express</span>
               </span>
-            </Link>
-            <p className="mt-6 max-w-xs text-sm font-light leading-relaxed text-mist">
-              Bespoke international logistics for those who measure quality in precision, discretion and
-              craftsmanship — connecting the Netherlands, Portugal and the world.
-            </p>
+            </LocaleLink>
+            <p className="mt-6 max-w-xs text-sm font-light leading-relaxed text-mist">{t('footer.tagline')}</p>
             <div className="mt-7 flex items-center gap-3">
               {social.map((s) => (
                 <a
@@ -51,33 +51,33 @@ export default function Footer() {
           </div>
 
           <div>
-            <h3 className="text-[11px] uppercase tracking-[0.24em] text-champagne/80 mb-6">Explore</h3>
+            <h3 className="text-[11px] uppercase tracking-[0.24em] text-champagne/80 mb-6">{t('footer.explore')}</h3>
             <ul className="space-y-3.5">
               {explore.map((l) => (
                 <li key={l.to}>
-                  <Link to={l.to} className="text-sm text-mist hover:text-ivory transition-colors font-light">
+                  <LocaleLink to={l.to} className="text-sm text-mist hover:text-ivory transition-colors font-light">
                     {l.label}
-                  </Link>
+                  </LocaleLink>
                 </li>
               ))}
             </ul>
           </div>
 
           <div>
-            <h3 className="text-[11px] uppercase tracking-[0.24em] text-champagne/80 mb-6">Client Services</h3>
+            <h3 className="text-[11px] uppercase tracking-[0.24em] text-champagne/80 mb-6">{t('footer.clientServices')}</h3>
             <ul className="space-y-3.5">
               {client.map((l) => (
                 <li key={l.to}>
-                  <Link to={l.to} className="text-sm text-mist hover:text-ivory transition-colors font-light">
+                  <LocaleLink to={l.to} className="text-sm text-mist hover:text-ivory transition-colors font-light">
                     {l.label}
-                  </Link>
+                  </LocaleLink>
                 </li>
               ))}
             </ul>
           </div>
 
           <div>
-            <h3 className="text-[11px] uppercase tracking-[0.24em] text-champagne/80 mb-6">Concierge</h3>
+            <h3 className="text-[11px] uppercase tracking-[0.24em] text-champagne/80 mb-6">{t('footer.concierge')}</h3>
             <ul className="space-y-4 text-sm font-light text-mist">
               <li className="flex items-start gap-3">
                 <Phone className="h-4 w-4 mt-0.5 text-champagne/70 shrink-0" strokeWidth={1.4} />
@@ -89,7 +89,7 @@ export default function Footer() {
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="h-4 w-4 mt-0.5 text-champagne/70 shrink-0" strokeWidth={1.4} />
-                <span>Amsterdam, Netherlands &amp; Lisbon, Portugal</span>
+                <span>{t('footer.offices')}</span>
               </li>
             </ul>
           </div>
@@ -98,9 +98,9 @@ export default function Footer() {
         <Divider className="my-12" />
 
         <div className="flex flex-col sm:flex-row items-center justify-between gap-4 text-[11px] uppercase tracking-[0.14em] text-mist-dim">
-          <p>&copy; {new Date().getFullYear()} Nederland Portugal Express. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} Nederland Portugal Express. {t('footer.rights')}</p>
           <p className="flex items-center gap-2">
-            <span>Crafted with discretion</span>
+            <span>{t('footer.crafted')}</span>
           </p>
         </div>
       </div>

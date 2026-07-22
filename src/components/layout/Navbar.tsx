@@ -1,21 +1,26 @@
 import { useEffect, useState } from 'react'
-import { Link, NavLink, useLocation } from 'react-router-dom'
+import { NavLink, useLocation } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
 import { Menu, X } from 'lucide-react'
-
-const navLinks = [
-  { label: 'Home', to: '/' },
-  { label: 'About', to: '/about' },
-  { label: 'Services', to: '/services' },
-  { label: 'Secure Storage', to: '/secure-storage' },
-  { label: 'Removals', to: '/international-removals' },
-  { label: 'Contact', to: '/contact' },
-]
+import { useTranslation } from 'react-i18next'
+import { useLang, localizePath } from '../../i18n/localePath'
+import LanguageSwitcher from '../../i18n/LanguageSwitcher'
 
 export default function Navbar() {
+  const { t } = useTranslation()
+  const lang = useLang()
   const [scrolled, setScrolled] = useState(false)
   const [open, setOpen] = useState(false)
   const location = useLocation()
+
+  const navLinks = [
+    { label: t('nav.home'), to: '/' },
+    { label: t('nav.about'), to: '/about' },
+    { label: t('nav.services'), to: '/services' },
+    { label: t('nav.secureStorage'), to: '/secure-storage' },
+    { label: t('nav.removals'), to: '/international-removals' },
+    { label: t('nav.contact'), to: '/contact' },
+  ]
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24)
@@ -39,24 +44,24 @@ export default function Navbar() {
       }`}
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-6 sm:px-10 py-5">
-        <Link to="/" className="group flex items-center gap-3">
-          <span className="flex h-9 w-9 items-center justify-center rounded-full border border-champagne/40">
+        <NavLink to={`/${lang}`} className="group flex items-center gap-3">
+          <span className="flex h-9 w-9 items-center justify-center rounded-full border border-champagne/40 transition-transform duration-500 group-hover:scale-105">
             <span className="font-display text-sm text-champagne-light tracking-wide">NP</span>
           </span>
           <span className="flex flex-col leading-none">
             <span className="font-display text-lg tracking-wide text-ivory">Nederland Portugal</span>
             <span className="text-[10px] tracking-[0.35em] text-champagne/80 uppercase mt-0.5">Express</span>
           </span>
-        </Link>
+        </NavLink>
 
         <nav className="hidden lg:flex items-center gap-9">
           {navLinks.map((link) => (
             <NavLink
               key={link.to}
-              to={link.to}
+              to={localizePath(lang, link.to)}
               end={link.to === '/'}
               className={({ isActive }) =>
-                `relative text-[12px] uppercase tracking-[0.16em] transition-colors duration-300 py-1 ${
+                `group relative text-[12px] uppercase tracking-[0.16em] transition-colors duration-300 py-1 ${
                   isActive ? 'text-champagne-light' : 'text-mist hover:text-ivory'
                 }`
               }
@@ -64,11 +69,13 @@ export default function Navbar() {
               {({ isActive }) => (
                 <>
                   {link.label}
-                  {isActive && (
+                  {isActive ? (
                     <motion.span
                       layoutId="nav-underline"
                       className="absolute -bottom-1 left-0 right-0 h-px bg-champagne-light"
                     />
+                  ) : (
+                    <span className="absolute -bottom-1 left-0 right-0 h-px scale-x-0 bg-champagne/50 transition-transform duration-300 origin-left group-hover:scale-x-100" />
                   )}
                 </>
               )}
@@ -76,22 +83,26 @@ export default function Navbar() {
           ))}
         </nav>
 
-        <div className="hidden lg:block">
-          <Link
-            to="/quote-request"
+        <div className="hidden lg:flex items-center gap-7">
+          <LanguageSwitcher />
+          <NavLink
+            to={localizePath(lang, '/quote-request')}
             className="inline-flex items-center gap-2 border border-champagne/50 px-6 py-3 text-[11px] font-semibold uppercase tracking-[0.2em] text-champagne-light transition-all duration-300 hover:bg-champagne/10 hover:border-champagne"
           >
-            Request a Quote
-          </Link>
+            {t('nav.requestQuote')}
+          </NavLink>
         </div>
 
-        <button
-          className="lg:hidden text-ivory p-2 focus-gold"
-          aria-label={open ? 'Close menu' : 'Open menu'}
-          onClick={() => setOpen((v) => !v)}
-        >
-          {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-        </button>
+        <div className="flex items-center gap-4 lg:hidden">
+          <LanguageSwitcher />
+          <button
+            className="text-ivory p-2 focus-gold"
+            aria-label={open ? 'Close menu' : 'Open menu'}
+            onClick={() => setOpen((v) => !v)}
+          >
+            {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          </button>
+        </div>
       </div>
 
       <AnimatePresence>
@@ -112,7 +123,7 @@ export default function Navbar() {
                   transition={{ delay: 0.05 * i, duration: 0.4 }}
                 >
                   <NavLink
-                    to={link.to}
+                    to={localizePath(lang, link.to)}
                     end={link.to === '/'}
                     className={({ isActive }) =>
                       `text-lg font-display ${isActive ? 'text-champagne-light' : 'text-ivory/90'}`
@@ -123,12 +134,12 @@ export default function Navbar() {
                 </motion.div>
               ))}
               <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.35 }} className="pt-3">
-                <Link
-                  to="/quote-request"
+                <NavLink
+                  to={localizePath(lang, '/quote-request')}
                   className="inline-flex items-center gap-2 border border-champagne/50 px-6 py-3 text-[11px] font-semibold uppercase tracking-[0.2em] text-champagne-light"
                 >
-                  Request a Quote
-                </Link>
+                  {t('nav.requestQuote')}
+                </NavLink>
               </motion.div>
             </div>
           </motion.div>
