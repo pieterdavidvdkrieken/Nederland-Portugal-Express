@@ -11,6 +11,8 @@
   --color-champagne-soft: #ddc48e;
   --color-champagne-deep: #a8823f;
   --color-ivory: #f3efe6;
+  --color-paper: #faf8f3;
+  --color-paper-deep: #efe9dc;
   --color-mist: #9aa5b5;
   --color-mist-dim: #6b7488;
 
@@ -71,26 +73,34 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  margin: 0;
-  background: var(--color-noir);
-  color: var(--color-ivory);
-  font-family: var(--font-sans);
-  font-weight: 300;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-rendering: optimizeLegibility;
-  overflow-x: hidden;
-}
+/*
+ * Wrapped in Tailwind's `base` layer so utility classes (e.g. text-noir on
+ * a heading inside a light/paper section) always win the cascade — an
+ * unlayered rule here would otherwise beat utilities regardless of
+ * specificity, since Tailwind v4 utilities live inside a CSS cascade layer.
+ */
+@layer base {
+  body {
+    margin: 0;
+    background: var(--color-noir);
+    color: var(--color-ivory);
+    font-family: var(--font-sans);
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+  }
 
-h1,
-h2,
-h3,
-h4 {
-  font-family: var(--font-display);
-  font-weight: 500;
-  letter-spacing: 0.01em;
-  color: var(--color-ivory);
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    color: var(--color-ivory);
+  }
 }
 
 /* Custom scrollbar */
@@ -176,6 +186,11 @@ h4 {
   background: linear-gradient(160deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.012));
   border: 1px solid rgba(203, 170, 107, 0.16);
   backdrop-filter: blur(6px);
+}
+
+.card-paper {
+  background: linear-gradient(160deg, rgba(10, 18, 32, 0.03), rgba(10, 18, 32, 0.01));
+  border: 1px solid rgba(10, 18, 32, 0.1);
 }
 
 .focus-gold:focus-visible {

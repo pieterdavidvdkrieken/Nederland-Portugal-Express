@@ -4,7 +4,8 @@
     "about": { "title": "Chi Siamo | Nederland Portugal Express", "desc": "Uno standard privato di eccellenza logistica, nato sul corridoio tra Amsterdam e Lisbona." },
     "services": { "title": "Servizi | Nederland Portugal Express", "desc": "Una gamma completa di servizi logistici privati — trasporto di lusso, logistica per yacht, trasporto di veicoli, traslochi e altro ancora." },
     "secureStorage": { "title": "Deposito Sicuro | Nederland Portugal Express", "desc": "Deposito privato climatizzato e sorvegliato per veicoli, imbarcazioni, opere d'arte e beni patrimoniali." },
-    "removals": { "title": "Traslochi Internazionali | Nederland Portugal Express", "desc": "Traslochi internazionali premium tra i Paesi Bassi, il Portogallo e oltre." },
+    "vehicleLogistics": { "title": "Logistica Veicoli | Nederland Portugal Express", "desc": "Trasporto chiuso e assicurato e logistica di livello concierge per supercar, collezioni classiche, moto e flotte." },
+    "removals": { "title": "Trasporto Internazionale & Trasferimento | Nederland Portugal Express", "desc": "Trasporto internazionale e trasferimento premium tra i Paesi Bassi, il Portogallo e oltre." },
     "contact": { "title": "Contatti | Nederland Portugal Express", "desc": "Parli con il nostro team di concierge della sua richiesta logistica privata." },
     "quote": { "title": "Richiedi un Preventivo | Nederland Portugal Express", "desc": "Richieda una proposta logistica privata e su misura a Nederland Portugal Express." },
     "notFound": { "title": "Pagina Non Trovata | Nederland Portugal Express" }
@@ -14,7 +15,8 @@
     "about": "Chi Siamo",
     "services": "Servizi",
     "secureStorage": "Deposito Sicuro",
-    "removals": "Traslochi",
+    "vehicleLogistics": "Logistica Veicoli",
+    "removals": "Trasferimento",
     "contact": "Contatti",
     "requestQuote": "Richiedi un Preventivo",
     "language": "Lingua"
@@ -225,9 +227,52 @@
       "desc": "Il nostro team conduce una consulenza privata per comprendere il bene, le sue esigenze ambientali e le sue necessità di accesso. Un piano di deposito su misura — compreso il trasporto verso la struttura, se necessario — viene quindi confermato prima di qualsiasi pianificazione."
     }
   },
+  "vehicleLogistics": {
+    "hero": {
+      "kicker": "Logistica Veicoli",
+      "title": "Ogni veicolo, trattato come quello che conta di più",
+      "desc": "Da una singola auto da collezione a un intero garage, il nostro team di logistica veicoli unisce trasporto chiuso, gestione meticolosa e perizia assicurativa completa — affinché provenienza e verniciatura arrivino esattamente come sono partite."
+    },
+    "features": {
+      "kicker": "Il Nostro Standard",
+      "title": "Precisione progettata per i veicoli che non può sostituire",
+      "desc": "Ogni trasporto è pianificato intorno al veicolo, non all'orario.",
+      "items": [
+        { "title": "Trasporto Interamente Chiuso", "desc": "Trasportatori chiusi con sospensioni pneumatiche e attenti al clima proteggono carrozzeria e finitura da intemperie, detriti stradali e sguardi indiscreti." },
+        { "title": "Ancoraggio Morbido, Carico Senza Contatto", "desc": "Sistemi di reti per ruote e ancoraggio morbido fissano ogni veicolo senza un solo punto di contatto metallo su metallo." },
+        { "title": "Tracciamento in Tempo Reale", "desc": "Il suo architetto logistico — e lei stesso, se lo desidera — può seguire l'avanzamento della spedizione in ogni fase." },
+        { "title": "Gestione di Livello Concorso", "desc": "Specialisti formati secondo lo standard della preparazione per esposizioni, non del trasporto merci generico." },
+        { "title": "Perizia Assicurativa Completa", "desc": "Copertura a valore concordato confermata prima che una ruota giri, adeguata al valore reale del veicolo." },
+        { "title": "Collezioni di Più Veicoli", "desc": "Interi garage trasferiti in un unico movimento coordinato, sequenziato secondo le esigenze di ciascun veicolo." }
+      ]
+    },
+    "categories": {
+      "kicker": "Cosa Trasportiamo",
+      "title": "Da una singola auto d'epoca a un'intera collezione",
+      "desc": "Ogni tipo di veicolo richiede il proprio protocollo di gestione — progettiamo ogni trasporto intorno al veicolo che ci viene affidato, mai secondo un modello standard.",
+      "items": [
+        "Supercar e Hypercar",
+        "Automobili Classiche e d'Epoca",
+        "Motociclette",
+        "Collezioni di Più Veicoli",
+        "Veicoli da Esposizione e Concorso",
+        "Flotte Aziendali e di Concessionari"
+      ]
+    },
+    "process": {
+      "kicker": "Come Lavoriamo",
+      "title": "Un protocollo costruito intorno alla provenienza",
+      "steps": [
+        { "title": "Valutazione e Perizia", "desc": "Ispezioniamo e documentiamo lo stato, e confermiamo la perizia assicurativa prima della pianificazione." },
+        { "title": "Piano di Carico su Misura", "desc": "Altezza da terra, distribuzione del peso e punti di accesso sono pianificati per veicolo e per rimorchio." },
+        { "title": "Trasporto Chiuso", "desc": "Il suo veicolo viaggia in un trasporto dedicato, monitorato e chiuso — mai unito a merci estranee." },
+        { "title": "Consegna White-Glove", "desc": "Arrivo, verifica dello stato e consegna, effettuati insieme a lei o al suo rappresentante." }
+      ]
+    }
+  },
   "removals": {
     "hero": {
-      "kicker": "Traslochi Internazionali Premium",
+      "kicker": "Trasporto Internazionale & Trasferimento",
       "title": "Trasferire una vita, con la cura che merita",
       "desc": "Da un monolocale a una proprietà multigenerazionale, i nostri specialisti di traslochi gestiscono ogni dettaglio tra i Paesi Bassi, il Portogallo e oltre — affinché la sua nuova casa sia completa fin dalla prima sera."
     },

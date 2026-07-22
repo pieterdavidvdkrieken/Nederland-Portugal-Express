@@ -94,11 +94,13 @@ export default function About() {
       </section>
 
       {/* TESTIMONIAL */}
-      <section className="relative border-y border-champagne/10 bg-noir-soft py-28 sm:py-32 px-6">
+      <section className="relative bg-paper py-28 sm:py-32 px-6">
+        <div className="absolute inset-0 opacity-[0.4] bg-[radial-gradient(ellipse_at_50%_0%,rgba(203,170,107,0.08),transparent_60%)]" />
         <Testimonial
           quote={t('about.testimonial.quote')}
           name={t('about.testimonial.name')}
           role={t('about.testimonial.role')}
+          tone="light"
         />
       </section>
 

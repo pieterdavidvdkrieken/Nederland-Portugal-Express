@@ -12,7 +12,8 @@ export default function Footer() {
     { label: t('footer.aboutUs'), to: '/about' },
     { label: t('nav.services'), to: '/services' },
     { label: t('nav.secureStorage'), to: '/secure-storage' },
-    { label: t('nav.removals'), to: '/international-removals' },
+    { label: t('nav.vehicleLogistics'), to: '/vehicle-logistics' },
+    { label: t('nav.removals'), to: '/international-relocation' },
   ]
 
   const client = [

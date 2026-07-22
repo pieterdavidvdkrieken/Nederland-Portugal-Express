@@ -11,6 +11,7 @@ export const serviceIcons: Record<string, LucideIcon> = {
 }
 
 export const serviceLinks: Record<string, string | undefined> = {
-  'international-removals': '/international-removals',
+  'international-removals': '/international-relocation',
   'secure-storage': '/secure-storage',
+  'vehicle-transport': '/vehicle-logistics',
 }

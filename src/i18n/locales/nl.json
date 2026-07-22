@@ -4,7 +4,8 @@
     "about": { "title": "Over Ons | Nederland Portugal Express", "desc": "Een private standaard van logistieke excellentie, ontstaan op de route tussen Amsterdam en Lissabon." },
     "services": { "title": "Diensten | Nederland Portugal Express", "desc": "Een volledig aanbod van private logistieke diensten — luxevervoer, jachtlogistiek, voertuigtransport, verhuizingen en meer." },
     "secureStorage": { "title": "Beveiligde Opslag | Nederland Portugal Express", "desc": "Klimaatgecontroleerde, bewaakte private opslag voor voertuigen, vaartuigen, kunst en huisraad." },
-    "removals": { "title": "Internationale Verhuizingen | Nederland Portugal Express", "desc": "Premium internationale verhuizingen en relocaties tussen Nederland, Portugal en daarbuiten." },
+    "vehicleLogistics": { "title": "Voertuiglogistiek | Nederland Portugal Express", "desc": "Gesloten, verzekerd transport en concierge-niveau logistiek voor supercars, klassieke collecties, motoren en wagenparken." },
+    "removals": { "title": "Internationaal Transport & Relocatie | Nederland Portugal Express", "desc": "Premium internationaal transport en relocatie tussen Nederland, Portugal en daarbuiten." },
     "contact": { "title": "Contact | Nederland Portugal Express", "desc": "Spreek met ons concierge-team over uw private logistieke aanvraag." },
     "quote": { "title": "Offerte Aanvragen | Nederland Portugal Express", "desc": "Vraag een op maat gemaakt, privé logistiek voorstel aan bij Nederland Portugal Express." },
     "notFound": { "title": "Pagina Niet Gevonden | Nederland Portugal Express" }
@@ -14,7 +15,8 @@
     "about": "Over Ons",
     "services": "Diensten",
     "secureStorage": "Beveiligde Opslag",
-    "removals": "Verhuizingen",
+    "vehicleLogistics": "Voertuiglogistiek",
+    "removals": "Relocatie",
     "contact": "Contact",
     "requestQuote": "Offerte Aanvragen",
     "language": "Taal"
@@ -225,9 +227,52 @@
       "desc": "Ons team voert een privéconsult uit om het object, de omgevingsvereisten en uw toegangsbehoeften te begrijpen. Een op maat gemaakt opslagplan — inclusief transport naar de faciliteit indien nodig — wordt vervolgens bevestigd voordat er iets wordt ingepland."
     }
   },
+  "vehicleLogistics": {
+    "hero": {
+      "kicker": "Voertuiglogistiek",
+      "title": "Elk voertuig behandeld als het voertuig dat het meest telt",
+      "desc": "Van één collector's item tot een volledige garage, ons voertuiglogistiek-team combineert gesloten transport, uiterste zorgvuldigheid en volledige verzekeringstaxatie — zodat herkomst en lak precies zo aankomen als ze vertrokken."
+    },
+    "features": {
+      "kicker": "Onze Standaard",
+      "title": "Precisie ontworpen voor de voertuigen die u niet kunt vervangen",
+      "desc": "Elk transport wordt gepland rond het voertuig, niet rond het rooster.",
+      "items": [
+        { "title": "Volledig Gesloten Transport", "desc": "Klimaatbewuste, luchtgeveerde gesloten trailers beschermen carrosserie en afwerking tegen weer, wegvuil en nieuwsgierige blikken." },
+        { "title": "Zacht Spansysteem, Zero-Contact", "desc": "Wielnet- en zachte spansystemen zetten elk voertuig vast zonder enig metaal-op-metaal contact." },
+        { "title": "Realtime Tracking", "desc": "Uw logistiek architect — en uzelf, indien gewenst — kan de voortgang van de zending in elke fase volgen." },
+        { "title": "Behandeling op Concours-Niveau", "desc": "Specialisten opgeleid naar de standaard van showvoorbereiding, niet van algemene vracht." },
+        { "title": "Volledige Verzekeringstaxatie", "desc": "Agreed-value dekking bevestigd voordat een wiel draait, afgestemd op de werkelijke waarde van het voertuig." },
+        { "title": "Meervoudige Voertuigcollecties", "desc": "Volledige garages verplaatst in één gecoördineerde beweging, afgestemd op de behoeften van elk voertuig." }
+      ]
+    },
+    "categories": {
+      "kicker": "Wat Wij Vervoeren",
+      "title": "Van één klassieker tot een volledige collectie",
+      "desc": "Elk type voertuig vraagt om zijn eigen behandelprotocol — wij ontwerpen elk transport rond het voertuig dat voor ons staat, niet rond een standaardsjabloon.",
+      "items": [
+        "Supercars & Hypercars",
+        "Klassieke & Vintage Automobielen",
+        "Motoren",
+        "Meervoudige Voertuigcollecties",
+        "Show- & Concoursvoertuigen",
+        "Zakelijke & Dealervloten"
+      ]
+    },
+    "process": {
+      "kicker": "Hoe Wij Werken",
+      "title": "Een protocol gebouwd rond herkomst",
+      "steps": [
+        { "title": "Beoordeling & Taxatie", "desc": "Wij inspecteren en documenteren de staat, en bevestigen de verzekeringstaxatie voordat we inplannen." },
+        { "title": "Op Maat Gemaakt Laadplan", "desc": "Rijhoogte, gewichtsverdeling en toegangspunten worden per voertuig, per trailer gepland." },
+        { "title": "Gesloten Transport", "desc": "Uw voertuig reist in toegewijd, bewaakt, gesloten transport — nooit gedeeld met niet-gerelateerde lading." },
+        { "title": "White-Glove Levering", "desc": "Aankomst, statuscontrole en overdracht, samen met u of uw vertegenwoordiger uitgevoerd." }
+      ]
+    }
+  },
   "removals": {
     "hero": {
-      "kicker": "Premium Internationale Verhuizingen",
+      "kicker": "Internationaal Transport & Relocatie",
       "title": "Een leven verhuizen, met de zorg die het verdient",
       "desc": "Van een appartement met één kamer tot een landgoed voor meerdere generaties, onze verhuisspecialisten verzorgen elk detail tussen Nederland, Portugal en daarbuiten — zodat uw nieuwe thuis zich vanaf de eerste avond compleet voelt."
     },

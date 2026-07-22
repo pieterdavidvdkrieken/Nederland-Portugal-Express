@@ -11,7 +11,7 @@ import { usePageMeta } from '../hooks/usePageMeta'
 
 const stepIcons = [ClipboardCheck, PackagePlus, FileCheck2, Truck, House]
 
-export default function InternationalRemovals() {
+export default function InternationalRelocation() {
   const { t } = useTranslation()
   usePageMeta('removals')
   const included = t('removals.included.items', { returnObjects: true }) as string[]
