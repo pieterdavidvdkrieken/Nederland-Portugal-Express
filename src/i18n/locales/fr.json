@@ -317,6 +317,8 @@
     },
     "info": {
       "telephone": "Téléphone",
+      "callAndWhatsapp": "Appel et WhatsApp",
+      "whatsappOnly": "WhatsApp uniquement",
       "email": "E-mail",
       "offices": "Bureaux",
       "office1": "Amsterdam, Pays-Bas",

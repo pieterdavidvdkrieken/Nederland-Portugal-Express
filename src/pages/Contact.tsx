@@ -9,6 +9,7 @@ import { Label, TextInput, TextArea, Field } from '../components/ui/FormField'
 import LocaleLink from '../i18n/LocaleLink'
 import { usePageMeta } from '../hooks/usePageMeta'
 import { CONTACT } from '../data/contact'
+import PhoneLine from '../components/ui/PhoneLine'
 
 export default function Contact() {
   const { t } = useTranslation()
@@ -17,12 +18,6 @@ export default function Contact() {
   const [submitting, setSubmitting] = useState(false)
 
   const info = [
-    {
-      icon: Phone,
-      title: t('contact.info.telephone'),
-      lines: [CONTACT.phoneNL, CONTACT.phonePT],
-      hrefs: [`tel:${CONTACT.phoneNL.replace(/\s/g, '')}`, `tel:${CONTACT.phonePT.replace(/\s/g, '')}`],
-    },
     { icon: Mail, title: t('contact.info.email'), lines: [CONTACT.email], hrefs: [`mailto:${CONTACT.email}`] },
     { icon: MapPin, title: t('contact.info.offices'), lines: [t('contact.info.office1'), t('contact.info.office2')] },
     {
@@ -57,6 +52,18 @@ export default function Contact() {
           {/* INFO */}
           <Reveal>
             <div className="space-y-10">
+              <div className="flex items-start gap-4">
+                <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-champagne/35 bg-champagne/[0.06]">
+                  <Phone className="h-[18px] w-[18px] text-champagne-light" strokeWidth={1.3} />
+                </span>
+                <div className="space-y-3">
+                  <h3 className="text-sm uppercase tracking-[0.16em] text-champagne-light">
+                    {t('contact.info.telephone')}
+                  </h3>
+                  <PhoneLine phone={CONTACT.phoneNL} />
+                  <PhoneLine phone={CONTACT.phonePT} />
+                </div>
+              </div>
               {info.map((item) => (
                 <div key={item.title} className="flex items-start gap-4">
                   <span className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-champagne/35 bg-champagne/[0.06]">
