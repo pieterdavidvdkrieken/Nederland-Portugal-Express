@@ -101,6 +101,14 @@ html {
     letter-spacing: 0.01em;
     color: var(--color-ivory);
   }
+
+  /* Prevent the browser's default blue/underlined link styling from ever
+     showing through — every anchor should inherit its surrounding text
+     color unless a component explicitly opts into an accent color. */
+  a {
+    color: inherit;
+    text-decoration: inherit;
+  }
 }
 
 /* Custom scrollbar */

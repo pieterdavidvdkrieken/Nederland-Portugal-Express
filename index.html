@@ -3,19 +3,63 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#0a0e17" />
+    <meta name="robots" content="index, follow" />
     <meta
       name="description"
       content="Nederland Portugal Express — bespoke international luxury logistics, white-glove transport, high-value vehicle and yacht logistics, and premium relocations between the Netherlands, Portugal and beyond."
     />
     <title>Nederland Portugal Express | Private Luxury Logistics</title>
+
+    <!--
+      Canonical/hreflang for this exact URL are managed dynamically per
+      page by src/hooks/usePageMeta.ts. Open Graph and Twitter Card tags
+      below are static, since social-media crawlers generally do not
+      execute JavaScript and only ever see this initial HTML — so every
+      shared link currently previews with the site-wide title/description/
+      image below rather than per-page copy. Update NPE_SITE_URL-derived
+      values here (and in src/i18n/siteUrl.ts) once the production domain
+      is known.
+    -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Nederland Portugal Express" />
+    <meta property="og:title" content="Nederland Portugal Express | Private Luxury Logistics" />
+    <meta
+      property="og:description"
+      content="Bespoke international luxury logistics, white-glove transport, high-value vehicle and yacht logistics, and premium relocations between the Netherlands, Portugal and beyond."
+    />
+    <meta property="og:image" content="https://www.nederlandportugalexpress.com/og-image.png" />
+    <meta property="og:image:width" content="2400" />
+    <meta property="og:image:height" content="1260" />
+    <meta property="og:image:alt" content="Nederland Portugal Express — Private International Logistics" />
+    <meta property="og:url" content="https://www.nederlandportugalexpress.com/en" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="nl_NL" />
+    <meta property="og:locale:alternate" content="de_DE" />
+    <meta property="og:locale:alternate" content="fr_FR" />
+    <meta property="og:locale:alternate" content="es_ES" />
+    <meta property="og:locale:alternate" content="pt_PT" />
+    <meta property="og:locale:alternate" content="it_IT" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Nederland Portugal Express | Private Luxury Logistics" />
+    <meta
+      name="twitter:description"
+      content="Bespoke international luxury logistics, white-glove transport, high-value vehicle and yacht logistics, and premium relocations between the Netherlands, Portugal and beyond."
+    />
+    <meta name="twitter:image" content="https://www.nederlandportugalexpress.com/og-image.png" />
+
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "MovingCompany",
         "name": "Nederland Portugal Express",
         "description": "Bespoke international luxury logistics, white-glove transport, high-value vehicle and yacht logistics, and premium relocations between the Netherlands, Portugal and beyond.",
+        "url": "https://www.nederlandportugalexpress.com/en",
+        "image": "https://www.nederlandportugalexpress.com/og-image.png",
+        "logo": "https://www.nederlandportugalexpress.com/og-image.png",
         "areaServed": [
           { "@type": "Country", "name": "Netherlands" },
           { "@type": "Country", "name": "Portugal" }
