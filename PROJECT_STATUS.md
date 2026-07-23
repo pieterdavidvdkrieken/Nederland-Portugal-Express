@@ -1,24 +1,27 @@
 # Project Status — Nederland Portugal Express
 
-**Last updated:** 2026-07-22
-**Primary branch:** `main` (source of truth — PR #1 merged as `de09a5b`)
-**Latest work branch:** `claude/npe-luxury-website-design-bfwdg3` — currently one PR ahead of `main` (docs update + Vehicle Logistics page/SEO/performance work below); not yet merged. Run `git log -1` on that branch or check GitHub for the exact current hash.
+**Last updated:** 2026-07-23
+**Primary branch:** `main` (source of truth — PR #1 and PR #2 both merged, latest commit `9978a2c`)
 
 ## Current Status
 
-**The website now covers eight pages** (a Vehicle Logistics page was added
-and International Removals was repositioned as International Transport &
-Relocation), still in all seven languages, with the full cinematic visual
-system described below plus real SEO metadata and route/locale-level code
-splitting for performance. `tsc --noEmit`, `vite build`, and `oxlint` all
-pass without errors as of the latest commit on the work branch.
+**The website is production-ready code-wise and merged into `main`.** It
+covers eight pages, in all seven languages, with the full cinematic visual
+system described below, real SEO metadata (Open Graph/Twitter Card tags,
+a branded OG image, structured data, sitemap, robots.txt, canonical +
+hreflang), and route/locale-level code splitting for performance. Verified
+on a fresh clone of `main`: `tsc --noEmit`, `vite build`, and `oxlint` all
+pass with zero errors or warnings. A full Playwright audit found zero
+broken links, zero missing assets, and zero console/network errors across
+all 56 page × language combinations.
 
-The project is **feature-complete but not yet live** — it has not been
-deployed to production hosting, no real domain is connected (SEO files
-currently reference a placeholder domain, see **Domain Configuration**),
-and the two forms (Contact, Quote Request) do not yet submit to a real
-backend. These remain the main blockers before the site can serve real
-clients (see **Pending Tasks**).
+**The only remaining blockers to going live are business inputs, not
+code:** a production domain is not yet connected (SEO files currently
+point at a placeholder — see **Domain Configuration**), the real business
+phone/email/social links haven't been supplied yet (see **Contact
+Details**), and the two forms (Contact, Quote Request) do not yet submit
+to a real backend. Once those are provided/decided, the site can go live
+as-is.
 
 ## Completed Features
 
@@ -49,54 +52,78 @@ clients (see **Pending Tasks**).
   (not just text) with light-mode headings, icon tiles and testimonials —
   used on the Home/About testimonial bands and the Vehicle Logistics
   features grid, so black/gold/navy/white are all real section colors.
-- **SEO:** `MovingCompany` JSON-LD structured data, `robots.txt`, a
-  generated `sitemap.xml` (56 URLs: 8 pages × 7 languages), and per-page
-  canonical + hreflang alternate link tags.
+- **SEO:** `MovingCompany` JSON-LD structured data (with url/image/logo), a
+  generated `sitemap.xml` (56 URLs: 8 pages × 7 languages), `robots.txt`,
+  per-page canonical + hreflang alternate link tags, `noindex` on the 404
+  page, and full Open Graph + Twitter Card tags (static in `index.html`
+  for non-JS crawlers, kept in sync dynamically per page for JS-executing
+  ones) backed by a brand-consistent generated `og-image.png`.
 - **Performance:** every page is route-level code-split (`React.lazy` +
   `Suspense`), and locale JSON bundles load on demand per language
   (English preloaded, the other six stream in as their own ~8 kB gzip
-  chunk only when selected) instead of bundling all seven eagerly.
-- **Version control hygiene:** PR #1 ("Build ultra-luxury Nederland
-  Portugal Express website (multilingual)") merged into `main`; working
-  tree and all branches verified clean with no uncommitted or unpushed
-  changes at each checkpoint.
+  chunk only when selected) instead of bundling all seven eagerly — this
+  removed the earlier production build's chunk-size warning entirely.
+- **Production polish:** centralized contact details into
+  `src/data/contact.ts`; real `tel:`/`mailto:` links; footer no longer
+  renders dead `href="#"` social links (only shows an icon once a real
+  URL is configured); a `favicon.ico` fallback alongside the SVG favicon;
+  a base-layer CSS reset so the browser's default blue/underlined link
+  style can never leak through on a future link.
+- **Version control hygiene:** PR #1 and PR #2 both merged into `main`;
+  working tree and all branches verified clean with no uncommitted or
+  unpushed changes at each checkpoint; `main` itself rebuilt from a fresh
+  clone to confirm it is genuinely deployable, not just the working copy.
 
 ## Pending Tasks
+
+Everything below requires a business decision or asset from the client —
+none of it is blocked on further engineering:
 
 - [ ] Wire Contact and Quote Request forms to a real backend (see
       **Contact Form Integration Status** below) — currently simulated.
 - [ ] Choose and configure production hosting (Vercel, Netlify, or a
       TransIP-hosted static/Node target).
 - [ ] Point the production domain at the chosen host via TransIP DNS (see
-      **Domain Configuration** below).
-- [ ] Replace placeholder contact details (phone numbers, email, office
-      copy) with the client's real information.
+      **Domain Configuration** below), and update the placeholder origin
+      (`https://www.nederlandportugalexpress.com`, in `src/i18n/siteUrl.ts`
+      and `scripts/generate-sitemap.mjs`) to the real domain, then rerun
+      `npm run generate:sitemap`.
+- [ ] Supply real business contact details — phone number(s), email,
+      Instagram/LinkedIn URLs — to replace the placeholders in
+      `src/data/contact.ts` (see **Contact Details**).
+- [ ] Optionally supply a street-level office address if the brand wants
+      more than the current city-level, by-appointment copy.
 - [ ] Source or commission real photography/video if the brand later wants
       imagery beyond the current custom CSS/SVG visual language.
-- [ ] Update the placeholder production origin (`https://www.nederlandportugalexpress.com`
-      in `src/i18n/siteUrl.ts` and `scripts/generate-sitemap.mjs`) to the
-      real domain once chosen, then rerun `npm run generate:sitemap`.
-- [ ] Review and merge the current work branch (Vehicle Logistics page,
-      International Transport & Relocation repositioning, SEO, and
-      performance work, plus the earlier docs update) into `main`, if a
-      pull request is requested.
+
+## Contact Details
+
+Centralized in `src/data/contact.ts`. Currently placeholder values:
+
+| Field | Current value | Status |
+|---|---|---|
+| Phone (NL) | `+31 20 123 4567` | Placeholder |
+| Phone (PT) | `+351 21 456 7890` | Placeholder |
+| Email | `concierge@npexpress.com` | Placeholder |
+| Instagram | *(empty — icon hidden until set)* | Needs real URL |
+| LinkedIn | *(empty — icon hidden until set)* | Needs real URL |
+
+The same phone/email also appear in the `MovingCompany` JSON-LD in
+`index.html` (kept in sync manually since that file is static HTML, not
+JS) — update both places together.
 
 ## GitHub Branch Information
 
 | Branch | Role | Status |
 |---|---|---|
-| `main` | Production source of truth | Contains the full merged website as of commit `de09a5b` |
-| `claude/npe-luxury-website-design-bfwdg3` | Active working branch | Restarted from `main` after PR #1 merged, per repo policy that a merged branch is not reused for further commits; currently holds the docs update, the Vehicle Logistics page, the International Transport & Relocation repositioning, and the SEO/performance work, all unmerged |
+| `main` | Production source of truth | Up to date — contains the full website, all pages, SEO, performance and production-polish work as of commit `9978a2c` |
+| `claude/npe-luxury-website-design-bfwdg3` | Feature branch | Fully merged into `main` via PR #1 and PR #2; will be restarted from `main` again if further work is requested, per this repo's workflow for a branch whose PR has already merged |
 
-**History:** PR #1 (`claude/npe-luxury-website-design-bfwdg3` → `main`)
-introduced the entire website build — the initial luxury site, the
-ultra-luxury/cinematic + multilingual upgrade, and the first version of
-this status document — and was merged as commit `de09a5b`. Every commit
-since (the documentation set, then the Vehicle Logistics/repositioning/
-SEO/performance work) has continued on that same branch name without a
-merge in between, so it is still one unmerged unit of work sitting on top
-of `main`; a pull request opened from it now would be a **new** PR, not a
-reopening of #1.
+**History:** PR #1 introduced the entire initial website build (merged as
+`de09a5b`). PR #2 added the Vehicle Logistics page, repositioned
+International Removals as International Transport & Relocation, and added
+the SEO/performance/production-polish work described above (merged as
+`9978a2c`). Both are closed and merged; `main` is current.
 
 ## Technology Stack
 
