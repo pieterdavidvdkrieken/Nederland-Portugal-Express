@@ -2,8 +2,12 @@ import { Mail, Phone, MapPin, ArrowUpRight } from 'lucide-react'
 import { useTranslation } from 'react-i18next'
 import Divider from '../ui/Divider'
 import LocaleLink from '../../i18n/LocaleLink'
+import { CONTACT } from '../../data/contact'
 
-const social = ['Instagram', 'LinkedIn']
+const social = [
+  { label: 'Instagram', url: CONTACT.social.instagram },
+  { label: 'LinkedIn', url: CONTACT.social.linkedin },
+].filter((s) => s.url)
 
 export default function Footer() {
   const { t } = useTranslation()
@@ -12,7 +16,8 @@ export default function Footer() {
     { label: t('footer.aboutUs'), to: '/about' },
     { label: t('nav.services'), to: '/services' },
     { label: t('nav.secureStorage'), to: '/secure-storage' },
-    { label: t('nav.removals'), to: '/international-removals' },
+    { label: t('nav.vehicleLogistics'), to: '/vehicle-logistics' },
+    { label: t('nav.removals'), to: '/international-relocation' },
   ]
 
   const client = [
@@ -35,19 +40,23 @@ export default function Footer() {
               </span>
             </LocaleLink>
             <p className="mt-6 max-w-xs text-sm font-light leading-relaxed text-mist">{t('footer.tagline')}</p>
-            <div className="mt-7 flex items-center gap-3">
-              {social.map((s) => (
-                <a
-                  key={s}
-                  href="#"
-                  aria-label={s}
-                  className="flex items-center gap-1.5 rounded-full border border-champagne/20 px-4 py-2 text-[11px] uppercase tracking-[0.12em] text-champagne/70 transition-colors hover:border-champagne hover:text-champagne-light"
-                >
-                  {s}
-                  <ArrowUpRight className="h-3 w-3" strokeWidth={1.4} />
-                </a>
-              ))}
-            </div>
+            {social.length > 0 && (
+              <div className="mt-7 flex items-center gap-3">
+                {social.map((s) => (
+                  <a
+                    key={s.label}
+                    href={s.url}
+                    target="_blank"
+                    rel="noreferrer"
+                    aria-label={s.label}
+                    className="flex items-center gap-1.5 rounded-full border border-champagne/20 px-4 py-2 text-[11px] uppercase tracking-[0.12em] text-champagne/70 transition-colors hover:border-champagne hover:text-champagne-light"
+                  >
+                    {s.label}
+                    <ArrowUpRight className="h-3 w-3" strokeWidth={1.4} />
+                  </a>
+                ))}
+              </div>
+            )}
           </div>
 
           <div>
@@ -81,11 +90,15 @@ export default function Footer() {
             <ul className="space-y-4 text-sm font-light text-mist">
               <li className="flex items-start gap-3">
                 <Phone className="h-4 w-4 mt-0.5 text-champagne/70 shrink-0" strokeWidth={1.4} />
-                <span>+31 20 123 4567</span>
+                <a href={`tel:${CONTACT.phoneNL.replace(/\s/g, '')}`} className="hover:text-ivory transition-colors">
+                  {CONTACT.phoneNL}
+                </a>
               </li>
               <li className="flex items-start gap-3">
                 <Mail className="h-4 w-4 mt-0.5 text-champagne/70 shrink-0" strokeWidth={1.4} />
-                <span>concierge@npexpress.com</span>
+                <a href={`mailto:${CONTACT.email}`} className="hover:text-ivory transition-colors">
+                  {CONTACT.email}
+                </a>
               </li>
               <li className="flex items-start gap-3">
                 <MapPin className="h-4 w-4 mt-0.5 text-champagne/70 shrink-0" strokeWidth={1.4} />

@@ -8,6 +8,7 @@ import Divider from '../components/ui/Divider'
 import { Label, TextInput, TextArea, Field } from '../components/ui/FormField'
 import LocaleLink from '../i18n/LocaleLink'
 import { usePageMeta } from '../hooks/usePageMeta'
+import { CONTACT } from '../data/contact'
 
 export default function Contact() {
   const { t } = useTranslation()
@@ -16,8 +17,13 @@ export default function Contact() {
   const [submitting, setSubmitting] = useState(false)
 
   const info = [
-    { icon: Phone, title: t('contact.info.telephone'), lines: ['+31 20 123 4567', '+351 21 456 7890'] },
-    { icon: Mail, title: t('contact.info.email'), lines: ['concierge@npexpress.com'] },
+    {
+      icon: Phone,
+      title: t('contact.info.telephone'),
+      lines: [CONTACT.phoneNL, CONTACT.phonePT],
+      hrefs: [`tel:${CONTACT.phoneNL.replace(/\s/g, '')}`, `tel:${CONTACT.phonePT.replace(/\s/g, '')}`],
+    },
+    { icon: Mail, title: t('contact.info.email'), lines: [CONTACT.email], hrefs: [`mailto:${CONTACT.email}`] },
     { icon: MapPin, title: t('contact.info.offices'), lines: [t('contact.info.office1'), t('contact.info.office2')] },
     {
       icon: Clock,
@@ -58,11 +64,20 @@ export default function Contact() {
                   </span>
                   <div>
                     <h3 className="text-sm uppercase tracking-[0.16em] text-champagne-light">{item.title}</h3>
-                    {item.lines.map((line) => (
-                      <p key={line} className="mt-1.5 text-sm font-light text-mist">
-                        {line}
-                      </p>
-                    ))}
+                    {item.lines.map((line, i) => {
+                      const href = 'hrefs' in item ? item.hrefs?.[i] : undefined
+                      return (
+                        <p key={line} className="mt-1.5 text-sm font-light text-mist">
+                          {href ? (
+                            <a href={href} className="hover:text-ivory transition-colors">
+                              {line}
+                            </a>
+                          ) : (
+                            line
+                          )}
+                        </p>
+                      )
+                    })}
                   </div>
                 </div>
               ))}

@@ -240,11 +240,13 @@ export default function Home() {
       </section>
 
       {/* TESTIMONIAL */}
-      <section className="relative border-y border-champagne/10 bg-noir-soft py-28 sm:py-32 px-6">
+      <section className="relative bg-paper py-28 sm:py-32 px-6">
+        <div className="absolute inset-0 opacity-[0.4] bg-[radial-gradient(ellipse_at_50%_0%,rgba(203,170,107,0.08),transparent_60%)]" />
         <Testimonial
           quote={t('home.testimonial.quote')}
           name={t('home.testimonial.name')}
           role={t('home.testimonial.role')}
+          tone="light"
         />
       </section>
 

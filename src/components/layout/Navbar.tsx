@@ -18,7 +18,8 @@ export default function Navbar() {
     { label: t('nav.about'), to: '/about' },
     { label: t('nav.services'), to: '/services' },
     { label: t('nav.secureStorage'), to: '/secure-storage' },
-    { label: t('nav.removals'), to: '/international-removals' },
+    { label: t('nav.vehicleLogistics'), to: '/vehicle-logistics' },
+    { label: t('nav.removals'), to: '/international-relocation' },
     { label: t('nav.contact'), to: '/contact' },
   ]
 
@@ -54,7 +55,7 @@ export default function Navbar() {
           </span>
         </NavLink>
 
-        <nav className="hidden lg:flex items-center gap-9">
+        <nav className="hidden xl:flex items-center gap-6 2xl:gap-8">
           {navLinks.map((link) => (
             <NavLink
               key={link.to}
@@ -83,7 +84,7 @@ export default function Navbar() {
           ))}
         </nav>
 
-        <div className="hidden lg:flex items-center gap-7">
+        <div className="hidden xl:flex items-center gap-7">
           <LanguageSwitcher />
           <NavLink
             to={localizePath(lang, '/quote-request')}
@@ -93,7 +94,7 @@ export default function Navbar() {
           </NavLink>
         </div>
 
-        <div className="flex items-center gap-4 lg:hidden">
+        <div className="flex items-center gap-4 xl:hidden">
           <LanguageSwitcher />
           <button
             className="text-ivory p-2 focus-gold"
@@ -112,7 +113,7 @@ export default function Navbar() {
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
             transition={{ duration: 0.4, ease: [0.16, 1, 0.3, 1] }}
-            className="lg:hidden overflow-hidden border-t border-champagne/10 bg-noir/95"
+            className="xl:hidden overflow-hidden border-t border-champagne/10 bg-noir/95"
           >
             <div className="flex flex-col px-6 py-8 gap-6">
               {navLinks.map((link, i) => (

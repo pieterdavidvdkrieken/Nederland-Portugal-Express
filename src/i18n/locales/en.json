@@ -4,7 +4,8 @@
     "about": { "title": "About Us | Nederland Portugal Express", "desc": "A private standard of logistics excellence, born on the corridor between Amsterdam and Lisbon." },
     "services": { "title": "Services | Nederland Portugal Express", "desc": "A complete suite of private logistics services — luxury transport, yacht logistics, vehicle transport, removals and more." },
     "secureStorage": { "title": "Secure Storage | Nederland Portugal Express", "desc": "Climate-controlled, monitored private storage for vehicles, vessels, art and estate belongings." },
-    "removals": { "title": "International Removals | Nederland Portugal Express", "desc": "Premium international removals and relocations between the Netherlands, Portugal and beyond." },
+    "vehicleLogistics": { "title": "Vehicle Logistics | Nederland Portugal Express", "desc": "Enclosed, insured transport and concierge-level logistics for supercars, classic collections, motorcycles and fleets." },
+    "removals": { "title": "International Transport & Relocation | Nederland Portugal Express", "desc": "Premium international transport and relocation between the Netherlands, Portugal and beyond." },
     "contact": { "title": "Contact | Nederland Portugal Express", "desc": "Speak with our concierge team about your private logistics request." },
     "quote": { "title": "Request a Quote | Nederland Portugal Express", "desc": "Request a tailored, private logistics proposal from Nederland Portugal Express." },
     "notFound": { "title": "Page Not Found | Nederland Portugal Express" }
@@ -14,7 +15,8 @@
     "about": "About",
     "services": "Services",
     "secureStorage": "Secure Storage",
-    "removals": "Removals",
+    "vehicleLogistics": "Vehicle Logistics",
+    "removals": "Relocation",
     "contact": "Contact",
     "requestQuote": "Request a Quote",
     "language": "Language"
@@ -225,9 +227,52 @@
       "desc": "Our team conducts a private consultation to understand the asset, its environmental requirements and your access needs. A tailored storage plan — including transport to the facility if required — is then confirmed before anything is scheduled."
     }
   },
+  "vehicleLogistics": {
+    "hero": {
+      "kicker": "Vehicle Logistics",
+      "title": "Every vehicle, treated like the one that matters most",
+      "desc": "From a single collector car to an entire garage, our vehicle logistics team combines enclosed transport, meticulous handling and full insurance valuation — so provenance and paintwork arrive exactly as they left."
+    },
+    "features": {
+      "kicker": "Our Standard",
+      "title": "Precision engineered for the vehicles you can't replace",
+      "desc": "Every transport is planned around the vehicle, not the timetable.",
+      "items": [
+        { "title": "Fully Enclosed Transport", "desc": "Climate-aware, air-ride enclosed carriers shield bodywork and finish from weather, road debris and prying eyes." },
+        { "title": "Soft-Strap, Zero-Contact Loading", "desc": "Wheel-net and soft-strap systems secure each vehicle without a single point of metal-to-metal contact." },
+        { "title": "Real-Time Tracking", "desc": "Your logistics architect — and you, if you wish — can follow the consignment's progress at every stage." },
+        { "title": "Concours-Level Handling", "desc": "Specialists trained to the standard of show preparation, not general freight." },
+        { "title": "Full Insurance Valuation", "desc": "Agreed-value cover confirmed before a single wheel turns, matched to the vehicle's true worth." },
+        { "title": "Multi-Vehicle Collections", "desc": "Entire garages relocated in a single coordinated movement, sequenced to each vehicle's needs." }
+      ]
+    },
+    "categories": {
+      "kicker": "What We Move",
+      "title": "From a single classic to an entire collection",
+      "desc": "Every vehicle type demands its own handling protocol — we design each transport around the vehicle in front of us, not a standard template.",
+      "items": [
+        "Supercars & Hypercars",
+        "Classic & Vintage Automobiles",
+        "Motorcycles",
+        "Multi-Vehicle Collections",
+        "Show & Concours Vehicles",
+        "Corporate & Dealer Fleets"
+      ]
+    },
+    "process": {
+      "kicker": "How We Work",
+      "title": "A protocol built around provenance",
+      "steps": [
+        { "title": "Assessment & Valuation", "desc": "We inspect and document condition, and confirm insurance valuation before scheduling." },
+        { "title": "Custom Loading Plan", "desc": "Ride height, weight distribution and access points are planned per vehicle, per trailer." },
+        { "title": "Enclosed Transport", "desc": "Your vehicle travels in dedicated, monitored, enclosed transport — never shared with unrelated cargo." },
+        { "title": "White-Glove Delivery", "desc": "Arrival, condition check and handover, completed together with you or your representative." }
+      ]
+    }
+  },
   "removals": {
     "hero": {
-      "kicker": "Premium International Removals",
+      "kicker": "International Transport & Relocation",
       "title": "Relocating a life, with the care it deserves",
       "desc": "From a single-room apartment to a multi-generational estate, our removals specialists manage every detail between the Netherlands, Portugal and beyond — so your new home feels complete from the first evening."
     },

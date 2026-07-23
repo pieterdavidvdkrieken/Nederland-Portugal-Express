@@ -6,7 +6,7 @@ import { usePageMeta } from '../hooks/usePageMeta'
 
 export default function NotFound() {
   const { t } = useTranslation()
-  usePageMeta('notFound')
+  usePageMeta('notFound', { noindex: true })
   return (
     <section className="relative flex min-h-[80vh] items-center justify-center overflow-hidden bg-noir px-6 text-center">
       <AuroraBackdrop />

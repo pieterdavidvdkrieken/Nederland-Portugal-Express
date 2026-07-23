@@ -1,21 +1,30 @@
 # Project Status — Nederland Portugal Express
 
 **Last updated:** 2026-07-22
-**Branch:** `claude/npe-luxury-website-design-bfwdg3`
-**Latest commit:** `a8f5d19`
+**Primary branch:** `main` (source of truth — PR #1 merged as `de09a5b`)
+**Latest work branch:** `claude/npe-luxury-website-design-bfwdg3` — currently one PR ahead of `main` (docs update + Vehicle Logistics page/SEO/performance work below); not yet merged. Run `git log -1` on that branch or check GitHub for the exact current hash.
 
 ## Current Status
 
-The marketing website is functionally complete and running as a client-side
-React single-page application. All seven pages are built, translated into
-seven languages, and pass type-checking, linting and production build
-cleanly. The site has **not yet been deployed to a live domain** — hosting
-and DNS (TransIP) still need to be configured (see below).
+**The website now covers eight pages** (a Vehicle Logistics page was added
+and International Removals was repositioned as International Transport &
+Relocation), still in all seven languages, with the full cinematic visual
+system described below plus real SEO metadata and route/locale-level code
+splitting for performance. `tsc --noEmit`, `vite build`, and `oxlint` all
+pass without errors as of the latest commit on the work branch.
+
+The project is **feature-complete but not yet live** — it has not been
+deployed to production hosting, no real domain is connected (SEO files
+currently reference a placeholder domain, see **Domain Configuration**),
+and the two forms (Contact, Quote Request) do not yet submit to a real
+backend. These remain the main blockers before the site can serve real
+clients (see **Pending Tasks**).
 
 ## Completed Features
 
-- **Pages:** Home, About Us, Services, Secure Storage, International
-  Removals, Contact, Quote Request (multi-step wizard), 404.
+- **Pages:** Home, About Us, Services, Secure Storage, Vehicle Logistics,
+  International Transport & Relocation, Contact, Quote Request (multi-step
+  wizard), 404.
 - **Design system:** black / deep ink navy / champagne gold palette,
   Cormorant Garamond + Bodoni Moda + Manrope type system, reusable UI
   primitives (buttons, section headings, icon tiles, stat band, testimonial,
@@ -31,7 +40,26 @@ and DNS (TransIP) still need to be configured (see below).
   menu and footer.
 - **Responsive:** verified at desktop and mobile breakpoints via Playwright.
 - **Quality gates:** `tsc --noEmit`, `vite build`, and `oxlint` all pass
-  clean; zero console/runtime errors across a full route + language sweep.
+  clean; zero console/runtime errors across a full route + language sweep,
+  re-verified on a fresh clone of `main` after merge.
+- **Project documentation:** `PROJECT_STATUS.md` (this file),
+  `ROADMAP.md` (long-term vision), `BRAND_MANIFESTO.md` (core brand
+  philosophy) — all version-controlled alongside the code.
+- **White/paper design layer:** genuine white/paper section backgrounds
+  (not just text) with light-mode headings, icon tiles and testimonials —
+  used on the Home/About testimonial bands and the Vehicle Logistics
+  features grid, so black/gold/navy/white are all real section colors.
+- **SEO:** `MovingCompany` JSON-LD structured data, `robots.txt`, a
+  generated `sitemap.xml` (56 URLs: 8 pages × 7 languages), and per-page
+  canonical + hreflang alternate link tags.
+- **Performance:** every page is route-level code-split (`React.lazy` +
+  `Suspense`), and locale JSON bundles load on demand per language
+  (English preloaded, the other six stream in as their own ~8 kB gzip
+  chunk only when selected) instead of bundling all seven eagerly.
+- **Version control hygiene:** PR #1 ("Build ultra-luxury Nederland
+  Portugal Express website (multilingual)") merged into `main`; working
+  tree and all branches verified clean with no uncommitted or unpushed
+  changes at each checkpoint.
 
 ## Pending Tasks
 
@@ -45,11 +73,30 @@ and DNS (TransIP) still need to be configured (see below).
       copy) with the client's real information.
 - [ ] Source or commission real photography/video if the brand later wants
       imagery beyond the current custom CSS/SVG visual language.
-- [ ] Optional: code-split translation bundles / lazy-load non-default
-      languages to shrink the initial JS payload (currently ~646 KB raw /
-      ~199 KB gzipped, flagged by the Vite build as a chunk-size warning).
-- [ ] Merge pull request [#1](https://github.com/pieterdavidvdkrieken/Nederland-Portugal-Express/pull/1)
-      into `main` once reviewed.
+- [ ] Update the placeholder production origin (`https://www.nederlandportugalexpress.com`
+      in `src/i18n/siteUrl.ts` and `scripts/generate-sitemap.mjs`) to the
+      real domain once chosen, then rerun `npm run generate:sitemap`.
+- [ ] Review and merge the current work branch (Vehicle Logistics page,
+      International Transport & Relocation repositioning, SEO, and
+      performance work, plus the earlier docs update) into `main`, if a
+      pull request is requested.
+
+## GitHub Branch Information
+
+| Branch | Role | Status |
+|---|---|---|
+| `main` | Production source of truth | Contains the full merged website as of commit `de09a5b` |
+| `claude/npe-luxury-website-design-bfwdg3` | Active working branch | Restarted from `main` after PR #1 merged, per repo policy that a merged branch is not reused for further commits; currently holds the docs update, the Vehicle Logistics page, the International Transport & Relocation repositioning, and the SEO/performance work, all unmerged |
+
+**History:** PR #1 (`claude/npe-luxury-website-design-bfwdg3` → `main`)
+introduced the entire website build — the initial luxury site, the
+ultra-luxury/cinematic + multilingual upgrade, and the first version of
+this status document — and was merged as commit `de09a5b`. Every commit
+since (the documentation set, then the Vehicle Logistics/repositioning/
+SEO/performance work) has continued on that same branch name without a
+merge in between, so it is still one unmerged unit of work sitting on top
+of `main`; a pull request opened from it now would be a **new** PR, not a
+reopening of #1.
 
 ## Technology Stack
 
@@ -59,7 +106,7 @@ and DNS (TransIP) still need to be configured (see below).
 | Styling | Tailwind CSS v4 (`@tailwindcss/vite`) |
 | Animation | Framer Motion, Lenis (smooth scroll) |
 | Routing | React Router v7, locale-prefixed (`/:lang/*`) |
-| i18n | react-i18next / i18next, 7 static JSON locale bundles |
+| i18n | react-i18next / i18next, 7 JSON locale bundles loaded on demand via `i18next-resources-to-backend` |
 | Icons | lucide-react |
 | Fonts | Cormorant Garamond, Bodoni Moda, Manrope — self-hosted via `@fontsource` (no external Google Fonts dependency) |
 | Linting | oxlint |
@@ -99,25 +146,8 @@ small-caps, wide-tracked gold labels; dividers use a thin gold hairline
 with a rotated-diamond ornament; imagery is entirely custom CSS/SVG (no
 stock photography) to keep the visual language exclusive and consistent.
 
-## Future Roadmap
-
-1. **Backend integration** — real form submission (email/CRM) for Contact
-   and Quote Request.
-2. **Deployment** — ship to production hosting and go live on the client's
-   domain.
-3. **CMS (optional)** — if content will change often (services, pricing,
-   testimonials), consider a headless CMS instead of hardcoded translation
-   JSON.
-4. **Analytics & SEO** — add privacy-respecting analytics, structured data
-   (LocalBusiness / Organization schema), and per-language sitemaps once
-   live.
-5. **Imagery** — commission real photography of vehicles/yachts/removals in
-   progress to replace the abstract visual language, if desired.
-6. **Performance** — code-split the i18n bundle and lazy-load non-default
-   languages once traffic patterns are known.
-7. **Additional languages** — infrastructure supports adding further
-   locales by dropping in a new JSON file under `src/i18n/locales/` and
-   registering it in `src/i18n/languages.ts` / `src/i18n/config.ts`.
+See `BRAND_MANIFESTO.md` for the underlying brand philosophy and
+`ROADMAP.md` for how the brand and product evolve from here.
 
 ## Deployment Instructions
 
@@ -151,9 +181,14 @@ static-file server works.
 
 ## Domain Configuration (TransIP)
 
-The production domain has **not yet been connected**. Once hosting is
-chosen, point the TransIP-registered domain at it via the TransIP Control
-Panel → **Domains** → select the domain → **DNS**:
+The production domain has **not yet been connected**. `robots.txt`,
+`sitemap.xml`, canonical tags and hreflang tags currently all point at a
+placeholder origin (`https://www.nederlandportugalexpress.com`, set in
+`src/i18n/siteUrl.ts` and `scripts/generate-sitemap.mjs`) — update both
+once the real domain is chosen, then rerun `npm run generate:sitemap`.
+
+Once hosting is chosen, point the TransIP-registered domain at it via the
+TransIP Control Panel → **Domains** → select the domain → **DNS**:
 
 - **If hosting on Vercel/Netlify (recommended for a static SPA):**
   - Add the `A`/`ALIAS` record(s) or `CNAME` the host's dashboard provides
