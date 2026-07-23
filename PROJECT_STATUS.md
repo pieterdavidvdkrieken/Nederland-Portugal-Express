@@ -1,7 +1,8 @@
 # Project Status — Nederland Portugal Express
 
 **Last updated:** 2026-07-23
-**Primary branch:** `main` (source of truth — PR #1, #2 and #3 merged, latest commit `897203e`; PR #4, adding real business contact information, pending)
+**Primary branch:** `main` (source of truth — PR #1, #2, #3 and #4 merged, latest commit `d69d9be`)
+**Canonical repository:** `pieterdavidvdkrieken/Nederland-Portugal-Express` — see **Canonical Repository & Deployment Platform** below.
 
 ## Current Status
 
@@ -16,12 +17,48 @@ broken links, zero missing assets, and zero console/network errors across
 all 56 page × language combinations.
 
 **Real business contact information is now live across the entire site**
-(see **Contact Details**). The only remaining blockers to going live are:
-DNS for the production domain is not yet pointed at hosting (the domain
-itself is confirmed and already used throughout SEO config — see **Domain
-Configuration**), and the two forms (Contact, Quote Request) do not yet
-submit to a real backend. Once those are handled, the site can go live
-as-is.
+(see **Contact Details**). The remaining blockers to going live are: the
+deployment platform is not yet connected to this repository (see
+**Canonical Repository & Deployment Platform** — this is today's most
+important open item), DNS for the production domain is not yet pointed at
+hosting (the domain itself is confirmed and already used throughout SEO
+config — see **Domain Configuration**), and the two forms (Contact, Quote
+Request) do not yet submit to a real backend. Once those are handled, the
+site can go live as-is.
+
+## Canonical Repository & Deployment Platform
+
+**Resolved today:** two separate, independently-built repositories existed
+for this business — `pieterdavidvdkrieken/Nederland-Portugal-Express`
+(this repo, built via Claude Code: React 19 + Vite + Tailwind CSS v4 +
+react-i18next, 7 languages including Italian) and
+`pieterdavidvdkrieken/hollandportugal-link` (a separate project built
+natively inside Lovable, on Lovable's own `tanstack_start_ts_current`
+template — a different framework entirely, with its own component
+library and its own i18n implementation covering only 6 languages, EN/NL/
+DE/FR/ES/PT — **no Italian**). Both repos independently ended up with the
+same real business contact details, which made the two look related, but
+they are not the same codebase and never have been.
+
+The Lovable preview the client was viewing was serving
+`hollandportugal-link`, not this repository — that's why it showed an
+older layout/navigation and no Italian: it isn't a stale cache of this
+project, it's genuinely different code.
+
+**Decision (client-confirmed):** `pieterdavidvdkrieken/Nederland-Portugal-Express`
+is the sole canonical production repository going forward. No further
+changes should be made to `hollandportugal-link` — it is frozen/
+deprecated as of this decision.
+
+**Pending for tomorrow:** migrate or reconnect Lovable (or choose another
+deployment platform — see **Deployment Instructions**) so it builds from
+`pieterdavidvdkrieken/Nederland-Portugal-Express` `main`, giving the
+project a single source of truth. Since Lovable's AI-editing is built
+around its own template/scaffolding, this may not be a simple "change the
+connected repo" toggle — it needs to be checked directly in Lovable's
+dashboard (or an alternative static host, e.g. Vercel/Netlify per
+**Deployment Instructions**, may be simpler than trying to make Lovable
+adopt an externally-built Vite app).
 
 ## Completed Features
 
@@ -79,6 +116,10 @@ as-is.
 Everything below requires a business decision or asset from the client —
 none of it is blocked on further engineering:
 
+- [ ] Migrate/reconnect Lovable (or choose another deployment platform) to
+      `pieterdavidvdkrieken/Nederland-Portugal-Express` `main` — see
+      **Canonical Repository & Deployment Platform** above. Top priority
+      for tomorrow.
 - [ ] Wire Contact and Quote Request forms to a real backend (see
       **Contact Form Integration Status** below) — currently simulated.
 - [ ] Choose and configure production hosting (Vercel, Netlify, or a
@@ -123,14 +164,17 @@ HTML, not JS — update both places together if contact info changes again.
 
 | Branch | Role | Status |
 |---|---|---|
-| `main` | Production source of truth | Up to date — contains the full website, all pages, SEO, performance and production-polish work as of commit `9978a2c` |
-| `claude/npe-luxury-website-design-bfwdg3` | Feature branch | Fully merged into `main` via PR #1 and PR #2; will be restarted from `main` again if further work is requested, per this repo's workflow for a branch whose PR has already merged |
+| `main` | Production source of truth | Up to date — contains the full website, all pages, SEO, performance, production-polish and real contact-info work as of commit `d69d9be` |
+| `claude/npe-luxury-website-design-bfwdg3` | Feature branch | Fully merged into `main` via PR #1–#4; restarted from `main` again if further work is requested, per this repo's workflow for a branch whose PR has already merged |
 
 **History:** PR #1 introduced the entire initial website build (merged as
 `de09a5b`). PR #2 added the Vehicle Logistics page, repositioned
 International Removals as International Transport & Relocation, and added
 the SEO/performance/production-polish work described above (merged as
-`9978a2c`). Both are closed and merged; `main` is current.
+`9978a2c`). PR #3 was a further production-readiness pass (merged as
+`897203e`). PR #4 replaced all placeholder contact info with real business
+details across the site and confirmed the production domain (merged as
+`d69d9be`). All four are closed and merged; `main` is current.
 
 ## Technology Stack
 
