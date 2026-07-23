@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next'
 import Divider from '../ui/Divider'
 import LocaleLink from '../../i18n/LocaleLink'
 import { CONTACT } from '../../data/contact'
+import PhoneLine from '../ui/PhoneLine'
 
 const social = [
   { label: 'Instagram', url: CONTACT.social.instagram },
@@ -90,9 +91,10 @@ export default function Footer() {
             <ul className="space-y-4 text-sm font-light text-mist">
               <li className="flex items-start gap-3">
                 <Phone className="h-4 w-4 mt-0.5 text-champagne/70 shrink-0" strokeWidth={1.4} />
-                <a href={`tel:${CONTACT.phoneNL.replace(/\s/g, '')}`} className="hover:text-ivory transition-colors">
-                  {CONTACT.phoneNL}
-                </a>
+                <div className="space-y-3">
+                  <PhoneLine phone={CONTACT.phoneNL} />
+                  <PhoneLine phone={CONTACT.phonePT} />
+                </div>
               </li>
               <li className="flex items-start gap-3">
                 <Mail className="h-4 w-4 mt-0.5 text-champagne/70 shrink-0" strokeWidth={1.4} />

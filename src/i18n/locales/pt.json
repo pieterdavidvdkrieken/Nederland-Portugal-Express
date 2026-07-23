@@ -317,6 +317,8 @@
     },
     "info": {
       "telephone": "Telefone",
+      "callAndWhatsapp": "Chamada e WhatsApp",
+      "whatsappOnly": "Apenas WhatsApp",
       "email": "E-mail",
       "offices": "Escritórios",
       "office1": "Amesterdão, Países Baixos",

@@ -19,9 +19,9 @@
       below are static, since social-media crawlers generally do not
       execute JavaScript and only ever see this initial HTML — so every
       shared link currently previews with the site-wide title/description/
-      image below rather than per-page copy. Update NPE_SITE_URL-derived
-      values here (and in src/i18n/siteUrl.ts) once the production domain
-      is known.
+      image below rather than per-page copy. NPE_SITE_URL-derived values
+      here must stay in sync with src/i18n/siteUrl.ts; contact values must
+      stay in sync with src/data/contact.ts.
     -->
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="Nederland Portugal Express" />
@@ -76,9 +76,26 @@
             "addressCountry": "PT"
           }
         ],
-        "telephone": "+31201234567",
-        "email": "concierge@npexpress.com",
+        "telephone": "+31644877149",
+        "email": "NederlandPortugalExpress@gmail.com",
         "priceRange": "$$$$",
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "telephone": "+31644877149",
+            "contactType": "customer service",
+            "areaServed": "NL",
+            "availableLanguage": ["en", "nl", "de", "fr", "es", "pt", "it"]
+          },
+          {
+            "@type": "ContactPoint",
+            "telephone": "+351913825401",
+            "contactType": "customer service",
+            "contactOption": "WhatsApp",
+            "areaServed": "PT",
+            "availableLanguage": ["en", "nl", "de", "fr", "es", "pt", "it"]
+          }
+        ],
         "sameAs": []
       }
     </script>

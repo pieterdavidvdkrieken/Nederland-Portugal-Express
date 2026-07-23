@@ -1,7 +1,7 @@
 # Project Status — Nederland Portugal Express
 
 **Last updated:** 2026-07-23
-**Primary branch:** `main` (source of truth — PR #1 and PR #2 both merged, latest commit `9978a2c`)
+**Primary branch:** `main` (source of truth — PR #1, #2 and #3 merged, latest commit `897203e`; PR #4, adding real business contact information, pending)
 
 ## Current Status
 
@@ -15,12 +15,12 @@ pass with zero errors or warnings. A full Playwright audit found zero
 broken links, zero missing assets, and zero console/network errors across
 all 56 page × language combinations.
 
-**The only remaining blockers to going live are business inputs, not
-code:** a production domain is not yet connected (SEO files currently
-point at a placeholder — see **Domain Configuration**), the real business
-phone/email/social links haven't been supplied yet (see **Contact
-Details**), and the two forms (Contact, Quote Request) do not yet submit
-to a real backend. Once those are provided/decided, the site can go live
+**Real business contact information is now live across the entire site**
+(see **Contact Details**). The only remaining blockers to going live are:
+DNS for the production domain is not yet pointed at hosting (the domain
+itself is confirmed and already used throughout SEO config — see **Domain
+Configuration**), and the two forms (Contact, Quote Request) do not yet
+submit to a real backend. Once those are handled, the site can go live
 as-is.
 
 ## Completed Features
@@ -84,13 +84,11 @@ none of it is blocked on further engineering:
 - [ ] Choose and configure production hosting (Vercel, Netlify, or a
       TransIP-hosted static/Node target).
 - [ ] Point the production domain at the chosen host via TransIP DNS (see
-      **Domain Configuration** below), and update the placeholder origin
-      (`https://www.nederlandportugalexpress.com`, in `src/i18n/siteUrl.ts`
-      and `scripts/generate-sitemap.mjs`) to the real domain, then rerun
-      `npm run generate:sitemap`.
-- [ ] Supply real business contact details — phone number(s), email,
-      Instagram/LinkedIn URLs — to replace the placeholders in
-      `src/data/contact.ts` (see **Contact Details**).
+      **Domain Configuration** below) — the domain itself is already
+      confirmed and configured throughout the codebase, only DNS/hosting
+      remains.
+- [ ] Optionally supply Instagram/LinkedIn URLs to populate the currently
+      hidden social icons in `src/data/contact.ts`.
 - [ ] Optionally supply a street-level office address if the brand wants
       more than the current city-level, by-appointment copy.
 - [ ] Source or commission real photography/video if the brand later wants
@@ -98,19 +96,28 @@ none of it is blocked on further engineering:
 
 ## Contact Details
 
-Centralized in `src/data/contact.ts`. Currently placeholder values:
+Centralized in `src/data/contact.ts` — real business values, confirmed by
+the client:
 
-| Field | Current value | Status |
+| Field | Value | Notes |
 |---|---|---|
-| Phone (NL) | `+31 20 123 4567` | Placeholder |
-| Phone (PT) | `+351 21 456 7890` | Placeholder |
-| Email | `concierge@npexpress.com` | Placeholder |
-| Instagram | *(empty — icon hidden until set)* | Needs real URL |
-| LinkedIn | *(empty — icon hidden until set)* | Needs real URL |
+| Phone (NL) | `+31 6 4487 7149` | Call & WhatsApp |
+| Phone (PT) | `+351 913 825 401` | WhatsApp only (no voice) |
+| Email | `NederlandPortugalExpress@gmail.com` | Temporary business address |
+| Instagram | *(empty — icon hidden until set)* | Optional, not yet supplied |
+| LinkedIn | *(empty — icon hidden until set)* | Optional, not yet supplied |
+
+The Footer and Contact page both render phone numbers through a shared
+`PhoneLine` component (`src/components/ui/PhoneLine.tsx`) that renders the
+correct `tel:`/`wa.me` behavior and an explicit "Call & WhatsApp" /
+"WhatsApp only" caption (translated in all 7 languages) so the NL/PT
+distinction is never ambiguous to a visitor.
 
 The same phone/email also appear in the `MovingCompany` JSON-LD in
-`index.html` (kept in sync manually since that file is static HTML, not
-JS) — update both places together.
+`index.html`, including a `contactPoint` array distinguishing the NL
+(call + WhatsApp) and PT (WhatsApp-only) numbers per schema.org
+conventions. This is kept in sync manually since `index.html` is static
+HTML, not JS — update both places together if contact info changes again.
 
 ## GitHub Branch Information
 
@@ -208,11 +215,13 @@ static-file server works.
 
 ## Domain Configuration (TransIP)
 
-The production domain has **not yet been connected**. `robots.txt`,
-`sitemap.xml`, canonical tags and hreflang tags currently all point at a
-placeholder origin (`https://www.nederlandportugalexpress.com`, set in
-`src/i18n/siteUrl.ts` and `scripts/generate-sitemap.mjs`) — update both
-once the real domain is chosen, then rerun `npm run generate:sitemap`.
+The production domain is **confirmed**: `www.nederlandportugalexpress.com`.
+`robots.txt`, `sitemap.xml`, canonical tags, hreflang tags, Open Graph/
+Twitter meta and JSON-LD all already point at
+`https://www.nederlandportugalexpress.com` (single source of truth:
+`src/i18n/siteUrl.ts`, read by `scripts/generate-sitemap.mjs`). **DNS is
+the only remaining step** — the domain is not yet pointed at any hosting
+provider.
 
 Once hosting is chosen, point the TransIP-registered domain at it via the
 TransIP Control Panel → **Domains** → select the domain → **DNS**:
